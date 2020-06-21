@@ -1,0 +1,778 @@
+A gestão da base de dados de utilizadores do sistema não é da responsabilidade do administrador de sistemas.
+Num CPD (“Centro de Processamento de Dados”) o número de servidores não afeta o consumo energético.
+O custo operacional que mais importante de um CPD é o custo com o pessoal para a sua administração
+O custo com o consumo energético de um CPD aumenta significativamente com o aumento de servidores virtuais
+Para cada servidor virtual é necessário existir um CPU físico (real) na plataforma de virtualização
+A virtualização de servidores reduz os custos operacionais
+Uma SAN (“Storage Area Network”) é uma rede de elevado desempenho que permite a virtualização de “storage”
+A virtualização sem recurso a uma SAN não permite que um mesmo disco seja usado por vários servidores virtuais 
+Uma desvantagem das SAN é que dificultam a implementação de alta disponibilidade e redundância
+Não é possível implementar uma SAN com recurso a hardware de rede corrente como por exemplo “Gigabit Ethernet” 
+As SAN “Fibre Channel” utilizam todas a taxa de transmissão de 10 Gbps
+Duas SAN do tipo “Fibre Channel” nunca podem ser interligadas através da Internet de nenhuma forma
+Para ligar um servidor a uma SAN “Fibre Channel” é necessário instalar um “Fibre Channel Host Bus Adapter”
+As SAN iSCSI constituem uma alternativa mais económica às SAN “Fibre Channel”
+Um iSCSI HBA (“Host Bus Adapter”) garante uma performance superior às restantes alternativas
+Um “target” iSCSI pode ser implementado com recurso a “hardware” corrente e um sistema operativo corrente 
+Numa implementação de continuidade de negócio de categoria 7 (“Tier 7”) existe redundância de servidores
+O “disk mirroring” é obrigatório nas implementações de continuidade de negócio de categoria 6 (“Tier 6”) e superiores
+O RTO (“Recovery Time Objective”) de “hardware” e dados é o ponto final do processo de recuperação
+A política de segurança deve definir as consequências da violação das regras nele definidas
+A política de segurança deve definir os protocolos de autenticação que são usados
+Se um serviço fica indisponível durante algum tempo, não pode ser considerado tolerante a falhas
+A deteção de intrusos é um meio de reduzir as consequências das falhas
+A manutenção de cópias de segurança atualizadas permite minimizar a possibilidade de ocorrência de falhas
+As falhas de confidencialidade em linhas de comunicação podem ser eliminadas através da segmentação da rede
+Para cada utilizador, o “username” deve ser igual em todos os servidores, mas a “password” pode ser diferente
+Só é possível o processo de autorização (“authorization”) após sucesso no processo de autenticação (“authentication”)
+Num sistema AAA, o PDP (“Policy Decision Point”) comunica diretamente com o PIP (“Policy Information Point”)
+O protocolo de autenticação PAP (“Password Authentication Protocol”) não é seguro em nenhum tipo de aplicação
+O protocolo RADIUS (“Remote Authentication Dial In User Service”) utiliza pacotes UDP para todas as transações
+O protocolo RADIUS é normalmente usado na comunicação entre o PEP/NAS (cliente) e o PDP (servidor)
+As bases de dados “Active Directory” são acessíveis através do protocolo LDAP (“Lightweight Directory Access Protocol”)
+O servidor LDAP nunca pode ser usado diretamente para validar credenciais, é necessário usar o servidor RADIUS
+No acesso ao servidor LDAP a autenticação simples com “password” em claro só deve ser usada com TLS/SSL
+Numa base de dados LDAP, um objeto pode pertencer a várias classes auxiliares (“auxiliary”)
+Um objeto de uma base de dados LDAP tem de usar todos os atributos definidos nas classes a que pertence
+O KERBEROS garante a confidencialidade dos dados transacionados entre os PRINCIPAL
+O sistema KERBEROS usa exclusivamente criptografia simétrica
+O KERBEROS pode funcionar mesmo que o serviço KDC (“Key Distribution Center”) não esteja disponível
+A autenticação dos PRINCIPAL do sistema KERBEROS usa certificados de chave pública
+Os ataques do tipo “Packet Sniffing” só podem ser adequadamente contrariados com encriptação da informação
+O ataque do tipo “IP Spoofing” consiste em falsear os endereços de origem dos pacotes IP
+Os ataques de tipo MITM (“man-in-the-middle”) são ataques de interposição que alteram a integridade das mensagens
+Muitos ataques de “IP Spoofing” podem ser evitados com recurso a ACLs estáticas
+A utilização de HTTPS permite evitar os ataques DoS (“Denial of Service”)
+O protocolo ARP está exposto a ataques porque não possui nenhum mecanismo de autenticação
+A criptografia de chave pública necessita de 4 chaves para assegurar uma comunicação segura entre duas entidades
+A utilização de uma chave pré partilhada (criptografia simétrica) assegura a autenticação
+Para um mesmo algoritmo de criptográfico, quanto maior for a chave usada, maior é a segurança
+As funções “hash” são algoritmos de criptografia de chave pública
+Na posse de uma mensagem cifrada e o respetivo original torna-se possível “quebrar” a chave por “força bruta”
+A aplicação dupla do algoritmo DES simples corresponde em termos de segurança a aumentar apenas um bit à chave
+O HTTPS difere do HTTP pelo facto de usar uma ligação SSL/TLS em lugar de uma simples ligação TCP
+Os algoritmos RC2, RC4 e RC5 são algoritmos de chave pública
+O ataque através da numeração de sequência do TCP tem geralmente como objectivo desencadear um ataque DoS
+O QoS (“Quality of Service”) evita que o tráfego menos importante afecte a performance da rede no tráfego prioritário
+Num “router” uma gestão de filas com implementação QoS usa a estratégia FIFO
+Para que o tráfego de baixa prioridade tenha sempre oportunidade de passar o método adequado é “Priority Queuing”
+A fragmentação e “Interleaving” de tráfego IP é uma técnica de gestão das filas nos “routers”
+No algoritmo “Custom Queuing” um pacote prioritário pode ficar mais tempo retido do que um de baixa prioridade
+A técnica “Weight Fair Queuing” é uma implementação “Hard QoS”
+O CAR (“Committed Access Rate”) pode levar à retenção de pacotes mesmo que a interface de saída esteja livre
+A técnica RED (“Random Early Detection”) descarta (“drop”) pacotes mesmo que a fila não esteja completamente cheia
+A técnica WRED (“Weighted RED”) pode ser usada pelo CAR para implementar “Hard QoS”
+O WRED nunca pode em nenhuma circunstância descartar (“drop”) pacotes de elevada prioridade
+O administrador de sistemas é o responsável pela salvaguarda de sistemas e dados (“backup”)
+O CPD (“Centro de Processamento de Dados”) é o local de trabalho permanente do administrador de sistemas e operadores.
+A virtualização de “hardware” permite criar novos servidores sem aumentar a quantidade de equipamento
+A virtualização de servidores reduz os custos, mas aumenta a complexidade das tarefas de administração
+A virtualização de servidores facilita a recuperação em caso de desastre (“Disaster Recovery”)
+“SMB/CIFS” e “NFS” são exemplos de protocolos usados para implementar a virtualização de “storage”
+O único tipo de SAN (“Storage Area Network”) que permite a utilização da pilha TCP/IP é o iSCSI
+A topologia atualmente mais usada nas SAN “Fibre-Channel” é o “Switched fabric”
+Nas implementações iSCSI, a opção de ligação que garante a melhor performance é o TOE (“TCP/IP Offload Engine”)
+O FCoE (“Fibre Channel over Ethernet”) não utiliza a pilha de protocolos TCP/IP
+Para interligar duas SAN “Fibre Channel” através da “internet” pode ser usado o FCIP (“Fibre Channel over IP”)
+O parâmetro MTBF (“Mean Time Between Failures”) e o parâmetro FIT (“Failures In Time”) não têm qualquer relação entre si
+O MTBF de um sistema redundante é aproximadamente igual ao somatório dos MTBF dos seus componentes
+Um sistema de alta disponibilidade do tipo “três noves” tem uma disponibilidade superior a 99%
+Um sistema designa-se “fail safe” se a falha de um componente não provoca qualquer degradação do desempenho
+Uma “common-mode fault” é uma falha que afeta apenas um dos componentes de um sistema redundante
+O sistema RAID 1 assegura a disponibilidade desde que pelo menos um dos discos se mantenha operacional
+Um dos objetivos do DRP (“Disaster Recovery Plan”) é reduzir o RTO (“Recovery Time Objective”)
+Num sistema de “storage” com “mirroring” síncrono o RPO (“Recovery Point Objective”) é nulo
+O DRP é um dos elementos importantes que constituem o BCP (“Business Continuity Plan”)
+O plano de “backup/restore” afeta o RTO, mas não RPO
+A utilização de cópias incrementais não favorece o valor do RTO
+A continuidade de negócio de categoria 6 (“Tier 6”) pressupõe valores de RTO entre 24 e 48 horas
+Nas cifras de chave simétrica para desencriptar é necessário usar a mesma chave que foi usada na encriptação
+O “não repúdio” pode ser facilmente garantido através de uma cifra de chave simétrica
+Os certificados de chave pública são usados para distribuir chaves secretas de cifras de chave simétrica
+As funções “hash“ são úteis para garantir a confidencialidade de dados
+O algoritmo RSA (“Ron Rivest, Adi Shamir e Leonard Adleman”) é uma cifra de chave simétrica
+Uma aplicação do PAP (“Password Authentication Protocol”) garante a autenticidade de apenas um dos intervenientes
+Num sistema AAA, só depois de validada a autenticação (“authentication”) é que é verificada a autorização (“authorization”).
+Num sistema AAA, é o PEP (“Policy Enforcement Point”) que toma a decisão de permitir ou não o acesso.
+O protocolo RADIUS é usado nas comunicações entre o PEP e o PIP (“Policy Information Point”)
+Com o EAP (“Extensible Authentication Protocol”), o PEP pode funcionar em modo “pass-through”
+Uma implementação PIP muito usada é um servidor LDAP (“Lightweight Directory Access Protocol”)
+O “Active Directory” da “MicroSoft” é uma implementação LDAP
+Numa base de dados LDAP um objeto nunca pode pertencer a mais do que uma classe estrutural
+Numa base de dados LDAP vários objetos podem ter o mesmo RDN (“Relative Distinguished Name”)
+O sistema KERBEROS só pode ser usado por quem tiver uma chave pré-partilhada com o AS (“Authentication Server”)
+A utilização do sistema KERBEROS sem pré-autenticação não garante a autenticidade nas comunicações entre os “principal”
+No “Active Directory” da Microsoft, o KERBEROS usa a transferência de relações de confiança (“transitive trust”)
+No TLS (“Transport Layer Security”) quem decide a versão que vai ser usada é o servidor
+O TLS exige sempre a utilização de uma cifra de chave assimétrica com troca de certificados de chave pública
+Para um pacote com determinadas caraterísticas, um “firewall” do tipo “packet-filter” tem sempre o mesmo comportamento.
+A funcionalidade “stateful packet inspection” (SPI) não está presente nos “firewalls” estáticos
+Para implementar uma arquitetura de rede com “Intranet”, ”DMZ” e “Internet” são necessários pelo menos dois “firewalls”
+Os ataques do tipo “sniffing” podem ser combatidos de forma eficaz com recurso a “firewalls”
+O ataque ARP “spoofing” pode ser usado como ponto de partida para um ataque MITM (“Man-in-the-middle”)
+O ataque “SYN flood” é um ataque do tipo DoS (“Denial of Service”), mas apenas pode ser aplicado a serviços TCP
+O ataque aos números de sequência TCP tem como objetivo a utilização de “spoofing” de endereços IP
+Tal como o protocolo TCP, o protocolo RTP (“Real-time Transport Protocol”) corrige automaticamente os erros
+A compressão de cabeçalhos (“header compression”) é mais vantajosa para pacotes de grande dimensão
+O LFI (“Link Fragmentation and Interleaving”) garante que os pacotes maiores são retransmitidos mais rapidamente
+Quando a rede fica congestionada, o TCP aumenta automaticamente o RTO (“Retransmission TimeOut”)
+O “Congestion avoidance” e “Slow Start” são mecanismos de controlo de fluxo regulados pelo recetor dos dados
+O RED (“Random Early Detection”) permite aos nós intermédios evitaram o “TCP global synchronization”
+O NBAR (“Network Based Application Recognition”) serve para classificar o tráfego através dos endereços de origem
+Os bits DSCP (“differentiated services codepoint”) são incompatíveis com os bits de precedência TOS
+A utilização de 100% da capacidade das ligações é garantida quer se use HARD QoS, quer se use SOFT QoS
+Na gestão de filas “Custom Queueing” (CQ) uma fila só é atendida quando as de prioridade superior estiverem vazias
+A gestão de filas do tipo “Fair Queueing” (FQ) trata de forma igual as várias filas criadas
+No “Weighted RED” (WRED) o tráfego é sempre tratado de forma diferenciada, seja qual for o estado da fila de saída
+No RSVP (“Resource Reservation Protocol”) os pedidos de reserva de recursos são efetuados pelos emissores dos dados.
+O IPsec em “Transport mode” não garante a confidencialidade de todo o pacote IP original
+O “IP Encapsulating Security Payload” (ESP) pode garantir a autenticidade/integridade e a confidencialidade
+O protocolo IKE (“Internet Key Exchange Protocol”) estabelece SAs (“Security Associations”) entre nós
+O suporte de ESP é obrigatório em todos os nós IPsec
+O protocolo IKE usa o algoritmo “Diffie-Hellman” para criar todas as (“Security Associations”)
+O “Layer 2 Tunneling Protocol” (L2TP) possui mecanismo de autenticação e confidencialidade adequados a uma VPN
+O parâmetro MTBF (“Mean Time Between Failures”) e o parâmetro FIT (“Failures In Time”) não têm qualquer relação entre si
+O algoritmo RSA (“Ron Rivest, Adi Shamir e Leonard Adleman”) é uma cifra de chave simétrica.
+Uma aplicação do PAP (“Password Authentication Protocol”) garante a autenticidade de apenas um dos intervenientes.
+Num sistema AAA, só depois de validada a autenticação (“authentication”) é que é verificada a autorização (“authorization”).
+Num sistema AAA, é o PEP (“Policy Enforcement Point”) que toma a decisão de permitir ou não o acesso
+Numa base de dados LDAP vários objetos podem ter o mesmo RDN (“Relative Distinguished Name”)
+O sistema KERBEROS só pode ser usado por quem tiver uma chave pré-partilhada com o AS (“Authentication Server”)
+A utilização do sistema KERBEROS sem pré-autenticação não garante a autenticidade nas comunicações entre os “principal”
+No TLS (“Transport Layer Security”) quem decide a versão que vai ser usada é o servidor
+O TLS exige sempre a utilização de uma cifra de chave assimétrica com troca de certificados de chave pública
+Para um pacote com determinadas caraterísticas, um “firewall” do tipo “packet-filter” tem sempre o mesmo comportamento
+Quando a rede fica congestionada, o TCP aumenta automaticamente o RTO (“Retransmission TimeOut”)
+Os bits DSCP (“differentiated services codepoint”) são incompatíveis com os bits de precedência TOS
+A utilização de 100% da capacidade das ligações é garantida quer se use HARD QoS, quer se use SOFT QoS
+No “Weighted RED” (WRED) o tráfego é sempre tratado de forma diferenciada, seja qual for o estado da fila de saída
+O protocolo IKE (“Internet Key Exchange Protocol”) estabelece SAs (“Security Associations”) entre nós
+O suporte de ESP é obrigatório em todos os nós IPsec
+O administrador de sistemas é o responsável pelo funcionamento do CPD (“Centro de Processamento de Dados”), mas não pela sua instalação inicial
+O acesso físico ao CPD apenas deve ser usado para operações de administração que não podem ser realizadas remotamente
+Uma das vantagens da virtualização de “hardware” é que permite reduzir a taxa de utilização dos recursos físicos
+A virtualização de servidores aumenta o número de operações de administração que podem ser realizadas remotamente
+Se um servidor virtual consumir uma quantidade exagerada de recursos, não há forma de impedir que isso interfira com os restantes servidores virtuais
+Na virtualização de “storage” os servidores disponibilizam aos clientes o acesso ao sistema de ficheiros através de diretórios partilhados (pastas partilhadas).
+As SAN (“Storage Area Network”) do tipo iSCSI são dispendiosas porque obrigam à utilização de “hardware” especificamente desenvolvido para o efeito
+Uma vez que ambos usam TCP/IP, é possível ligar diretamente dispositivos iFCP com dispositivos iSCSI
+O TOE (“TCP/IP Offload Engine”) é um componente de “hardware” que contém uma implementação do protocolo SCSI
+Duas SAN do tipo FCoE (“Fibre Channel over Ethernet”) podem ser diretamente ligadas através da INTERNET
+Na terminologia iSCSI designa-se por “initiator” o servidor que fornece discos lógicos a outras máquinas
+O parâmetro MTBF (“Mean Time Between Failures”) aumenta quando a probabilidade de falha diminui
+O MTBF de um sistema redundante é igual ao menor dos MTBF dos seus componentes
+Um sistema que em média está inoperante durante um dia por ano tem uma disponibilidade do tipo “três noves” ( 364/365 = 0,997260… )
+Um sistema com uma UPS que ordena o encerramento dos servidores após 10 minutos de falha de energia pode ser classificado como “fail safe”
+Se vários servidores partilham uma ligação de rede, essa ligação de rede constitui um SPOF (“Single Point Of Failure”)
+A diferença entre um sistema de discos redundante RAID 1 e RAID 2 é que o primeiro usa apenas um disco e o segundo necessita de dois discos iguais
+A quantificação do risco associado a uma dada falha depende exclusivamente da probabilidade dessa falha ocorrer
+O RPO (“Recovery Point Objective”) especifica uma quantidade de tempo medida após o instante em que ocorre o desastre
+O DRP (“Disaster Recovery Plan”) é constituído por BCP (“Business Continuity Plan”) e “Politica de segurança”
+Um plano de “backup/restore” com uma cópia integral semanal e cópias incrementais diárias é suficiente quando se pretende um RPO de 12 horas
+A grande vantagem da utilização de cópias incrementais relativamente a cópias integrais é que reduz o tempo necessário à realização da cópia
+Para implementar uma continuidade de negócio de categoria 3 (“Tier 3”) é necessário recorrer a “mirroring” síncrono de discos
+Entre muitos outros aspetos, a “Politica de segurança” deve estabelecer regras para a definição e manuseamento das “passwords” dos utilizadores.
+A utilização de uma chave pública para cifrar dados (cifra assimétrica) não dá garantias ao recetor da identidade do emissor
+O “não repúdio” deve ser garantido pelas assinaturas digitais, consiste em impedir que uma entidade possa negar que recebeu uma dada mensagem
+Um certificado de chave pública identifica duas entidades: proprietário (“owner”) e emissor (“issuer”), e transporta a chave pública do proprietário
+É pouco provável encontrar duas mensagens pouco diferentes que produzam o mesmo resultado com a aplicação de uma dada função “hash “
+O algoritmo AES (“Advanced Encryption Standard””) é do tipo assimétrico e é normalmente utilizado com chaves de 1024 ou 2048 bits
+O CHAP (“Challenge Handshake Authentication Protocol”) garante a autenticidade de ambos os intervenientes, mas necessita de um segredo pré partilhado
+Num sistema AAA, o NAS (“Network Access Service”) permite ou não o acesso de acordo com a resposta do PDP (“Policy Decision Point”)
+Uma limitação dos servidores RADIUS é que o PIP (“Policy Information Point”) tem de estar localizado na mesma máquina física do servidor
+Ao contrário do que acontece com o protocolo RADIUS, no protocolo TACACS+ a autenticação e a autorização são verificadas separadamente
+Em certos casos, o servidor LDAP (“Lightweight Directory Access Protocol”) pode assumir a função PDP, mas normalmente assegura a função PIP
+As bases de dados LDAP são especialmente eficientes para operações de escrita. Devido à sua estrutura em árvore, as operações de consulta são lentas
+Implementar redundância com servidores LDAP é complexo devido à dificuldade em manter a sincronização
+Numa base de dados LDAP não pode haver dois objetos diferentes a pertencer à mesma classe estrutural
+Numa base de dados LDAP o DN (“Distinguished Name”) de um objeto define a localização do mesmo na DIT (“Directory Information Tree”)
+No sistema KERBEROS os nomes “exemplo.com” e “EXEMPLO.COM” identificam um mesmo "realm”
+A pré-autenticação no sistema KERBEROS impede que intrusos consigam obter um TGT (“Ticket Granting Ticket”)
+No sistema KERBEROS é impossível um “principal” de um “realm” estabelecer sessões com “principals” de outros “realms”
+O “Active Directory” da Microsoft, além de serviços LDAP, usa também o sistema KERBEROS
+A mensagem “ServerHello”, usada no TLS (“Transport Layer Security”), é enviada pelo cliente ao servidor indicando qual o “cipher suite” a utilizar
+Em TLS o “cipher suite” “TSL_RSA_WITH_AES_256_CBC_SH256” significa que a autenticação é realizada através de certificados de chave pública
+O “firewall” que separa a DMZ (“DeMilitarized Zone”) da “Internet” nunca pode ser o mesmo que separa a DMZ da Intranet”
+A funcionalidade “stateful packet inspection” (SPI) leva a que o “firewall” tenha um comportamento que depende apenas do pacote individual que analisa
+Os ataques de ”sniffing” (inspeção furtiva) podem ser combatidos com um “firewall”, desde que seja um “firewall” dinâmico
+A maioria dos ataques do tipo DoS (“Denial of Service”), podem ser combatidos de forma eficaz com recurso a “firewalls” estáticos
+As implementações ARP (“Address Resolution Protocol”) estão expostas a ataques do tipo “SYN flood”
+Os ataques MITM (“Man-in-the-middle”) podem ser evitados se forem utilizados mecanismos de autenticação em todas as comunicações
+Os ataques com “spoofing” de endereços IP são mais complexos de realizar sobre serviços TCP do que sobre serviços UDP
+O ataque DDOS (“Distributed DOS”) refletido só é possível se a origem do ataque não estiver protegida contra “spoofing”
+No IPsec, o “Encapsulating Security Payload” (ESP) nunca pode ser usado em “Transport mode”
+Qualquer um dos dois mecanismos do IPsec, ESP ou AH (“Authentication Header”), permitem garantir a autenticação.
+A utilização do IPsec em “Transport mode” implica que a confidencialidade dos dados transportados nos pacotes nunca pode ser assegurada
+O protocolo IKE (“Internet Key Exchange Protocol”) versão 2 utiliza o algoritmo “Diffie-Hellman” apenas na “Phase 1”
+O IPsec nunca pode ser usado quando existem dispositivos NAT (“Network Address Translation”) interpostos
+Numa VPN do tipo LAN-LAN, cada utilizador estabelece uma ligação VPN independente com o servidor, tendo para o efeito de se autenticar
+O “Layer 2 Tunneling Protocol” (L2TP) isoladamente não permite implementar uma VPN, para esse efeito, tem de ser aliado por exemplo ao IPsec
+O protocolo PPTP (“Point to Point Tunneling Protocol”) inclui mecanismos de segurança que garantem a autenticação e a confidencialidade
+Nas transmissões de dados em tempo real, geralmente a utilização de mecanismos de correção de erros com retransmissão não faz sentido
+A compressão de cabeçalhos (“header compression”) é normalmente aplicada entre “routers” diretamente interligados, não entre nós finais
+O LFI (“Link Fragmentation and Interleaving”) tem impacto negativo nos pacotes não prioritários de grande dimensão
+Sob o ponto de vista do TCP o RTO (“Retransmission TimeOut”) e o RTT (“Round-Trip Time”) são a mesma coisa e têm sempre valores iguais
+Quando um nó emissor entra em modo “Slow Start”, esse facto não afeta a emissão de “datagramas” UDP
+Através do RED (“Random Early Detection”) os nós intermédios levam alguns emissores a entrar em modo “Slow Start”
+O CAR (“Committed Access Rate”) é uma técnica HARD QoS, por isso cada tipo de tráfego está limitado a uma fração da capacidade disponível
+Na gestão de filas “Priority Queuing” (PQ), após processar um pacote, o pacote seguinte será o da fila de prioridade imediatamente abaixo
+Com um conjunto de 10 filas do tipo “Fair Queuing” (FQ), para uma ligação com 1 Gbps, cada fila dispõe de uma capacidade de cerca de 100 Mbps
+O “Weighted RED” (WRED) diferencia-se do RED porque no primeiro os pacotes que estão mais tempo em espera são descartados em primeiro lugar
+As funções do administrador de sistemas informáticos não incluem o planeamento e projeto da infra-estrutura
+Na atualidade, os custos operacionais dos servidores superam claramente os custos de aquisição
+A virtualização de servidores reduz os custos operacionais de consumo energético
+A virtualização de servidores aumenta os custos operacionais de gestão e administração
+Duas máquinas virtuais residentes numa mesma plataforma, não podem usar sistemas operativos de tipos diferentes
+Numa plataforma de virtualização um mesmo CPU pode ser usado por várias máquinas virtuais
+A virtualização de “storage” permite que as unidades de disco sejam usadas simultaneamente por vários servidores
+Numa SAN (“Storage Area Network”) os sistemas operativos usam os dispositivos remotos como se fossem discos locais
+Uma desvantagem das SAN é que não permitem a transferência de dados para localizações remotas não locais
+Os protocolos usados nas SAN são os protocolos normais de partilha de ficheiros como por exemplo o SMB/CIFS
+Uma SAN “Fibre Channel” pode ser implementada sobre equipamento de rede “corrente”, como por exemplo “Ethernet”
+Uma SAN “Fibre Channel” de topologia ponto a ponto (FC-P2P) suporta um máximo de três nós em “full-duplex”
+O protocolo iSCSI permite ao servidor a utilização de unidades de disco da SAN como se fossem discos SCSI locais
+O iSCSI é o único protocolo de SAN que usa como transporte a pilha de protocolos TCP/IP
+Numa implementação de continuidade de negócio de categoria 5 (“Tier 5”) ou superior as cópias devem ser feitas em disco
+O RTO (“Recovery Time Objective”) de “hardware” e dados é superior ao RTO de integridade de transacções
+A autenticação serve para determinar se um dado utilizador tem permissão para usar um dado recurso
+Num sistema AAA é o PDP (“Policy Decision Point”) que toma a decisão de permitir ou não um dado acesso
+Quando o PDP obtém as credenciais dos utilizadores de um diretório LDAP, este é o PIP (“Policy Information Point”)
+O protocolo de autenticação CHAP tem como grande vantagem nunca transmitir a “password”
+A autenticação por certificado digital é uma técnica de chave partilhada
+A autorização é normalmente verificada depois da autenticação bem sucedida
+Numa base de dados LDAP, um objeto não pode pertencer a mais do que uma classe “structural”
+A nomeação da base LDAP deve seguir obrigatoriamente a recomendação X.500: regiões geográficas e países
+O protocolo RADIUS (“Remote Authentication Dial In User Service”) garante a comunicação entre o PDP e o PIP
+A comunicação entre o NAS (“Network Access Server”) e o servidor RADIUS é cifrada com uma chave pré-partilhada
+O protocolo RADIUS não suporta contabilização (“accounting”)
+O sistema KERBEROS assegura não apenas a autenticação, mas também a privacidade das comunicações
+As chaves de sessão (“session-key”) do sistema KERBEROS são transmitidas simultaneamente ao serviço e ao cliente
+A autenticação via KERBEROS exige que esteja instalado na rede um KDC (“Key Distribution Center”)
+O nível de risco de ataque a uma empresa com utilizadores especialistas em informática é mais elevado
+A política de segurança de uma organização deve especificar as consequências do seu incumprimento
+A política de segurança aborda a confidencialidade, integridade e controlo de acesso, mas não a disponibilidade
+Os detalhes técnicos da implementação dos mecanismos de segurança não devem ser incluídos na política de segurança
+A manutenção de cópias de segurança atualizadas é um meio de proporcionar tolerância a falhas
+A monitorização / deteção de falhas não tem qualquer relevância para o caso de falhas de confidencialidade
+A utilização de redes locais comutadas (com “switches”) resolve o problema da confidencialidade das comunicações
+Os ataques “Packet Sniffing” são ataques do tipo DoS (“Denial of Service”)
+O ataque “DNS Spoofing” pode ser implementado com a técnica MITM (“man-in-the-middle”)
+Os ataques de “IP Spoofing” externos podem ser evitados através de ACLs estáticas no “router” de ligação ao exterior
+Os ataques do tipo “SYN Flood” são ataques DoS que afectam de igual modo os serviços TCP e UDP
+Os ataque DoS podem ser impedidos através de um “firewall” estático
+Na criptografia de chaves simétricas o algoritmo de encriptação tem de ser mantido secreto
+Em criptografia de chaves públicas o emissor de uma mensagem cifrada não tem a capacidade de a decifrar
+A criptografia de chaves públicas nunca pode ser usada para implementar autenticação, apenas confidencialidade
+As funções de “hashing” obrigam a que os dados de entrada sejam divididos em blocos de dimensão adequada à função
+As funções de “hashing” devem produzir resultados iguais para dados de entrada iguais
+O protocolo HTTPS opera sobre o protocolo SSL/TLS
+A dificuldade em “quebrar” uma chave criptográfica por “força bruta” não depende do tempo de execução do algoritmo
+Os algoritmos criptográficos com maior longevidade são aqueles que suportam um aumento do tamanho da chave
+A DZM (“DeMilitarized Zone”) pode ser ligada à rede dos utilizadores locais por um comutador Ethernet
+O ataque através da numeração de sequência TCP tem como objetivo estabelecer ligações TCP com “IP Spoofing”
+Os registos de actividades (“audit records”) são criados manualmente pelo administrador
+As filas de espera dos “routers” são o local onde a QoS (“Quality of Service”) é posta em prática
+Os bits de precedência do cabeçalho IPv4 (“TOS”) são úteis para marcar os pacotes à entrada da rede
+A QoS só tem efeito prático quando a fila de espera do “router” fica cheia
+A fragmentação e “Interleaving” de tráfego IP é particularmente útil em “links” de débito muito elevado
+Na gestão de fila “Priority Queuing” um pacote só é retransmitido se não existe tráfego de prioridade mais elevada
+No algoritmo “Custom Queuing” nunca é processado mais do que um pacote da mesma fila sem passar à fila seguinte
+A precedência IP nunca pode ser usada como critério de classificação numa implementação “Weight Fair Queuing”
+No algoritmo “Weight Fair Queuing” o número de filas existentes deve ser sempre dezasseis
+O CAR (“Committed Access Rate”) é uma técnica HARD QoS
+A técnica RED (“Random Early Detection”) entra em acção quando a fila de espera do “router” fica cheia
+O “TCP Slow Start” é uma funcionalidade de controlo de fluxo do protocolo TCP
+O RED afecta indirectamente os tempos de retransmissão dos segmentos (pacotes) TCP
+O CAR permite associar a cada tipo de tráfego uma taxa máxima que não será nunca ultrapassada
+O WRED (“Weighted RED”) pode ser usado pelo CAR através da marcação dos pacotes
+O RSVP (“Resource Reservation Protocol”) permite a um nó solicitar à rede determinadas condições QoS
+A gestão da base de dados de utilizadores do sistema não é da responsabilidade do administrador de sistemas
+Num CPD (“Centro de Processamento de Dados”) o número de servidores não afeta o consumo energético.
+O custo operacional que mais importante de um CPD é o custo com o pessoal para a sua administração.
+Para cada servidor virtual é necessário existir um CPU físico (real) na plataforma de virtualização.
+A virtualização de servidores reduz os custos operacionais
+A virtualização sem recurso a uma SAN não permite que um mesmo disco seja usado por vários servidores virtuais
+Não é possível implementar uma SAN com recurso a hardware de rede corrente como por exemplo “Gigabit Ethernet”
+Um “target” iSCSI pode ser implementado com recurso a “hardware” corrente e um sistema operativo corrente
+A deteção de intrusos é um meio de reduzir as consequências das falhas
+A manutenção de cópias de segurança atualizadas permite minimizar a possibilidade de ocorrência de falhas
+O protocolo de autenticação PAP (“Password Authentication Protocol”) não é seguro em nenhum tipo de aplicação
+O protocolo RADIUS (“Remote Authentication Dial In User Service”) utiliza pacotes UDP para todas as transações
+O servidor LDAP nunca pode ser usado diretamente para validar credenciais, é necessário usar o servidor RADIUS
+Um objeto de uma base de dados LDAP tem de usar todos os atributos definidos nas classes a que pertence
+O KERBEROS garante a confidencialidade dos dados transacionados entre os PRINCIPAL
+Muitos ataques de “IP Spoofing” podem ser evitados com recurso a ACLs estáticas
+Para blocos de dados de entrada iguais, uma função de “hash” produz sempre o mesmo resultado (“digest”)
+Na posse de uma mensagem cifrada e o respetivo original torna-se possível “quebrar” a chave por “força bruta”
+Os servidores do centro de dados (CPD) devem estar colocados numa DMZ (“DeMilitarized Zone”)
+A marcação de pacotes é necessária se o local onde é feita a classificação de pacotes não é o mesmo onde ela é aplicada
+A fragmentação e “Interleaving” de tráfego IP é uma técnica de gestão das filas nos “routers”
+No algoritmo “Custom Queuing” um pacote prioritário pode ficar mais tempo retido do que um de baixa prioridade
+A técnica RED (“Random Early Detection”) descarta (“drop”) pacotes mesmo que a fila não esteja completamente cheia
+O administrador de sistemas é o responsável pela gestão das contas de utilizador
+O CPD (“Centro de Processamento de Dados”) é um local de acesso livre a todos os utilizadores
+O custo operacional mais significativo de um CPD é o custo de funcionamento das unidades de refrigeração
+Os custos energéticos de um CPD não estão relacionados com a idade do “hardware” utilizado
+A virtualização de servidores reduz os custos operacionais de um CPD
+A taxa média de utilização dos recursos físicos (“hardware”) melhora com a virtualização
+A virtualização de “storage” é implementada através de uma SAN (“Storage Area Network”)
+As SAN do tipo iSCSI apenas podem ser implementadas sobre tecnologia “ethernet”
+Duas SAN do tipo “Fibre-Channel” nunca podem ser interligadas através da “Internet”
+O tipo de “target iSCSI” que garante a melhor performance é o “software target”
+Um disco de uma SAN “Fibre Channel” pode ser diretamente usado por um iSCSI “initiator”
+O objetivo de criar um sistema redundante é aumentar o MTBF (“Mean Time Between Failures”)
+O MTBF nunca pode ser inferior ao MTTF (“mean time to fail”)
+Um bom controlo de permissões é uma medida que se enquadra na “prevenção de falhas” (“fault avoidance”)
+Num sistema verdadeiramente tolerante a falhas, a falha de um componente não tem qualquer impacto no desempenho
+Uma “common-mode fault” é uma falha que afeta simultaneamente vários componentes de um sistema redundante
+A deteção de falhas (monitorização) permite reduzir o RTO (“Recovery Time Objective”)
+Num sistema com cópias de segurança diárias, o RPO (“Recovery Point Objective”) é de 24 horas
+O objetivo do DRP (“Disaster Recovery Plan”) é reduzir o RTO e aumentar o RPO
+As cópias de segurança devem ser realizadas no horário correspondente ao maior grau de utilização dos sistemas
+Uma matriz de risco de falha de um componente relaciona o impacto da falha com a probabilidade de ela ocorrer
+O plano de contingência (“contingency plan”) destina-se a garantir que o sistema continua a operar com toda a normalidade
+A continuidade de negócio de categoria 7 (“Tier 7”) pressupõe valores de RTO inferiores aos da categoria 5 (“Tier 5”)
+A politica de segurança deve definir regras na definição, armazenamento e manuseamento das “passwords”
+O “não repúdio” serve para garantir que os dados não são alterados por intrusos (“integridade”)
+Os certificados de chave pública transportam uma chave que apenas pode ser extraída pelo respetivo proprietário
+As funções “hash“ são usadas na implementação de assinaturas digitais simples
+O algoritmo AES (“Advanced Encryption Standard”) é uma cifra de chave simétrica
+O algoritmo DES (“Data Encryption Standard”) é equivalente em termos de segurança ao AES
+O algoritmo RSA (“Ron Rivest, Adi Shamir e Leonard Adleman”) utiliza normalmente chaves com menos de 128 bits
+Num sistema AAA, a validade da autenticação (“authentication”) garante imediatamente o acesso ao recurso
+NAS (“Network Access Service”) é uma designação que se dá ao PEP (“Policy Enforcement Point”) em certas situações
+O protocolo RADIUS verifica em mensagens separadas a autenticação (“authentication”) e a autorização (“authorization”)
+O EAP (“Extensible Authentication Protocol”) pode ser usado nas comunicações entre os clientes e o PEP
+Os servidores LDAP (“Lightweight Directory Access Protocol”) podem funcionar como PDP (“Policy Decision Point”)
+Numa base de dados LDAP um objeto pode ser criado apenas com classes auxiliares
+A classe de objeto “inetOrgPerson” contém todos os atributos necessários para contas de utilizador de sistemas UNIX
+Numa base de dados LDAP não podem existir dois objetos com o mesmo DN (“Distinguished Name”)
+No sistema KERBEROS o TGT (“Ticket Granting Ticket”) não pode ser desencriptado pelo “principal” que o recebe
+Para o KERBEROS funcionar é necessário que todos os sistemas intervenientes tenham os relógios sincronizados
+O KERBEROS versão 5 exige que todos os intervenientes suportem a cifra AES com chaves de 256 bits
+O GSS-API (“Generic Security Services Application Program Interface”) usa apenas cifras de chaves simétricas
+O SASL (“Simple Authentication and Security Layer”) permite usar mecanismos de segurança, sem alterar os protocolos
+O “cipher suite” “TLS_RSA_WITH_AES_256_CBC_SHA256” usa autenticação através de certificados de chave pública
+Os “firewalls” dinâmicos possuem a funcionalidade “stateful packet inspection” (SPI)
+A arquitetura “three legged firewall” permite a separação da “Intranet”, ”DMZ” e “Internet” com apenas um “firewall”
+Os ataques do tipo DoS (“Denial of Service”), podem ser contrariados de forma eficaz com um “firewall” estático
+Os ataques MITM (“Man-in-the-middle”) apenas são possíveis sobre protocolos que não implementam autenticação
+Os serviços locais DHCP e ARP estão particularmente expostos a ataques MITM
+O “Spoofing IP” contra serviços TCP é mais complexo do que contra serviços UDP
+No protocolo RTP (“Real-time Transport Protocol”) cada pacote transporta uma etiqueta data/hora
+A redução do tamanho dos pacotes só é eficaz se for aliada à compressão de cabeçalhos (“header compression”)
+O LFI (“Link Fragmentation and Interleaving”) é aplicado entre nós intermédios, sendo transparente para os nós finais
+O valor do RTT (“Round-Trip Time”) fornece ao TCP indicações sobre o estado de congestionamento da rede
+O efeito “TCP global synchronization” ocorre quando muitos nós TCP entram no modo “Slow Start”
+O RED (“Random Early Detection”) leva os nós intermédios a descartar pacotes, mesmo sem a fila de saída estar cheia
+Os bits de precedência IP podem ser usados com os protocolos TCP e RDP, mas não com o protocolo UDP
+Com SOFT QoS (“Quality Of Service”), alguns pacotes podem ficar em espera mesmo que a interface de saída esteja livre
+A gestão de filas “Custom Queueing” (CQ) oferece menos garantias ao tráfego prioritário do que a “Priority Queueing” (PQ)
+A gestão de filas do tipo “Weighted Fair Queueing” (WFQ) é uma técnica SOFT QoS
+O “Weighted RED” (WRED) pode usar os bits de precedência para escolher os pacotes que devem ser descartados
+O CAR (“Committed Access Rate”) é uma técnica HARD QoS
+O RSVP (“Resource Reservation Protocol”) permite aos nós recetores configurar o QoS nos nós intermédios
+O IPsec em “Tunnel mode” nunca pode garantir a confidencialidade do cabeçalho IP original
+O “IP Authentication Header” (AH) permite garantir a autenticidade/integridade, mas não a confidencialidade
+A “Security Policy Database” (SPD) é uma ACL com 3 resultados possíveis (DISCART; BYPASS e PROTECT)
+O protocolo IKE usa o algoritmo “Diffie-Hellman” para criar a primeira SA (“Security Association”) entre dois nós (IKE SA)
+No “Layer 2 Tunneling Protocol” (L2TP) um LAC (“L2TP Access Concentrator”) opera como um comutador de rede (nível 2).
+A partição “raiz” de um sistema Linux é sempre a partição “/dev/sda1”
+Em Linux o comando “umask” permite alterar as permissões nos objetos existentes no sistema
+Em Linux, o ficheiro “/etc/shadow” tem exatamente o mesmo conteúdo que o ficheiro “/etc/passwd”
+Em Linux o comando “chown” e “chmod” fazem exatamente o mesmo
+O módulo PAM (“Pluggable Authentication Modules”) “pam_cracklib” é habitualmente usado na cadeia “auth”
+O módulo “pam_deny.so” é normalmente usado no início da cadeia “auth” do sistema PAM
+A permissão 705 na pasta HOME de um utilizador garante a privacidade
+A principal vantagem do “Internet Daemon” (INETD) é reduzir o tempo de resposta dos serviços
+No comando “iptables” as opções “--dport” e “-- sport” apenas são válidas para alguns protocolos (opção “-p”)
+A linha de configuração do CRON “30 6 * * 2 root /usr/sbin/runA” provoca a execução do comando uma vez por semana
+No ficheiro “/etc/resolv.conf” o parâmetro “search” apenas é usado na resolução de nomes não qualificados (sem domínio)
+Um certificado de chave pública nunca é considerado fidedigno se for emitido por uma “ROOT CA”
+O “Windows 2008 Server”, não suporta a definição de cotas de utilização de espaço em disco
+No “2008 Server”, um “Spanned volume” permite obter o dobro do espaço que seria obtido com um “Striped volume”
+No “Windows 2008 Server” os certificados de chave pública podem ser revogados antes do fim do período de validade
+Quando é criado um novo domínio “Windows 2008” é sempre criada obrigatoriamente uma nova floresta (“forest”)
+No “Windows Server 2008” o comando “dsquery” permite obter uma lista dos utilizadores definidos no “Active Directory”
+A regra “access-list 100 deny ip any 167.12.2.9 0.0.68.0” bloqueia o tráfego destinado ao endereço 167.12.6.9
+O comando “access-list 105 permit tcp any host 190.8.7.3 established” não é válido
+Em CISCOIOS, o comando ”ip nat inside source list 5 pool NP” corresponde a uma configuração NAPT
+As várias partições existentes num mesmo disco podem conter diferentes tipos de sistemas de ficheiros (EXT4; NTFS; …)
+Em Linux o comando “umask 0070” compromete a segurança dos ficheiros criados posteriormente
+Em Linux, se um nome de utilizador é válido, então está necessariamente registado no ficheiro “/etc/passwd”
+As permissões 662 são adequadas para o ficheiro “/etc/nsswitch.conf”
+Em Linux, o comando “quota” permite ao administrador (“root”) limitar o espaço que pode ser ocupado por um utilizador
+O comando “vconfig add eth1 94” cria uma nova interface de rede identificada por “eth1.94”
+Em Linux os comandos “ifconfig” e “ip addr” permitem ambos definir o endereço IPv4 de uma interface de rede
+No protocolo DHCP o cliente encontra o servidor através do estabelecimento de uma ligação TCP
+No comando “iptables” a opção “-i eth1” não é normalmente usada na cadeia OUTPUT da tabela “filter”
+Todos os utilizadores podem programar a execução de tarefas editando o ficheiro “/etc/crontab”
+Para configurar um servidor HTTPS, o administrador tem de fornecer a chave privada e o certificado de chave pública
+Em Linux, no ficheiro “lastlog” são registadas as entradas dos utilizadores, as saídas não são registadas neste ficheiro
+Ao contrário do sistema de ficheiros EXT4, o NTFS usado no “Windows 2008 Server”, não suporta “journaling”
+No “Windows 2008 Server”, “Spanned volume” e “Striped volume” são ambas configurações do tipo RAID 0
+O “Windows Server Backup” do “Windows 2008 Server” não suporta cópias incrementais
+Num domínio “Windows” um grupo universal (“universal group”) é válido em todos os domínios da floresta (“forest”)
+No Windows Server 2008 o comando “dsadd” pode ser usado para criar novos utilizadores e também novos grupos
+A regra “access-list 5 deny 192.168.5.8 0.0.36.0” bloqueia o tráfego com origem no endereço 192.168.1.8
+O comando “access-list 120 permit icmp any 200.5.0.3 0.0.3.0 echo” não é válido
+A resolução de nomes DNS pode ser usada para criar entradas nas tabelas NAT dos “routers”
+Em Linux, a tabela de partições existente num disco pode ser visualizada através do comando “fdisk”
+Em Linux um ficheiro com as permissões 604 é legível para todos os utilizadores
+O resultado (“output”) do comando “getent passwd” nunca é exatamente igual ao conteúdo do ficheiro “/etc/passwd”
+O ficheiro “/etc/nsswitch.conf”, é usado pelo módulo “libnss_ldap.so”, mas não pelo módulo “libnss_winbind.so”
+Em Linux, o comando “repquota” pode ser usado por qualquer utilizador para ver o espaço ocupado pelos outros utilizadores
+Em Linux as interfaces de VLAN são identificadas por nomes começados por “vlan”, por exemplo “vlan0”
+Em Linux os comandos “route” e “ip route” permitem ambos a gestão da tabela de encaminhamento (“routing table”)
+No DHCP são trocadas entre cliente e servidor um total de 2 mensagens para completar a atribuição de um novo endereço
+No comando “iptables” a opção “--dport 200” nunca pode ser usada em conjunto com a opção “-p tcp”
+A linha de configuração do CRON “5 8 6 * * root /usr/local/bin/chk-A” provoca a execução do comando uma vez por mês
+Quando se utiliza o protocolo HTTPS, o servidor envia ao cliente a sua chave privada e o seu certificado de chave pública
+Os ficheiros “utmp” e “wtmp” registam entradas e saídas no sistema, ambos são criados pelo “System Logger” (syslog)
+No “Windows 2008 Server”, ambos os tipos de disco (“Dynamic Disk” e “Basic Disk”) suportam a definição de cotas
+No “Windows 2008 Server”, o comando “dsquery” permite obter uma lista dos objetos existente no “Active Directory”
+No “Windows 2008 Server”, a aplicação “diskpart” permite aumentar o tamanho de um volume usando um disco diferente
+Um servidor “Windows 2008 Server” em situação “domain member” possui uma base de dados “Active Directory” local
+No “Windows Server 2008” todo e qualquer domínio faz sempre parte de uma floresta (“forest”)
+O “wildcard” 0.0.34.255 associado ao endereço 192.168.0.0 representa um conjunto de 4 redes de classe C
+A regra de ACL “access-list 120 deny ip any any echo” não é válida
+No “Twice NAT” dois ou mais “routers” com a função NAT têm as respetivas tabelas NAT sincronizadas entre si
+A virtualização de “hardware” permite criar novos servidores sem aceder fisicamente ao Centro de Processamento de Dados
+Uma vantagem da virtualização de servidores é que diminui a taxa de utilização dos CPUs físicos
+Em Linux, para definir o endereço IPv4 de uma interface de rede tanto pode ser usado o comando “ifconfig” como o comando “ip”
+Numa SAN (“Storage Area Network”) do tipo iSCSI o “target” é o componente que opera como servidor de discos lógicos
+Existem vários tipos de SAN que utilizam a pilhaTCP/IP, uma delas é o FCoE (“Fibre Channel over Ethernet”)
+O comando Linux “iptables –A INPUT –i eth1 –p udp –j DROP” acrescenta uma regra à tabela “filter”
+Os adaptadores de rede do tipo TOE (“TCP/IP Offload Engine”) podem ter outras aplicações para além do protocolo iSCSI
+Se um servidor utiliza discos lógicos de uma SAN, as respetivas cópias de segurança têm de ser realizadas pelo próprio servidor
+Se o MTBF (“Mean Time Between Failures”) é expresso em horas, o seu inverso (1/MTBF) é o número médio de falhas por hora
+A aplicação de atualizações ao “software” e sistema operativo contribui para a prevenção de falhas(“fault avoidance”)
+Se em caso de falha o serviço fica indisponível durante um minuto, isso não pode ser considerado “full fault tolerance”
+Nos sistemas Linux o administrador pode impedir os utilizadores de definirem tarefas através do serviço CRON
+Um RTO (“Recovery Time Objective”) de 24 horas é compatível com uma continuidade de negócio de categoria 5 (“Tier 5”)
+Obter um valor de RPO (“Recovery Point Objective”) nulo é algo impossível, mas deve ser o mais reduzido possível
+O tempo que demora a efetuar uma cópia de segurança afeta o RPO, o tempo que demora a restaurar a cópia afeta o RTO
+A utilização de uma cifra de chave simétrica garante numa única aplicação a confidencialidade, integridade e autenticação
+Usando uma cifra de chave assimétrica, para garantir a autenticação é necessário cifrar com a chave “privada”
+As funções “hash” não são reversíveis, isto é, a partir do resultado é totalmente impossível obter a mensagem original
+O DES (“Data Encryption Standard”) é atualmente considerado inseguro, até porque utiliza chaves com menos de 128 bits
+A técnica “Cipher-Block Chaining” (CBC) é necessária quando se utiliza o algoritmo RC4 (“Rivest Cipher 4”)
+Em Linux as permissões 733 são adequadas para todos os ficheiros existentes na pasta “/etc/”
+Se um utilizador tem acesso num PEP (“Policy Enforcement Point”), então terá acesso em todos os PEP do mesmo sistema AAA
+Num sistema AAA, nunca pode ser usada autenticação do tipo CHAP (“Challenge-Handshake Authentication Protocol”)
+O PIP (“Policy Information Point”) usado no contexto dos sistemas AAA é normalmente algum tipo de base de dados
+O EAP (“Extensible Authentication Protocol”) suporta autenticação através de certificados de chave pública
+O LDAP (“Lightweight Directory Access Protocol”) foi concebido de forma a otimizar as operações de consulta
+Um servidor LDAP pode ser usado como PIP, mas também pode ser usado como PDP (“Policy Decision Point”)
+No KERBEROS, se o “realm” A confia no “realm” Bdesigna-se “transitive trust” a confiança do “realm” B no “realm” A
+O sistema KERBEROS pode operar sem o recurso à criptografia de chave pública (cifras de chave assimétrica)
+Em Linux, o SYSTEM LOGGER (“syslog”) pode receber e enviar eventos através da rede usando “datagramas” UDP
+Com SPI (“Stateful Packet Inspection”) o resultado da análise de um dado pacote pode depender de pacotes anteriores
+A DMZ (“DeMilitarized Zone”) deve ser ligada à “Intranet” através de um comutador de nível dois (por exemplo “Ethernet”)
+Um Windows 2008 Server em modo RODC (“Read OnlyDomain Controller”) não contém uma base de dados “Active Directory”
+Uma estratégia possível para evitar ataques “sniffing” é utilizar ligações VPN (“Virtual Private Network”) robustas
+O objetivo principal dos ataques MITM (“Man-in-the-middle”) é impedir que os utilizadores honestos tenham acesso aos serviços
+Os ataques do tipo “SYN flood” obrigam o atacante a tentar adivinhar o número de sequência TCP gerado pelo servidor
+As mensagens ICMP “Redirect” podem ser usadas para criar ataques do tipo MITM (“Man-in-the-middle”)
+Para um protocolo de aplicação (como por exemplo o HTTP) operar sobre IPsec, tem de sofrer algumas pequenas adaptações
+No IKEv2 (“Internet Key Exchange Protocol v2”) a “Phase 1” envolve dois pedidos: o “IKE_SA_INIT” seguido do “IKE_AUTH”
+O “IP Encapsulating Security Payload” (ESP) e oIPsec em geral nunca podem funcionar sem o apoio do IKE
+Num controlador de domínio “Windows 2008 Server”, o comando “dsadd” pode ser usado para criar um utilizador, grupo ou “OU”
+Mesmo que a fila esteja totalmente vazia, o RED(“Random Early Detection”) pode eliminar alguns pacotes
+Em alternativa à eliminação de pacotes, o RED pode usar o ECN (“Explicit Congestion Notification”)
+Em CISCOIOS, o comando “ip access-list extendedENX” permite editar uma ACL identificada pelo nome“ENX”
+Nos cabeçalhos IPv4, os bits do campo DSCP (“differentiated services codepoint”) estão sobrepostos aos bits de precedência
+Uma desvantagem do HARD QoS (“guaranteed service”) é que pode conduzir a um sub aproveitamento dos recursos
+Na gestão de filas “Priority Queueing” (PQ) o volume de tráfego de baixa prioridade nunca afeta o tráfego de alta prioridade
+Em CISCOIOS, o “wildcard” 0.0.131.2 permite representar um conjunto de 16 endereços IPv4
+No “Weighted RED” (WRED) descartar um pacote depende de dois fatores: o estado da fila de saída e a prioridade do pacote
+Quando se usa “Traffic Shaping” os pacotes em excesso apenas são eliminados se a fila de espera ficar cheia
+No CAR (“Committed Access Rate”) todo o tráfego acima do “Excess Burst Size” (EBS) é sempre sujeito a algum tipo de ação
+Um exemplo de uma implementação da arquitetura IntServ (“Integrated services”) é o RSVP (“Resource Reservation Protocol”)
+Em CISCOIOS, o comando “access-list 125 permit udp host 20.10.10.1 any established” é válido
+O administrador de sistemas é o responsável pelo funcionamento do CPD (Centro de Processamento de Dados)
+A rede que interliga os equipamentos do Centro de Processamento de Dados é normalmente uma DMZ (“DeMilitarized Zone”)
+A virtualização de “hardware” permite um melhor aproveitamento dos equipamentos físicos do que as soluções sem virtualização
+Em Linux, o objeto “/dev/hda1” representa uma partição num disco do tipo SATA ou do tipo SCSI
+Numa SAN (“Storage Area Network”) os discos lógicos são disponibilizados aos clientes com o sistema de ficheiros já criado
+Um “target” iSCSI não pode ser usado por clientes FCIP (“Fibre Channel over IP”), apesar de ambos usarem a pilha TCP/IP
+Em Linux, o comando “quota” permite a qualquer utilizador visualizar as cotas de qualquer outro utilizador
+Um HBA (“Host Bus Adapter”) iSCSI é uma interface de rede que contém uma implementação de TCP/IP e do protocolo iSCSI
+Para interligar duas SAN remotas através da Internet é fortemente aconselhada a utilização de uma VPN
+O parâmetro MTBF (“Mean Time Between Failures”) é tanto maior quanto maior for a probabilidade de ocorrer uma falha
+Num sistema RAID 1 com 3 discos, o MTBF do sistema é aproximadamente igual ao triplo do MTBF de cada disco
+A “política de segurança” deve definir os protocolos de autenticação que são utilizados no acesso a cada um dos serviços
+Em Linux, a linha de configuração do CRON “5 4 * 3 2 root /etc/tarefa” define a execução do comando uma vez em todos os dias
+O valor do RPO (“Recovery Point Objective”) nunca é inferior ao tempo de demora a realizar a cópia de segurança (“backup”)
+O RTO (“Recovery Time Objective”) nunca pode ser inferior ao valor do RPO (“Recovery Point Objective”)
+Em caso de falha, pretende-se que o tempo que demora a repor o sistema nunca seja inferior ao RTO
+Para garantir o diálogo seguro entre 2 entidades através de cifras de chave assimétrica terão de ser usadas 4 chaves no total
+No algoritmo RSA (“Ron Rivest, Adi Shamir e Leonard Adleman”) qualquer número arbitrário pode ser usado como chave pública
+O algoritmo DES (“Data Encryption Standard”) é uma cifra de chave simétrica, ou seja, a chave é sempre um número capicua
+O número de bits produzido pelo algoritmo MD5 (“Message Digest 5”) é sempre igual ao número de bits fornecidos como dados
+Os algoritmos DES e AES (“Advanced Encryption Standard”) proporcionam níveis de segurança equivalentes
+Para verificar a autenticidade de uma assinatura digital recorre-se ao certificado de chave pública do emissor da assinatura
+Em Linux, os grupos a que um utilizador pertence são determinados exclusivamente pelo ficheiro “/etc/group”
+Na arquitetura AAA, o único componente com o qual os utilizadores interagem diretamente é o PIP (“Policy Information Point”)
+Num sistema AAA, o username/password a utilizar deve variar de acordo com o PEP (“Policy Enforcement Point”) usado
+Uma das utilizações mais comuns do protocolo RADIUS é na comunicação entre o PEP e o PDP (“Policy Decision Point”)
+Um protocolo que pode ser usado nas comunicações entre o PDP e o PIP é o LDAP (“Lightweight Directory Access Protocol”)
+Numa base de dados LDAP o DN (“Distinguished Name”) identifica o objeto e a sua posição na DIT (“Directory Information Tree”)
+Em LDAP, dois objetos diferentes nunca podem ter o mesmo RDN (“Relative Distinguished Name”)
+Em Linux, dependendo do conteúdo do ficheiro “/etc/nsswitch.conf”, o ficheiro “/etc/passwd” pode ou não ser consultado
+O servidor KERBEROS é composto por dois serviços: o AS (“Authentication Server”) e o TGS (“Ticket Granting Service”)
+No KERBEROS, se existe confiança entre 2 “realm”, os “principal” de um “realm” podem comunicar como TGS do outro “realm”
+Em TLS o “cipher suite” “TSL_RSA_WITH_AES_256_CBC_SH256” indica que vai ser usada uma cifra de chave simétrica
+O “firewall” que separa a DMZ (“DeMilitarized Zone”) da “Internet” nunca pode ser o mesmo que separa a DMZ da “Intranet”
+Um Windows 2008 Server em modo PDC (“Primary Domain Controller”) necessita de ter um servidor DNS associado
+A utilização de HTTPS em lugar de HTTP permite evitar os ataques do tipo DoS (“Denial of Service”)
+Alguns serviços que podem ser usados para ataques do tipo MITM (“Man-in-the-middle”) são o ARP e oDHCP
+Num ataque do tipo ARP “spoofing” o atacante falsifica o valor do endereço IPv4 que se encontra nos pacotes ARP
+Os ataques do tipo “sniffing” não alteram o conteúdo ou integridade dos dados que circulam através da rede
+O IPsec e o TLS são duas implementações de segurança alternativas, ambas operam na camada de rede (nível 3)
+No IPsec em “Transport mode” nunca pode ser garantida a integridade da totalidade dos campos do cabeçalho IP
+Quando um nó de rede utiliza o IPsec, obrigatoriamente todos os pacotes IP emitidos e recebidos são protegidos pelo IPsec
+O comando “dsquery” pode ser usado num controlador de domínio “Windows 2008 Server” para ver o conteúdo dos objetos
+No funcionamento do RED (“Random Early Detection”), quanto mais cheia estiver a espera na fila, mais pacotes são eliminados
+O mecanismo ECN (“Explicit Congestion Notification”) utiliza informação colocada nos cabeçalhos dos pacotes IP e também TCP
+Em CISCOIOS, para definir regras que evitem o “spoofing” de endereços IP as ACL do tipo “standard”são suficientes
+Nos cabeçalhos IPv4, o campo DS (“DiffServ”) inclui o campo DSCP (“differentiated services codepoint”) e o campo ECN
+O HARD QoS (“guaranteed service”) usa “Traffic Shaping” enquanto o SOFT QoS (“differentiated service”) usa “Traffic Policing”
+A gestão de filas “Custom Queuing” (CQ) é uma técnica HARD QoS que pode bloquear totalmente o tráfego de baixa prioridade
+Em CISCOIOS, o endereço 178.20.96.5 associado ao “wildcard” 0.0.18.32 inclui o endereço 178.20.112.5
+Na técnica “Fair Queuing” (FQ) a capacidade é dividida de forma equitativa por todas as sessões, por isso não se trata de QoS
+No “Weighted RED” (WRED), para um dado estado da fila de saída, a probabilidade de eliminação é igual para todos os pacotes
+Um exemplo de uma técnica HARD QoS é o CAR (“Committed Access Rate”)
+Na arquitetura IntServ (“Integrated services”) os nós finais fazem a reserva de recursos (HARD QoS) nos nós intermédios
+Num Centro de Processamento de Dados (CPD) ou “Data Center” é desejável que o hardware seja o mais diversificado possível
+A virtualização de hardware permite reduzir o consumo energético no CPD, mas aumenta os encargos administrativos
+Com a virtualização de servidores é possível reduzir a quantidade de hardware necessário para prestar os mesmos serviços
+O comando Linux quotaon só deve ser utilizado numa partição após o comando quotacheckter sido já aplicado a essa partição
+Numa SAN (“Storage Area Network”) os equipamentos que usam os discos lógicos (LUN) estão separados dos discos físicos
+As SAN do tipo iSCSI utilizam a pilha TCP/IP, por isso podem ser facilmente interligadas através da internet
+Em Linux, tudo o que pode ser feito com o comando ip pode igualmente ser realizado com o comando ifconfig
+A topologia “Fibre Channel” mais usada na atualidade é o “Arbitrated Loop” (FC-AL) com HUB
+Numa SAN do tipo iSCSI um dado “target” pode ser usado simultaneamente por vários “initiator”
+Disponibilidade, integridade e confidencialidade são três parâmetros chave na definição de um sistema seguro
+Se o valor do MTBF (“Mean Time Between Failures”) aumenta, então o valor do FIT (“Failures In Time”) diminui
+O DRP (“Disaster Recovery Plan”) não tem qualquer impacto sobre o valor do MTBF (“Mean Time Between Failures”)
+Num sistema “fault tolerant” é aceitável uma degradação pontual dos parâmetros de funcionamento (“graceful degradation”)
+Nos sistemas Linux é possível usar o serviço CRON para executar uma tarefa todos os dias exatamente às 05:20:35
+Se o valor do RPO (“Recovery Point Objective”) não é nulo, isso significa que em caso de falha podem perder-se dados
+Para obter um valor de RTO (“Recovery Time Objective”) inferior a uma hora é necessário recorrer a mirroring síncrono
+O tipo de falha que corresponde a um maior risco é sempre aquela que tem maior probabilidade de ocorrer
+Para garantir a confidencialidade, integridade e autenticação com uma cifra de chave simétrica basta uma chave secreta
+Os certificados de chave pública são usados para autenticar as chaves públicas das cifras de chave assimétrica
+Uma função hash garante que não existem dois blocos de dados de entrada diferentes que produzam o mesmo resultado
+O AES (“Advanced Encryption Standard”) é uma cifra simétrica que suporta chaves de 256 bits
+A técnica “Cipher-Block Chaining” (CBC) é uma cifra assimétrica em que a chave pública pode ter até 2048 bits
+Num sistema operativo Linux o comando umask apenas pode ser usado pelos administradores (utilizador root ou equivalente)
+Num sistema AAA, o PEP (“Policy Enforcement Point”) é o componente que toma a decisão de permitir ou não o acesso
+Sempre que é usado o EAP (“Extensible Authentication Protocol”), o PEP opera necessariamente em modo pass-through
+O protocolo EAP suporta entre outros mecanismos de autenticação o CHAP (“Challenge-Handshake Authentication Protocol”)
+Nos sistemas AAA o PDP (“Policy Decision Point”) nunca interage diretamente com o PIP (“Policy Information Point”)
+O LDAP (“Lightweight Directory Access Protocol”) pode operar sobre TLS (“Transport Layer Security”)
+Em LDAP a raiz da DIT (“Directory Information Tree”) designa-se “base dn” ou “root dn”
+Com o KERBEROS é possível garantir a autenticidade e confidencialidade sem recorrer a cifras de chave pública
+No caso de o principal ser um utilizador, a chave KERBEROS pode ser gerada a partir da respetiva password
+Em Linux, os ficheiros utmpe wtmpregistam entradas e saídas no sistema, mas não são criados pelo syslog(“System Logger”)
+Um “packet filter” ou “screening router” é um firewallcom capacidade SPI (“Stateful Packet Inspection”)
+Na arquitetura “three legged firewall” existe uma única ligação entre o firewalle a DMZ (“DeMilitarized Zone”)
+No Windows 2008 Server, o comando dsaddpode ser usado para adicionar um utilizador a um grupo de utilizadores já existente
+Os ataques de sniffing podem ser difíceis de detetar pelo facto de não produzirem alterações nos dados transacionados
+O ataque aos números de sequência TCP consiste em alterar os números de sequência dos segmentos emitidos pela vítima
+Um servidor DNS (“Domain Name System”) falsificado pode ser usado para criar um ataque do tipo MITM (“Man-in-the-middle”)
+Quando o IPsec é aplicado, não fica garantida a autenticação e a confidencialidade dos dados transportados pelo protocolo TCP
+O “Encapsulating Security Payload” (ESP) apenas pode operar em “tunnel mode”, não funciona em modoem “transport mode”
+O algoritmo “Diffie-Hellman” não é usado pelo IKEv2 (“Internet Key Exchange Protocol v2”)
+Um controlador de domínio “Windows 2008 Server” pode funcionar sem ter uma base de dados active directory local
+O protocolo RTP (“Real-time Transport Protocol”) garante a ordem de entrega e deteta perdas de pacotes
+A marcação de pacotes tem a vantagem de poder evitar a necessidade de repetir várias vezes o procedimento de classificação
+Em CISCO IOS, uma ACL constituída apenas pela regra “deny host 120.10.5.3” impede a passagem de qualquer tipo de tráfego
+A implementação do mecanismo ECN (“Explicit Congestion Notification”) envolve o protocolo IPv4/IPv6 e também o TCP
+Numa ACL em CISCOIOS, a representação ”190.30.192.5 0.12.0.0” inclui o endereço “190.38.192.5”
+Se for pretendido evitar qualquer desaproveitamento de recursos não deve ser usado HARD QoS(“guaranteed service”)
+A gestão de filas “Priority Queueing” (PQ) é a que dá mais garantias de tratamento rápido ao tráfego de alta prioridade
+O mecanismo ECN pode ser usado pelo RED (“Random Early Detection”), mas não pelo WRED (“Weighted RED”)
+Ao contrário do “Traffic Policing”, o “Traffic Shaping” garante que em circunstância alguma haverá pacotes eliminados
+O CAR (“Committed Access Rate”) permite reservar uma parte dos recursos disponíveis para um tipo de tráfego predeterminado
+Com o RSVP (“Resource Reservation Protocol”) as reservas de recursos são feitas pelas aplicações que utilizam as redes
+O administrador de sistemas é o responsável pela salvaguarda de sistemas e dados (“backup”)
+O CPD (“Centro de Processamento de Dados”) é o local de trabalho permanente do administrador de sistemas e operadores
+A virtualização de servidores reduz os custos, mas aumenta a complexidade das tarefas de administração
+O único tipo de SAN (“Storage Area Network”) que permite a utilização da pilha TCP/IP é o iSCSI
+Nas implementações iSCSI, a opção de ligação que garante a melhor performance é o TOE (“TCP/IP Offload Engine”)
+O FCoE (“Fibre Channel over Ethernet”) não utiliza a pilha de protocolos TCP/IP
+O parâmetro MTBF (“Mean Time Between Failures”) e o parâmetro FIT (“Failures In Time”) não têm qualquer relação entre si
+Um sistema de alta disponibilidade do tipo “três noves” tem uma disponibilidade superior a 99%
+Um sistema designa-se “fail safe” se a falha de um componente não provoca qualquer degradação do desempenho
+Uma “common-mode fault” é uma falha que afeta apenas um dos componentes de um sistema redundante
+O sistema RAID 1 assegura a disponibilidade desde que pelo menos um dos discos se mantenha operacional
+Num sistema de “storage” com “mirroring” síncrono o RPO (“Recovery Point Objective”) é nulo
+A continuidade de negócio de categoria 6 (“Tier6”) pressupõe valores de RTO entre 24 e 48 horas
+Nas cifras de chave simétrica para desencriptar é necessário usar a mesma chave que foi usada na encriptação
+Uma aplicação do PAP (“Password Authentication Protocol”) garante a autenticidade de apenas um dos intervenientes
+Num sistema AAA, só depois de validada a autenticação (“authentication”) é que é verificada a autorização (“authorization”)
+Num sistema AAA, é o PEP (“Policy Enforcement Point”) que toma a decisão de permitir ou não o acesso
+Uma implementação PIP muito usada é um servidorLDAP (“Lightweight Directory Access Protocol”)
+O “Active Directory” da “MicroSoft” é uma implementação LDAP
+A utilização do sistema KERBEROS sem pré-autenticação não garante a autenticidade nas comunicações entre os “principal”
+No TLS (“Transport Layer Security”) quem decide a versão que vai ser usada é o servidor
+O TLS exige sempre a utilização de uma cifra de chave assimétrica com troca de certificados de chave pública
+Para um pacote com determinadas caraterísticas, um “firewall” do tipo “packet-filter” tem sempre o mesmo comportamento
+A funcionalidade “stateful packet inspection” (SPI) não está presente nos “firewalls” estáticos
+O ataque “SYN flood” é um ataque do tipo DoS (“Denial of Service”), mas apenas pode ser aplicado aserviços TCP
+O ataque aos números de sequência TCP tem como objetivo a utilização de “spoofing” de endereços IP
+Tal como o protocolo TCP, o protocolo RTP (“Real-time Transport Protocol”) corrige automaticamente os erros
+A compressão de cabeçalhos (“header compression”) é mais vantajosa para pacotes de grande dimensão
+O LFI (“Link Fragmentation and Interleaving”) garante que os pacotes maiores são retransmitidos mais rapidamente
+Quando a rede fica congestionada, o TCP aumenta automaticamente o RTO (“Retransmission TimeOut”)
+O “Congestion avoidance” e “Slow Start” são mecanismos de controlo de fluxo regulados pelo recetordos dados
+O NBAR (“Network Based Application Recognition”) serve para classificar o tráfego através dos endereços de origem
+A utilização de 100% da capacidade das ligações é garantida quer se use HARD QoS, quer se use SOFTQoS
+A gestão de filas do tipo “Fair Queueing” (FQ) trata de forma igual as várias filas criadas
+No “Weighted RED” (WRED) o tráfego é sempre tratado de forma diferenciada, seja qual for o estado da fila de saída
+O WRED (“Weighted RED”) pode ser usado pelo CAR através da marcação dos pacotes
+No RSVP (“Resource Reservation Protocol”) os pedidos de reserva de recursos são efetuados pelos emissores dos dados
+No “Layer 2 Tunneling Protocol” (L2TP) um LAC (“L2TP Access Concentrator”) opera como um comutador de rede (nível 2)
+O administrador de sistemas nunca deve acumular a função de administrador de redes, mas é o responsável pela formação dos operadores
+O número de pessoas com possibilidade de acesso físico ao CPD (“Centro de Processamento de Dados”) deve ser o mais limitado possível
+No CPD ficam concentrados todos os sistemas de processamento e armazenamento e também todos os equipamentos ativos da infra-estrutura de rede
+É vantajoso que o acesso físico ao CPD seja apenas possível através do local de trabalho dos administradores e operadores
+A virtualização de “hardware” permite reduzir a quantidade de “hardware” físico necessário para implementar as mesmas funções
+Com a virtualização é possível criar um novo servidor virtual e instalar o respetivo sistema operativo sem aceder fisicamente ao CPD
+Numa SAN (“Storage Area Network”), um único sistema de “storage” pode ser usado para fornecer discos lógicos a vários servidores
+Uma vantagem da virtualização de “storage” é que o “backup” e “mirroring” podem ser realizados sem a intervenção do servidor que usa os discos lógicos
+Um “initiator” iSCSI pode usar “targets” do tipo FCoE (“Fibre Channel over Ethernet”), mas não “targets” do tipo FCP (“Fibre Channel Protocol”)
+Quando uma SAN é implementada sobre “ethernet”, é fundamental assegurar a redundância, por exemplo com recurso ao STP (“Spanning Tree Protocol”)
+Um HBA (“Host Bus Adapter”) “Fibre Channel” pode ser diretamente ligado por um cabo a outro HBA “Fibre Channel”
+O parâmetro MTTR (“Mean Time To Repair”) está fortemente dependente do DRP (“Disaster Recovery Plan”)
+Num sistema, aumentar o número de componentes redundantes provoca uma diminuição do valor do MTBF (“Mean Time Between Failures”) do conjunto
+Se conseguirmos diminuir o MTTR, conseguimos aumentar a disponibilidade do sistema
+Num sistema “fail safe”, em caso de falha os serviços continuam disponíveis como se a falha não tivesse ocorrido
+Uma forma de eliminar um SPOF (“Single Point OfFailure”) é tornar o componente que a provoca redundante
+Com cinco discos configurados em RAID 1, se três dos discos falharem simultaneamente, o conjunto ainda se mantém operacional
+Se uma falha A tem uma probabilidade de ocorrer superior a uma falha B, então necessariamente o risco da falha A é superior ao da falha B
+Após a falha de um sistema espera-se que ele seja recuperado num período de tempo inferior ao RTO (“Recovery Time Objective”)
+O BCP (“Business Continuity Plan”) tem como único objetivo definir a forma como a infra-estrutura informática deve manter o seu funcionamento
+O plano de contingência (“Contingency Plan”) é ativado apenas em situações nas quais a recuperação do sistema a curto prazo não é possível
+Um plano de “backup/restore” baseado apenas em cópias integrais nunca pode garantir um RPO (“Recovery Point Objective”) de 24 horas
+Se a operação de “backup” demora duas horas, nunca será possível garantir um RPO inferior a duas horas
+O “mirroring” síncrono de discos garante um RPOe um RTO nulos, o “mirroring” assíncrono garante apenas o RPO nulo
+A “Politica de segurança” é um documento que deve ser do conhecimento dos administradores, não dos utilizadores “normais”
+Para garantir a autenticação com uma cifra assimétrica (chave pública) o emissor tem de cifrar coma chave privada, mas não garante a confidencialidade
+Se “quebrar” uma chave por força bruta demora 5000 horas, então se a chave tivesse mais um bit demoraria 10000 horas
+Num certificado de chave pública quando o proprietário (“owner”) e igual ao emissor (“issuer”), diz-se que o certificado é auto assinado
+Na aplicação de uma função “hash“, se for alterado apenas um bit nos dados de entrada então o resultado também terá apenas um bit alterado
+Uma assinatura digital deve garantir duas propriedades: autenticação e “não repúdio”. Não garante a confidencialidade
+O protocolo PAP (“Password Authentication Protocol”) utilizado isoladamente garante a autenticidade do utilizador, mas não a autenticidade do serviço
+As OTP (“One Time Password”) podem ser geradas pelos serviços e transmitidas aos utilizadores paramaior segurança em determinadas operações
+Nos sistemas AAA, em alguns casos o PEP (“Policy Enforcement Point”) tem a designação NAS (“Network Access Service”)
+O PDP (“Policy Decision Point”) recorre ao PIP (“Policy Information Point”) para verificar as credenciais de autenticação
+Existindo vários PEP ligados ao mesmo PDP, para um dado conjunto de credenciais de acesso, a resposta do PDP pode depender no PEP utilizado
+Os servidores RADIUS utilizam o protocolo LDAP (“Lightweight Directory Access Protocol”) para comunicarem diretamente com o PEP
+Uma vez que o protocolo LDAP não garante a confidencialidade dos dados, apenas deve ser usado através de uma VPN (“Virtual Private Network”)
+A classe de objeto LDAP do tipo “inetOrgPerson” é do tipo estrutural, por isso um objeto desta classe não pode pertencer a outras classes estruturais
+Em LDAP podem ser criados objetos que pertençam apenas a classes auxiliares, sem pertencerem a nenhuma classe estrutural
+No sistema KERBEROS o TGT (“Ticket Granting Ticket”) pode ser usado para obter um “ticket” de acesso a um serviço num “realm” diferente do seu
+Um problema dos sistemas KERBEROS atuais é que apenas suportam cifras baseadas em DES (“Data Encryption Standard”), com chaves de 128 bits
+Uma desvantagem do SASL (“Simple Authenticationand Security Layer”) é que para ser usado é necessidade de modificar o protocolo de aplicação
+O sistema KERBEROS foi criado pela Microsoft para dar suporte ao “Active Directory” que utiliza o protocolo LDAP
+No diálogo cliente/servidor do TLS (“Transport Layer Security”), o servidor informa qual o “ciphersuite” a utilizar através da mensagem “ServerHello”
+O TLS suporta autenticação com chave pré-partilhada, por exemplo através do “cipher suite” “TSL_PSK_WITH_AES_256_CBC_SHA”
+A DMZ (“DeMilitarized Zone”) está normalmente localizada no CPD, deve estar separada por “firewalls” das restantes redes
+Um “firewall” que implementa a funcionalidade “stateful packet inspection” (SPI) é habitualmente designado “firewall” dinâmico
+A utilização do protocolo HTTPS com certificados fidedignos está imune a ataques de ”sniffing” (inspeção furtiva) e MITM (“Man-in-the-middle”)
+Todos os ataques do tipo DoS (“Denial of Service”), podem ser evitados através da utilização de regras que evitem o “spoofing” IP
+Os ataques ao protocolo ARP (“Address Resolution Protocol”) não podem ser evitados com recurso a “firewalls”
+O nó de rede habitualmente designado “honeypot” deve estar particularmente bem protegido contra todo o tipo de ataques
+O ataque do tipo “SYN flood” a serviços UDP só pode ser realizado com recurso a “spoofing” IP
+O objetivo do IPsec (“Internet Protocol Security”) é proporcionar mecanismos de autenticação e confidencialidade na camada de rede (nível 3)
+O “Encapsulating Security Payload” (ESP) permite garantir a autenticação e a confidencialidade, todas as implementações IPsec o devem suportar
+O IPsec em “Transport mode” não pode garantir a integridade de todos os campos do cabeçalho IP, quer use ESP quer use AH (“Authentication Header”)
+Quando um pacote IPsec com a confidencialidade garantida circula na rede, todos os nós intermédios por onde passa podem obter os dados transportados
+As implementações IPsec nunca podem funcionar sem o auxílio do protocolo IKE (“Internet Key Exchange Protocol”)
+Para criar a IKE SA (“Security Association”) é usado o algoritmo “Diffie-Hellman”, as restantes SA são criadas usando a IKE SA
+Numa VPN do tipo HOST-LAN, após a ligação o posto de trabalho fica numa situação equivalente a estar fisicamente ligado à rede remota
+O “Layer 2 Tunneling Protocol” (L2TP) e o PPTP (“Point to Point Tunneling Protocol”) são dois protocolos muito utilizados na implementação de VPN
+O RTP (“Real Time Protocol”) é bastante mais eficiente do que o TCP sob o ponto de vista do seu mecanismo de correção automática de erros
+A compressão de cabeçalhos (“header compression”) deve ser seletiva, apenas sendo aplicada aos pacotes prioritários de reduzida dimensão
+A técnica LFI (“Link Fragmentation and Interleaving”) leva a que os pacotes sejam fragmentados no nó de origem e reconstruídos no nó de destino
+O RTT (“Round-Trip Time”) é calculado pelos emissores TCP, em função do seu valor, ajustam o valor do RTO (“Retransmission TimeOut”)
+Uma razão possível para um segmento TCP (pacote) se perder é por atuação do RED (“Random Early Detection”) num nó intermédio
+Na gestão de filas “Custom Queuing” (CQ), o tráfego prioritário passa primeiro, um exemplo desta implementação é o CAR (“Committed Access Rate”)
+As técnicas de gestão de filas “Custom Queuing” (CQ) e “Fair Queuing” (FQ) são do tipo HARD QoS, com limite de capacidade por tipo de tráfego
+Ao contrário do RED, o “Weighted RED” (WRED) pode usar os bits de precedência IP para tomar a decisão de descartar ou não um pacote
+A técnica “Fair Queuing” (FQ) permite garantir que o tráfego mais importante é retransmitido antes do tráfego menos importante
+O RSVP (“Resource Reservation Protocol”) só pode ser usado se ao longo do caminho esse protocolo for suportado por todos os nós intermédios
+O administrador de sistemas é o responsável pela formação dos utilizadores e operadores
+Durante o seu horário de trabalho o administrador de sistemas deve estar permanentemente no interior do CPD (“Centro de Processamento de Dados”)
+As cópias de segurança (“backups”) devem ser armazenadas no mesmo CPD onde estão armazenados os dados originais
+A virtualização de “hardware” reduz de forma significativa os custos operacionais de um CPD (“Centro de Processamento de Dados”)
+Criar um servidor virtual e instalar o respetivo sistema operativo são operações que podem ser realizadas remotamente, sem acesso físico
+O número total de servidores virtuais nunca pode exceder o número total de servidores físicos
+A SAN (“Storage Area Network”) é a infra-estrutura de comunicação base para a implementação da virtualização de “storage”
+Numa SAN, um disco lógico (LUN) pode ser parte de um disco físico e também pode estar distribuído por vários discos físicos
+As SAN FCP (“Fibre Channel Protocol”) com topologia “switched fabric” podem ser implementadas utilizando equipamentos de tecnologia “Ethernet”
+A forma mais eficiente de ligar um servidor a uma SAN iSCSI é através de um HBA (“Host Bus Adapter”)
+Numa SAN FCP com topologia “switched fabric” é assegurada a redundância sem necessidade de recorrer ao STP (“Spanning Tree Protocol”)
+O valor do parâmetro MTTR (“Mean Time To Repair”) não tem qualquer influência no valor do grau de disponibilidade
+Aumentar o número de componentes redundantes tem como resultado uma redução do valor do MTBF (“Mean Time Between Failures”)
+Um sistema com um grau de disponibilidade de 99,59 % é classificado com sendo do tipo “três noves”
+Se em caso de falha há garantias de que não vão ocorrer perdas de dados, o sistema pode designar-se “fail safe”
+Sob o ponto de vista de tolerância a falhas as designações “fail soft” e “fault tolerant” significam exatamente o mesmo
+Uma estratégia que permite eliminar a maioria das “common mode fault” é distribuir os componentes por localizações geográficas diferentes
+Nem sempre as falhas com maior probabilidade de ocorrerem são as que correspondem a um risco mais elevado
+O valor do RTO (“Recovery Time Objective”) nunca pode ser igual ao valor do RPO (“Recovery Point Objective”)
+O DRP (“Disaster Recovery Plan”) é para o administrador de sistemas um dos elementos fundamentais do BCP (“Business Continuity Plan”)
+A ativação do plano de contingência (“Contingency Plan”) é normalmente decidida pelos utilizadores
+O valor do RPO (“Recovery Point Objective”) nunca pode ser inferior ao tempo que demora a realizara cópia de segurança (“backup”)
+O RPO refere-se a um período de tempo decorrido após o desastre
+A forma como as cópias de segurança são realizadas afeta diretamente o RPO, mas não tem qualquer efeito sobre o RTO
+A “Politica de segurança” é um documento que contribui de forma significativa para a prevenção de falhas (“fault avoidance”)
+Para garantir confidencialidade com uma cifra simétrica é necessário que o emissor e o recetor conheçam uma chave secreta que mais ninguém conhece
+O número de bits usados das chaves criptográficas secretas e privadas não afeta de forma significativa a segurança que se obtém
+A criptografia assimétrica (chave pública) nunca pode garantir a autenticidade, para isso é necessário recorrer sempre a criptografia simétrica
+Quando uma mensagem é cifrada com a chave privada de uma cifra assimétrica, a confidencialidade não fica garantida
+Quando se aplica uma função “hash“ a uma mensagem, o resultado é um código cujo comprimento é sempre igual ao comprimento da mensagem
+O protocolo PAP (“Password Authentication Protocol”) só deve ser usado em canais que garantam a confidencialidade das transações
+Uma vantagem do CHAP (“Challenge Handshake Authentication Protocol”) relativamente ao PAP é que garante a autenticidade do serviço
+Dos vários componente da arquitetura AAA, o PEP(“Policy Enforcement Point”) é o único com o qual os utilizadores interagem diretamente
+O PIP (“Policy Information Point”) é o responsável por registar os acessos ao sistema (“accounting”)
+O PDP (“Policy Decision Point”) pode consideraras credenciais de autenticação válidas, mas mesmo assim negar o acesso ao serviço
+O protocolo LDAP (“Lightweight Directory AccessProtocol”) pode ser usado nas comunicações entre o PDP e o PIP
+É possível criar um objeto LDAP que pertença a várias classes auxiliares, sem pertencer a nenhuma classe estrutural
+Em LDAP a definição de classes suporta herança, por isso é possível definir uma nova classe tendo como base uma classe já existente
+Numa base de dados LDAP é possível existirem vários objetos com o mesmo RDN (“Relative Distinguished Name”)
+No sistema KERBEROS os TGT (“Ticket Granting Ticket”) são fornecidos aos “principal”, mas não existe nenhum “principal” capaz de os decifrar
+As cifras assimétricas (chave pública) são a base de funcionamento do sistema KERBEROS, sem elas este sistema não pode operar
+Quando um nome de um “realm” KERBEROS deriva de um nome de domínio DNS deve ser expresso em maiúsculas
+O AES (“Advanced Encryption Standard”) é uma das cifras suportadas pelo KERBEROS
+A mensagem “ClientHello” enviada pelos clientes TLS (“Transport Layer Security”) indica qual é a versão mais recente de TLS que o cliente suporta
+O “cipher suite” “TLS_RSA_WITH_AES_256_CBC_SHA256” realiza a autenticação através de certificados de chave pública
+O acesso da “intranet” à DMZ (“DeMilitarized Zone”) deve ser filtrado permitindo a passagem apenas do tráfego estritamente necessário
+Para combater ataques de “spoofing” de endereços IPv4 os “firewall” estáticos são suficientes
+O processo de execução de ataques do tipo MITM (“Man-in-the-middle”) inclui normalmente ataques de“sniffing”
+Os ataques designados “SYN flood” obrigam o atacante a “adivinhar” os números de sequência usados pelo servidor
+Se for usado exclusivamente ARP estático podemos evitar os ataques de “spoofing” ao protocolo ARP (“Address Resolution Protocol”)
+Seja qual for o tipo de serviço TCP considerado pode sempre sofrer um ataque do tipo DoS (“Denial of Service”) designado “SYN flood”
+Os ataques DDoS refletidos apenas são possíveis se o atacante tiver a possibilidade de realizar “spoofing” IP
+O IPsec (“Internet Protocol Security”) proporciona segurança ao protocolo IPv6, mas não é compatível com o IPv4
+O “Encapsulating Security Payload” (ESP) nunca pode ser usado isoladamente, só funciona em conjunto com o AH (“Authentication Header”)
+Seja em “Tunnel Mode” ou “Transport Mode”, o AH (“Authentication Header”) não garante a confidencialidade, os dados ficam visíveis para os intrusos
+Todas as implementações IPsec devem suportar o ESP, o suporte de AH não é obrigatório, mas o AH e o ESP podem ser usados em conjunto.
+No IPsec, para se conseguir uma comunicação segura nos dois sentidos entre duas entidades, são necessárias duas SA (“Security Association”)
+O algoritmo “Diffie-Hellman” é usado pelo IKE (“Internet Key Exchange”) para criar a primeira SA, designada IKE SA
+As VPN do tipo LAN-LAN são criadas pelos administradores das redes, os utilizadores não têm consciência de que estão a ser utilizadas
+O “Layer 2 Tunneling Protocol” (L2TP) pode ser usado em conjunto com o IPsec para criar uma VPN do tipo LAN-LAN
+Os pacotes RTP (“Real Time Protocol”) transportam uma etiqueta data/hora que permite o sincronismo dos fluxos
+A compressão de cabeçalhos (“header compression”) deve ser aplicada quando a quantidade de dados em cada pacote é reduzida
+A técnica LFI (“Link Fragmentation and Interleaving”) é aplicada apenas aos pacotes de grande dimensão
+No protocolo TCP, quando o valor do RTT (“Round-Trip Time”) aumenta, o valor do RTO (“Retransmission TimeOut”) é automaticamente diminuído
+No mecanismo RED (“Random Early Detection”) enquanto a fila de saída estiver vazia, nenhum pacote é descartado
+Os bits de precedência IP são usados para marcar os pacotes, podem assumir qualquer valor de zero a 4096
+A técnica de gestão de filas “Priority Queuing” (PQ) tem a vantagem de dar totais garantias para o tráfego considerado mais importante
+Na gestão de filas “Custom Queuing” (CQ), algum tráfego não prioritário é processado mesmo que exista tráfego prioritário nas filas
+O CAR (“Committed Access Rate”) não é uma técnica do tipo SOFT QoS (“Quality of Service”)
+No CAR dos “routers” CISCO, ao tráfego que está dentro do “Normal Burst” não é aplicada qualquer ação
+O protocolo RADIUS é usado nas comunicações entre o PEP e o PIP (“Policy Information Point”)

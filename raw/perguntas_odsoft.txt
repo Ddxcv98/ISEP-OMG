@@ -1,0 +1,88 @@
+Admitindo um pipeline de integração que se segue a vários pipelines, um para cada componente de uma aplicação:
+Relativamente ao Jenkins:
+Admitindo que estamos a usar um repositório local que é um clone de um repositório central alojado no Bitbucket e usando git:
+Admitindo um pipeline suportado pelo Jenkins:
+Em continuous delivery, o automatismo de implantação deve ser idempotente:
+Uma das origens típicas de problemas de capacidade das aplicações e o acesso a disco é:
+Para evitarmos o branching em continuous delivery podemos usar a técnica do branch by abstraction?
+Nos jobs/projetos freestyle do Jenkins apenas podemos invocar um alvo/target do ant de cada vez?
+Os ficheiros resultantes da compilação devem ser incluídos no repositório?
+Numa abordagem de continuous delivery é aconselhável que cada feature tenha o seu ramo no repositório?
+As bibliotecas de terceiros que usamos no projeto devem ser incluídas no repositório se não tivermos um servidor de gestão de biblioteca?
+No git fazemos git commit para enviarmos as nossas alterações para um repositório remoto?
+O Jenkins funciona com o git e com outros sistemas de controlo de versões?
+No Ant, task e target são sinónimos?
+A técnica de code coverage permite-nos ter uma ideia de quantos testes unitários foram executados com sucesso?
+Numa abordagem de continuous delivery não e boa pratica a execução de testes unitários na máquina local do developer?
+É boa prática executar a produção do relatório de code coverage sempre que se faz um commit?
+O OFbiz não usa o JUnit para a execução de testes:
+O OFbiz cria automaticamente as tabelas necessárias as entidades que definimos:
+É boa prática termos um script do Ant para cada etapa/fase do pipeline?
+O JMeter é uma ferramenta de medição de testes unitários?
+O conceito de continuous delivery inclui o de continuous integration?
+Os smoke tests são invocados tipicamente na sequência dos testes unitários?
+Em continuous delivery só depois de todos os commits diários é que se devem tentar corrigir erros ou falhas nos testes?
+One of the good practices in continuous delivery is to implement automation of the deployment of software before the automation of unit tests?
+One of the advantages of ant as a build tool it’s how easy it is to manage dependencies of third party libraries?
+Normally organizations should automate the production of metrics of build even before automating the cycle of build and testing?
+It is a good practice to stop the pipeline as soon as a test fails in order to provide feedback as soon as possible?
+The coverage tools only produce reports of coverage related to tests?
+In the Jenkins pipelines (Jenkinsfile) it is possible to specify tasks to be executed in diverse machines/computers?
+In the final of a successful Jenkins build we should put the generated jars in the source control repository?
+In ant the tasks are used to specify how the targets will be built?
+There are several tools for the automation of the non-functional tests, such as jmeter and cucumber?
+It is not a good practice when the development team produces the application, installers and documentation and delivers these artifacts to a special team that works on the deployment?
+In the commit phase (commit stage) tests should be executed in an environment similar to production?
+The java plugin for gradle follows a standard for the structure of the project in which it is mandatory, for instance, that all the java code be included in a fixed directory as it occurs with the java code in the ofbiz project?
+To produce a coverage report always implies a process of instrumentation of the code that may be explicit or implicit?
+An enterprise reveals an interesting level of maturity regarding continuous delivery when the team of system administration regularly executes changes in the configuration of production systems?
+In continuous delivery approaches under no circumstances should configuration and data be included in the repository of version control?
+A process of build, deploy, test and release that is not automated cannot be considered repeatable?
+In ofbiz the integration tests are always declared in a xml file and implemented in java?
+The code (schema, scripts, etc) of the data base should have a specific branch in the repository, separated from the main code?
+It is a good practice to avoid the use of packaging tools that are native of the operating systems because they are not multiplatform?
+Ant, make, maven and gradle are all examples of build tools?
+Relativamente aos testes de software podemos afirmar que:
+Relativamente a framework estudada nas aulas (ofbiz):
+Admitindo um pipeline suportado pelo Jenkins:
+Relativamente a abordagem continuous delivery podemos afirmar que:
+Os ficheiros de documentação (ex: javadoc) gerados a partir de anotações no código fonte devem ser colocados nos mesmos diretórios que o código fonte.
+Quando um teste falha deve-se parar o processo de forma a rapidamente corrigir a situação e só depois se retoma o processo?
+Ao executarmos um commit no git com sucesso o HEAD altera-se?
+Numa abordagem de continuous delivery as organizações abordam tipicamente os testes de aceitação antes dos testes não funcionais?
+Num pipeline do Jenkins uma sequência típica será: check-in; build; smoke tests; unit tests; automated acceptance tests?
+É fácil diferenciamos bibliotecas e componentes uma vez que as bibliotecas são as partes do nosso software que são também desenvolvidas pela nossa equipa (ao contrario dos componentes)?
+No continuous delivery, todas as alterações no código fonte, configuração da aplicação ou esquema dos dados devem originar uma nova instância do pipeline?
+A abordagem continuous integration implica que a implantação do software seja automatizada?
+Quando se usa o Cobertura todo o código deve ser instrumentado, incluindo o código dos testes?
+É um bom princípio que os developers usem o mesmo processo (que o usado para ambientes de testes, por exemplo) para implantar e executar a aplicação localmente nas suas máquinas?
+Um tipo de testes que devemos fazer o esforço de tentar automatizar, mesmo que seja difícil, são os testes exploratório?
+Em termos de prática de implementação de Jenkins, a execução de builds noturnos precede a fase de geração de métricas de qualidade?
+Um dos princípios do continuous delivery é que o processo de implantação é da exclusiva responsabilidade dos administradores de sistemas?
+Os testes não funcionais, em particular os testes de capacidade, podem ser facilmente automatizados?
+Na plataforma ofbiz a execução dos testes passa pela invocação de uma tarefa que executa o jar ofbiz.jar?
+No Ant, nas tarefas (tasks) especificamos as dependências e nos alvos (targets) especificamos como fazer as ações?
+Só necessitamos de ter o java instalado na máquina do Jenkins se os projetos que desejamos construir no Jenkins forem projetos java?
+Os testes de aceitação devem ser escritos e, idealmente, automatizados antes do desenvolvimento/implementação da user story?
+Se um dos requisitos não funcionais for o alto desempenho, então uma arquitetura indicada será uma que assente em vários tiers?
+Os testes de aceitação permitem verificar se construímos o software de forma correta e os testes unitários se construímos o software correto?
+Smoke tests automáticos não podem abranger apenas as funções prioritárias de um produto?
+Testes unitários que demoram demasiado tempo a executar podem indicar problemas de performance?
+A ferramenta Jenkins suporta a definição do pipeline como código?
+Após configurar devidamente o suporte para Jenkinsfile no Jenkins, para se ter um script com uma simples mensagem para a consola, é necessário instalar mais plugins no Jenkins?
+No Jenkins, os artefactos gerados e arquivados num build são colocados na pasta workspace do projeto?
+A ferramenta JMeter permite simular vários utilizadores a fazerem pedidos a uma aplicação mas apenas via o protocolo http?
+Numa abordagem de Continuous Integration deve-se fazer commit no sistema de controlo de versões de forma frequente e separar o código em componentes de forma a gerir mais facilmente equipas grandes ou distribuídas?
+Se na mesma máquina instalarmos Jenkins e OFbiz é boa pratica mudar os portos usados em pelo menos uma das aplicacoes referidas?
+Numa utilização central do Jenkins como a que foi usada durante o semestre em que os jobs do Jenkins são automaticamente baseados na Jenkinsfile presente nos repositórios não é necessária a instalação do git no servidor de Jenkins?
+No Jenkins é possivel usar computadores denominados Agents para distribuir a carga de execução dos Jenkinsfile?
+Em Continuous Delivery o processo de deployment deve ser idempotente (operação cuja aplicação recorrente resulta no mesmo resultado da aplicação inicial)?
+It’s a good practice the following principle: Unit tests should be stored in a package hierarchy different from your source code?
+No processo de packaging de uma aplicação não é necessário incluir as bibliotecas das quais a aplicação depende para executar pois na máquina de deployment podemos usar o Maven para esse efeito?
+Os relatórios de cobertura dos testes não dão indicações da qualidade ou correção dos mesmos?
+No contexto dos testes, um exemplo de Fake Objects são as bases de dados in-memory?
+Quando herdamos um projeto legado a primeira tarefa e automatizar o processo de build:
+Os grandes problemas de capacidade das aplicações centram-se na maioria dos casos em CPU e não em I/O ou networking?
+No git a criação de um novo ramo (branch) é uma operação pesada pois corresponde, na prática, a quase duplicação do conteúdo do repositório para se criar a cópia do código no novo ramo?
+Em Continuous Integration uma técnica para se evitar a criação de ramos é conhecida por branching by abstraction?
+Em Continuous Integration uma aplicação com base de dados deve ter armazenada a versão do seu schema na propria BD?

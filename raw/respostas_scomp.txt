@@ -1,0 +1,364 @@
+ Identificador do processo (PID).
+ Espaço de endereçamento.
+ Indentificador do utilizador (UID).
+ Descritores de ficheiros abertos.
+
+ O processo pai irá continuar a ver o valor antigo na variável global com o mesmo nome no seu espaço de endereçamento.
+ O processo pai vê imediatamente a alteração ao valor da variável.
+ O pai vê a alteração ao valor da variável apenas se esta tiver sido alocada na heap antes do processo filho ter sido criado.
+ Nenhuma das anteriores.
+
+ Um processo em execução enquanto outro está bloqueado numa operação de I/O usando um mecanismo de espera passiva.
+ Um processo em execução enquanto outro está bloqueado numa operação de I/O usando um mecanismo de espera activa.
+ Mais do que um processo em execução simultânea, quer existam ou não processos bloqueados em operações de I/O.
+ Apenas um processo bloqueado em operações de I/O, quer existam ou não processos em execução.
+
+ Um processo foi preemptado por outro processo.
+ Um processo deixou de estar bloqueado num semáforo.
+ A espera do processo pela operação de I/O ou evento terminou.
+ Um novo processo acabou de ser criado.
+
+ Permite que um processo use mais memória do que a RAM fisicamente existente.
+ Delega nos processos o mapeamento de endereços virtuais em endereços físicos.
+ Usa registos do CPU para impedir que um processo utilize um endereço que não lhe pertence.
+ Assegura que cada processo tem o seu próprio espaço de endereçamento contínuo que começa no endereço 0.
+
+ Permite que os processos operem de forma assíncrona.
+ Dá a ilusão de que existe mais memória do que a realmente existente de forma física.
+ Reduz o número de operações de escrita em memória.
+ Permite que os processos acedam à memória sem qualquer mecanismo de sincronização.
+
+ A sincronização implícita na troca de dados.
+ A sua melhor performance.
+ A sua maior ﬂexibilidade no acesso a apenas parte dos dados enviados.
+ Permitir a leitura simultânea do mesmo bloco de dados por vários processos consumidores.
+
+ Parte do programa em que são acedidos dados potencialmente partilhados por vários processos.
+ Parte do programa em que o processo requisita ao sistema operativo a reserva de mais memória de forma dinâmica.
+ Parte do programa em que um bug causa garantidamente o término do processo.
+ Parte do programa que é executada em kernel space.
+
+ Exclusão mútua, posse e espera, ausência de preempção dos recursos, espera circular.
+ Ausência de exclusão mútua, posse e espera, preempção dos recursos, espera circular.
+ Exclusão mútua, ausência de posse e espera, preempção dos recursos, espera circular.
+ Exclusão mútua, posse e espera, preempção dos recursos, ausência de espera circular.
+
+ Independentes da ordem e velocidade de execução dos processos.
+ Dependentes da ordem e velocidade de execução dos processos.
+ Usados apenas para garantir exclusão mútua no acesso aos recursos partilhados.
+ Nenhuma das anteriores.
+
+ Uma situação em que um processo de maior prioridade é obrigado a esperar por um processo de menor prioridade.
+ Uma redução da prioridade de um processo por este bloquear constantemente em operações de I/O.
+ Um aumento da prioridade de um processo de modo a que este liberte mais rapidamente um recurso requerido por um processo de maior prioridade.
+ A atribuição de prioridades aos processos pela ordem inversa dos seus tempos de execução.
+
+ Aumentar o grau de concorrência das aplicações e o overhead do protocolo de sincronização.
+ Diminuir o grau de concorrência das aplicações e o overhead do protocolo de sincronização.
+ Diminuir o grau de concorrência das aplicações, mas aumentar o overhead do protocolo de sincronização.
+ Um maior número de dependências entre os semáforos, por vezes subtis, que podem originar deadlocks.
+
+ Heap.
+ Stack.
+ Variáveis locais.
+ Conjunto de registos do CPU.
+
+ X=1 ou X=2 ou X=3.
+ X=3
+ X=1 ou X=3.
+ X=0 ou X=1 ou X=2 ou X=3.
+
+ Sem requisitar a sua cooperaçao, antes do seu time quantum expirar ou o processo terminar.
+ Para garantir que outro processo vítima de resource starvation execute.
+ Sempre que este requisita uma operação de I/O.
+ Para evitar deadlocks.
+
+ Round Robin.
+ Escalonamento por prioridades fixas.
+ Shortestjob First.
+ Nenhum dos anteriores.
+
+ 3311131233322-2
+ 3111-1222-233-333
+ 32111212323-333
+ 33322211133321
+
+ São invocadas em user-space e executadas em kernel-space, permitindo a um processo aceder aos serviços disponibilizados pelo sistema operativo.
+ São invocadas e executadas em user-space, permitindo a um processo aceder aos serviços disponibilizados pelo sistema operativo.
+ Não são usadas porque os processos em user-space podem aceder directamente aos serviços disponibilizados pelo sistema operativo.
+ Nenhuma das anteriores.
+
+ Agrega todos os componentes num único processo que corre num único espaço de endereçamento.
+ Executa alguns componentes críticos em user space por uma questão de performance.
+ Exige um mecanismo de troca de mensagens entre user space e kernel space.
+ Permite carregar módulos dinamicamente, evitando a recompilação do núcleo quando se adicionam novas funcionalidades.
+
+ "Em execução" para "pronto a executar".
+ "Bloqueado" para "em execução".
+ "Pronto a executar" para "bloqueado".
+ "Bloqueado" para "Terminado".
+
+ O tempo que o escalonador tinha atribuído ao processo (time quantum) termina, o processo liberta o CPU e passa para o estado "pronto a executar".
+ O processo bloqueia usando um mecanismo de espera activa pelo acesso a um recurso, liberta o CPU e é colocado numa fila de espera associada ao recurso.
+ O tempo que o escalonador tinha atribuído ao processo (time quantum) termina, o processo liberta o CPU e mantém-se no estado "em execução".
+ O processo cria um novo processo, ficando de seguida à espera que o seu filho termine invocando a função Wait, não libertando o CPU e mantendo-se em execução.
+
+ Usa registos do CPU para impedir que um processo utilize um endereço que não lhe pertence.
+ Delega nos processos o mapeamento de endereços virtuais em endereços físicos.
+ Permite que um processo use mais memória do que a RAM fisicamente existente.
+ Assegura que cada processo tem o seu próprio espaço de endereçamento contínuo que começa no endereço 0.
+
+ É crítica em qualquer sistema operativo que permita a execução concorrente de processos.
+ Não é necessária num sistema operativo que permita a execução concorrente de processos.
+ É substituída pelo conceito de memória virtual em Linux e Windows.
+ Obriga os processos a indicarem endereços físicos quando pretendem aceder à memória.
+
+ A troca de dados e a sincronização das acções mesmo sem partilha do mesmo espaço de endereçamento.
+ A troca de dados e a sincronização de acções apenas quando os processos partilham o mesmo espaço de endereçamento.
+ Apenas a troca de dados e não a sincronização das suas acções, com ou sem partilha de espaço de endereçamento.
+ Apenas a sincronização das acções mas não a troca de dados, com ou sem partilha de espaço de endereçamento.
+
+ Não é possível associar mais dados ao sinal para além do seu número.
+ Só podem ser usados entre as várias threads do mesmo processo.
+ Funcionam de forma assíncrona.
+ Um processo tem sempre a opção de ignorar a recepção de todos os sinais.
+
+ Acesso exclusivo, progressão, espera limitada.
+ Diferentes prioridades para os processos, envelhecimento, ausência de interbloqueio (deadlock).
+ Acesso exclusivo, preempção, progressão.
+ Ausência de preempção, starvation, inversão de prioridades.
+
+ Tanto em software como em hardware.
+ Apenas em software.
+ Apenas em hardware.
+ Apenas para garantir exclusão mútua.
+
+ Em consequência da política de escalonamento do CPU, um recurso passa alternadamente dum processo P1 para um outro processo P2, deixando um terceiro processo P3 indefinidamente bloqueado sem acesso ao recurso.
+ Dois processos (P1 e P2) se bloqueiam mutuamente devido a P1 ter bloqueado o semáforo S1, P2 ter bloqueado o semáforo S2, P1 necessitar de aceder a uma zona crítica protegida por S2(sem libertar S1) e P2 necessitar de aceder a uma zona crítica protegida por S1 (sem libertar S2).
+ Dois processos (P1 e P2) se bloqueiam mutuamente devido a P1 ter bloqueado o semáforo S1, P2 ter bloqueado o semáforo S2, P1 necessitar de aceder a uma zona crítica protegida por S2(depois de libertar S1) e P2 necessitar de aceder a uma zona crítica protegida por S1 (depois de libertar S2).
+ Nenhuma dãs anteriores.
+
+ Diminuir o grau de concorrência das aplicaçoes e o overhead do protocolo de sincronização.
+ Aumentar o grau de concorrência das aplicações e o overhead do protocolo de sincronização.
+ Diminuir o grau de concorrência das aplicações, mas aumentar o overhead do protocolo de sincronização.
+ Um maior número de dependências entre os semáforos, por vezes subtis, que podem originar deadlocks.
+
+ Stack.
+ Heap.
+ Variáveis globais.
+ Código do programa.
+
+ Escalonamento não preemptivo.
+ Escalonamento preemptivo.
+ Escalonamento por prioridades fixas.
+ Escalonamento por prioridades dinâmicas.
+
+ Um time quantum muito pequeno aumenta consideravelmente o overhead.
+ Um time quantum muito pequeno converte-o na prática no algoritmo First come First served.
+ Um time quantum muito pequeno aumenta consideravelmente a performance do sistema.
+ Um time quantum muito pequeno converte-o na prática no algoritmo Shortestjob First.
+
+ Tal permite a partilha segura de periféricos entre diferentes aplicações.
+ Tal permite que a rotina de interrupção execute mais depressa.
+ Assim cada aplicação pode aceder diretamente ao dispositivo.
+ Nenhuma das anteriores.
+
+ Nestes sistemas as chamadas ao sistema operativo apenas podem ser feitas através de interrupções de hardware que permitam comutar para kernel mode.
+ Em sistemas baseados nestes CPUs é possível a um sistema operativo suportar com segurança vários utilizadores.
+ Em sistemas baseados nestes CPUs não é possível a um sistema operativo suportar com segurança vários utilizadores.
+ A execução em user mode permite que qualquer programa tenha acesso direto a todos os periféricos instalados no computador,
+
+ Funcionam através de interrupções de hardware.
+ Funcionam em User Mode. 
+ Todas as chamadas necessitam do armazenamento de dados em disco.
+ Servem para invocar Serviços do Sistema Operativo. 
+
+ A ligação entre o CPU e os dispositivos de entrada e saída é feita pelo barramento de dados e por uma ou mais linhas de interrupção.
+ A ligação entre o CPU e os dispositivos de entrada e saída é feita exclusivamente pelas linhas de interrupção.
+ A ligação entre o CPU e os dispositivos de entrada e saída é feita exclusivamente pelo barramento de dados.
+ Nenhuma das anteriores.
+
+ Para tal o programa deverá ativar uma interrupção de hardware e passar os parâmetros da referida chamada através da memória, registos da CPU ou da stack.
+ Para tal o programa deverá ativar uma interrupção de hardware e passar os parâmetros da referida chamada de registos da CPU.
+ Para tal o programa deverá ativar uma interrupção de software e passar os parâmetros da referida chamada da rede.
+ Para tal o programa deverá ativar uma interrupção de software e passar os parâmetros da referida chamada de registos da CPU.
+
+ Nestes sistemas não é possível suportar com segurança vários utilizadores diferentes.
+ Nestes sistemas é possível suportar com segurança vários utilizadores diferentes.
+ Nestes sistemas não é possivel suportar programação multiprocesso.
+ Nestes sistemas as chamadas ao sistema operativo apenas podem ser feitas através de interrupções de software que permitam comutar para kernel mode.
+
+ Os mecanismos DMA permitem que os dispositivos de I/O executem as transferências de dados diretamente para a memória e em paralelo com a execução do CPU, além disso os buffers de memória dos dispositivos podem ser mais pequenos relativamente ao mesmo tipo de dispositivo, caso este funcionasse apenas por interrupção.
+ Os mecanismos de DMA obrigam a que os dispositivos acedam diretamente à memória o que tornaa operação mais lenta.
+ Os mecanismos de DMA permitem que os dispositivos de I/O executem as transferências de dados diretamente para a memória e em paralelo com a execução no CPU de qualquer tipo de código.
+ Os mecanismos de DMA permitem que os dispositivos de I/O executem as transferências de dados diretamente para a memória e em paralelo com a execução no CPU de código exclusivamente do sistema operativo,
+
+ Que durante a compilação sejam definidas as posições na memória física em que se irá localizar o programa executável.
+ Diminuir o tamanho dos programas.
+ Partilhar bibliotecas entre programas diferentes.
+ Utilizar a versão mais adequada das bibliotecas,
+
+ Permite que um programa do utilizador execute, com segurança, rotinas do kernel do sistema operativo através da execução de interrupções de software.
+ Impede que um programa do utilizador execute em user mode.
+ Permite que um programa do utilizador execute, com segurança, rotinas do kernel do sistema operativo através da execução de interrupções de hardware.
+ Permite que um programa do utilizador tenha cesso a atodas as funcionalidades do processador.
+
+ Na existência de uma tabela que indica a que segmentos e páginas um processo em execução pode aceder.
+ Na marcação de cada segmento de memória, indicando os utilizadores que lhe podem aceder.
+ Na existência de dois registos: o base register que guarda o endereço mais baixo na memória física a que um processo pode aceder e o limite register que guarda o tamanho da zona de memória.
+ Na existência de mecanismos em todas as linguagens de programação que impedem o acesso aáreas de memória que não pertençam ao processo em execução.
+
+ Até que seja feita uma transação desse processo, entre o estado de running e de ready, por decisão do escalonador ou até que termine.
+ Initerruptamente até que termine.
+ Até que termine, nessa altura passa para o estado de waiting.
+ Nenhuma das anteriores.
+
+ Até que seja feita uma transição entre o estado de running e waiting.
+ Até qie seja retirado de execução pelo programador.
+ Até que seja feita uma transição entre o estado de running e ready.
+ Nenhuma das anteriores.
+
+ O endereçamento lógico assume que um programa é colocado em memória a partir da posição 0.
+ O endereçamento lógico assume que um programa é colocado em memória a partir da posição O e que é colocado no endereço físico 0.
+ A utilização de endereçamento lógico não permite a utilização de paginação de memória.
+ A utilização de endereçamento lógico não permite que o Código seja relocatável na memória física.
+
+ Permitir que um utilizador veja a memória como sendo constituída como segmentos de tamanho diferente e independentes entre si.
+ Permitir a divisão da memória em segmentos do mesmo tamanho.
+ Permitir que um utilizador veja a memória Como sendo Constituída por segmentos de tamanho diferente e independentes entre si.
+ Permitir a utilização de endereços físicos contíguos,
+
+ Permitir que um programa utilize a memória como sendo constituída por pedaços do mesmo tamanho e eliminar totalmente a fragmentação externa da memória.
+ Permitir a divisão da memória em pedaços de tamanho diferente.
+ Obrigar os programas a serem mais pequenos.
+ Permitir que um programa utilize a memória Como sendo constituída por pedaços do mesmo tamanho e eliminar totalmente a fragmentação interna da memória.
+
+ Permitir a utilização de espaços de memória não contíguos.
+ Permitir os acesso aos periféricos.
+ Permitir a utilização de endereços fisicos contíguos.
+ Aumentar a performance do sistema.
+
+ Utilizar de forma mais eficiente os recursos de um computador.
+ Dar menos trabalho ao compilador.
+ Isolar as duas threads uma da outra por razões de segurança. 
+ Diminuir a quantidade de memória ocupada,
+
+ É uma operação pesada do ponto de vista computacional.
+ É uma operação leve do ponto de vista computacional. 
+ Envolve obrigatoriamente operações em vírgula flutuante. 
+ Só é possível com permissões de "root".
+
+ Todas as threads de um mesmo grupo (que derivam do mesmo processo) partilham as mesmas áreas de memória.
+ Todas as threads de um sistema operativo partilham as mesmas áreas de memória.
+ Todos os processos de um sistema operativo partilham as mesmas áreas de memória.
+ As threads es os processos não partilham memória entre si.
+
+ Só deve ser feita depois do fecho do mutex associado a essa variável.
+ Pode ser feita sem o fecho do semáforo associado.
+ Só deve ser feita depois do fecho de qualquer um dos semáforos do programa.
+ Só deve ser feita pela mesma thread que está a espera dessa sinalização.
+
+ Tal permite que todos os pedidos de acesso aos periféricos sejam controlados pelo sistema operativo.
+ Tal permite que a rotina de interrupção execute mais depressa, 
+ Assim cada aplicação pode aceder diretamente ao dispositivo. 
+ Nenhuma das anteriores,
+
+ Funcionam através de interrupções de hardware
+ Funcionam em User Mode.
+ Todas as chamadas necessitam do armazenamento de dados em disco.
+ Não servem para invocar serviços do sistema operativo.
+
+ Servem para invocar serviços do sistema operativo.
+ Funcionam em User Mode.
+ Todas as chamadas necessitam do armazenamento de dados em disco.
+ Funcionam apenas atravez de interrupções de hardware.
+
+ Na existência de dois registos: o base register que guarda o endereço mais baixo na memória física a que um processo pode aceder e o “limite register” que guarda o tamanho da zona de memória e que permitem verificar se todos os acessos à memória ocorrem dentro dessa zona.
+ Na marcação de cada segmento de memória, indicando os utilizadores que lhe podem aceder.
+ Na existência de dois registos: o base register que guarda o endereço mais baixo na memória física a que um processo pode aceder e o limite register que guarda o tamanho da zona de memória.
+ Na existência de mecanismos em todas as linguagens de programação que impedem o acesso aáreas de memória que não pertençam ao processo em execução.
+
+ Dois processos (P1 e P2) bloqueiam-se mutuamente devido a P1 ter bloqueado o semáforo S1, P2 ter bloqueado o semáforo S2, P1 necessitar de aceder a uma zona crítica protegida por S2 (sem libertar S1) e P2 necessitar de aceder a uma zona crítica protegida por S1 (sem libertar S2).
+ Dois processos (P1 e P2) bloqueiam-se mutuamente devido a P1 ter bloqueado o semáforo S1, P2 ter bloqueado o semáforo S2, P1 necessitar de aceder a uma zona crítica protegida por S2 (depois de libertar S1) e P2 necessitar de aceder a uma zona crítica protegida por S1 (depois de libertar S2).
+ Em consequência da política de escalonamento da UCP, um recurso passa alternadamente dum processo P1 para um outro processo P2, deixando um terceiro processo P3 indefinidamente bloqueado sem acesso ao recurso.
+ Nenhuma das anteriores.
+
+ Pela Memory Management Unit do CPU.
+ Durante a compilação do programa pelo linker. 
+ Pelo módulo de gestão de memória do kernel do sistema operativo. 
+ Pelo módulo de gestão de processos do kernel do sistema operativo,
+
+ Dividir a memória em pedaços de tamanho diferente e com diferentes propriedades.
+ Dividir a memória em pedações de tamanho diferente, mas com as mesmas propriedades.
+ Dividir a memória em pedações de tamanho igual, mas com as mesmas propriedades.
+ Dividir a memória em pedações de tamanho igual e com diferentes propriedades.
+
+ A alocação de memória para os dados e código do processo, e a criação do Process Control Block do processo.
+ A reserva dos periféricos a utilizar pelo programa.
+ A criação do Process Control Block do processo.
+ A alocação de memória para o código de um programa e a criação do Process Control Block do processo.
+
+ Traduzir o nome de um ficheiro para o número do ficheiro, gestão do diretório e proteção.
+ Traduzir o nome de um ficheiro para o número do ficheiro, aceder ao hardware que controla o disco.
+ Gerir os buffers de leitura e escrita.
+ Nenhuma das anteriores. 
+
+ Alocação indexada, cada bloco de um ficheiro contém um apontador para o próximo bloco.
+ Alocação continua: em que cada ficheiro ocupa um único bloco de disco.
+ Alocação continua: em que cada ficheiro ocupa um conjunto de blocos de disco contíguos.
+ Alocação ligada: em que cada ficheiro ocupa um conjunto de blocos de disco contíguos.
+
+ O módulo de gestão de processos trata da comutação entre processos e entre threads do sistema operativo.
+ O módulo de gestão de I/O permite gerir o acesso à memória principal.
+ O módulo de gestão de processos é responsável pela alocação de memória aos processos. 
+ O módulo de gestão de processos trata da Comutação entre processos mas não entre threads.
+
+ A criação do Process Control Block do processo e alocação de memória para os dados, seguida da cópia dos dados do processo que fez o pedido.
+ A alocação de memória para os dados, código de um programa e a criação do Process ControlBlock do processo.
+ A reserva dos periféricos a utilizar pelo programa.
+ A alocação de memória para o código de um programa e a criação do Process Control Block do processo.
+
+ A arquitetura x86 utiliza paginação de memória permitindo normalmente reservar memória em múltiplos de 4k, consequentemente m[20] pode pertencer à zona de memória partilhada reservada ao processo.
+ As funções de alocação de memória reservam sempre 20% mais memória que a que é pedida e a linguagem C não faz qualquer controlo no acesso à memória.
+ Nem a linguagem C nem o sistema operativo fazem qualquer controlo de acesso para além dos limites reservados ao processo ou configuração do sistema computacional para o fazer.
+ Nenhuma das anteriores,
+
+ Que qualquer programa possa interagir com o kernel do sistema operativo de uma forma segura.
+ Que um programa de um utilizador qualquer possa alterar a tabela de interrupção de um processador.
+ Que qualquer programa possa aceder diretamente e alterar a configuração de um dispositivo de hardware.
+ Que, em Linux, apenas programas com privilégios de administrador possam interagir com o kernel do sistema operativo de uma forma segura.
+
+ Em consequência da política de escalonamento da UCP, um recurso passa alternadamente dum processo P1 para um outro processo P2, deixando um terceiro processo P3 indefinidamente bloqueado sem acesso ao recurso.
+ Vários processos acedem e manipulam dados partilhados "simultaneamente", deixando os dados num estado de possível inconsistência.
+ Processos a Correr em processadores diferentes, manipuiam simultaneamente a dados na sua Cache.
+ Nenhuma das anteriores.
+
+ Tais funcionalidades apenas podem ser executadas em segurança se o CPU suportar a execução de processos em dual mode.
+ Tais funcionalidades podem ser executadas em segurança em qualquer tipo de CPU,
+ A execução em segurança é garantida apenas pela existência de mecanismo de acesso protegido àmemória.
+ Nenhuma das anteriores,
+
+ Até que termine, desde que seja o processo com maior prioridade.
+ Interruptamente até que termine, independentemente de fazer operações de I/O ou não. 
+ Até que seja feita uma transição desse processo para outro com menor prioridade, por decisão doescalonador. 
+ Interruptamente até que termine, ou até efectuar operações de I/O.
+
+ Qualquer operação de incremento ou decremento de um semáforo é sempre executada pelo sistema operativo.
+ O decremento de um semáforo pode levar o processo a bloquear o que implica a sua passagem para o estado de ready.
+ O incremento de um semáforo pode levar o processo a bloquear o que implica a sua passagem para o estado de waiting.
+ O incremento de um semáforo pode levar o processo a bloquear o que implica a sua passagem para o estado de ready.
+
+ Utilizar de forma mais eficiente os recursos do Computador.
+ Dar menos trabalho ao gerar o ficheiro executável.
+ Diminuir o tempo de compilação.
+ Diminuir a quantidade de memória ocupada.
+
+ n*n.
+ n/2
+ n/2*log2(n)
+ Nenhuma das anteriores.
+
+ O programa 1 poderá ter maior performance do que no caso de executarmos o programa 2 com NT=Ncores, se as threads tiverem um número substancial operação de I/O.
+ O programa 1 terá maior performance do que no caso de executarmos o programa 2 com NT=Ncores, em qualquer condição.
+ O programa 1 terá maior performance do que no caso de executarmos o programa 2 com NT=Ncores, se as threads não tiverem qualquer operação de I/O.
+ Nenhuma das anteriores.

@@ -1,0 +1,279 @@
+ Os testes unitários devem ser executados nos pipelines dos componentes.
+ Os testes unitários devem ser executados no pipeline de integração.
+ Os smoke tests devem ser executados nos pipelines dos componentes.
+ Nenhuma das anteriores.
+
+ Nenhuma das anteriores.
+ O Copy Artifact plugintem por objetivo permitir copiar artefactos entre diretórios do mesmo workspace.
+ O Promote Builds plugin permite implementar lógica de integração de jobs num pipeline.
+ Com Promote Builds plugin não é possível ter passos com intervenção manual do utilizador.
+
+ Ao executarmos um checkout para mudarmos de ramo o HEAD local altera-se.
+ Ao executarmos um commit o HEAD local não se altera.
+ Ao executarmos um checkout para mudarmos de ramo o HEAD local não se altera.
+ Nenhuma das anteriores.
+
+ Nenhuma das anteriores.
+ Em todas as fases/jobs do pipeline devemos ir buscar o código fonte ao repositório e compilar o projeto.
+ E na fase de deployment que devemos executar os testes unitários.
+ Devemos executar os testes não funcionais sempre que e feito um commit.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ A versão estudada do ofbiz não gera adequadamente o relatório cobertura.
+ Não é possível a execução de testes de capacidade jmeter a partir de um script Ant.
+ Os testes do ofbiz são executados por um alvo Ant que invoca explicitamente o junit.
+ Nenhuma das anteriores.
+
+ Apenas temos um ficheiro ofbiz-component.xml por componente.
+ Apenas temos um ficheiro services.xml por componente.
+ Apenas temos um ficheiro entitymodel.xml por componente.
+ Nenhuma das anteriores.
+
+ Nenhuma das anteriores.
+ Em cada fase/job do pipeline apenas podemos executar um alvo do Ant.
+ Nos jobs do tipo freestyle não é possível fazer pooling de um repositório para detetar alterações ao código.
+ Os jobs do tipo freestyle apenas permitem invocar o Ant.
+
+ Nenhuma das anteriores.
+ E na fase de build que devemos executar os testes unitários.
+ No jenkins, o job de execução de testes unitários deve falhar logo que um teste unitário falha.
+ No jenkins, em abordagem de pooling ao git, devemos fazer git push antes do git pull.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.
+
+ Falso.
+ Verdadeiro.
+
+ Falso.
+ Verdadeiro.
+
+ Verdadeiro.
+ Falso.
+
+ Verdadeiro.
+ Falso.

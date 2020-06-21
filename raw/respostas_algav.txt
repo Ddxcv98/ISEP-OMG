@@ -1,0 +1,134 @@
+(b v c) -> a
+a -> (b ^ c)
+a -> (b v c)
+(b ^ c) -> a
+
+(s ^ !s) -> (s V !q)
+(s V !s) -> (s ^ !s)
+(s V !s) -> (s ^ !q)
+(s V !q) -> (s ^ !s)
+
+É possível provar que z é verdade por refutação.
+Não é possivel provar que z é verdade por refutação.
+Não é possivel provar que z é verddade recorrendo ao modus ponens.
+z toma sempre o valoder de verdade falso.
+
+Um raciocínio indutivo.
+Um raciocínio dedutivo.
+Um raciocínio abdutivo.
+Um raciocínio redutivo.
+
+O raciocínio abdutivo.
+O raciocínio dedutivo.
+O modus tollens.
+O modus ponens.
+
+Estamos a usar raciocínio abdutivo.
+Estamos a usar modus ponens.
+Estamos a usar raciocínio dedutivo.
+Estamos a usar modus tollens.
+
+2 dias com 5 trabalhadores e também em 3 dias com 4 trabalhadores.
+2 dias com 4 trabalhadores e também em 2 dias com 5 trabalhadores.
+3 dias com 4 trabalhadores e também em 3 dias com 5 trabalhadores.
+1 dias com 6 trabalhadores e também em 2 dias com 5 trabalhadores.
+
+O número de planos alternativos que existem em G1 só será menor que o número de planos alternativos de G se o arco incluído não for redudante.
+O número de planos alternativos que existem em G1 será sempre maior que o número de planos alternativos de G.
+O número de planos alternativos que existem em G1 será sempre menor que o número de planos alternativos de G.
+O número de planos alternativos que existem em G1 só será maior que o número de planos alternativos de G se o arco incluído não for redundante.
+
+Há mais planos alternativos em G do que em G'.
+G e G' são equivalentes.
+Há mais planos alternativos em G' do que em G.
+Há exatamento o mesmo número de planos alternativos em G e em G' apesar de G e G' não serem equivalentes.
+
+Nenhuma das anteriores.
+Com níveis de corte garante que se encontra a melhor solução.
+Com níveis de corte garante que se encontra a soluçao até ao nivel de corte definido.
+Dá-nos a solução no nível mais proxímo da raiz.
+
+Primeiro em Profundidade
+Primeiro em Largura
+A*
+Branch and Bound
+
+Branch and Bound
+Primeiro o Melhor
+Primeiro em Largura
+Primeiro em Profundidade
+
+Nenhuma das anteriores.
+Branch and Bound e Primeiro em Profundidade.
+A* e Primeiro o Melhor.
+Primeiro em Profundidade e Primeiro em Largura.
+
+Simulated Annealing
+GRASP
+Particle Swarm Intelligence
+Pesquisa Local Aleatorizada
+
+Pesquisa Tabu
+A*
+Branch and Bound
+Colónia de Formigas
+
+Se no algoritmo A* colocarmos h(n)=0, este degenera no primeiro em profundidade com retrocesso.
+Uma das desvantagens da procura em profundidade com cortes face à procura em profundidade é que pode não encontar a solução se esta estiver além do nível de corte.
+O algoritmo subir a colina pode estagnar em máximo ou mínimos locais.
+O algoritmo primeiro em largura garante a obtenção da solução no nível mais próximo da raiz.
+
+Simulated Annealing
+Primeiro em Largura
+Pesquisa Local
+Branch and Bound
+
+O custo para ir da origem ao nó n
+A profundiade do nó n
+A estimativa do custo para ir do nó n até ao nó destino
+O custo para ir do nó n ao nó destino.
+
+Nenhuma das anteriores.
+O algoritmo subir a colina é uma boa estratégia para evitar planaltos.
+No algoritmo primeiro em profundidade deve expandir-se o nó que esta mais proximo do destino.
+O método de pesquisa primeiro em profundidade com níveis de corte garante que se encontra a melhor solução.
+
+Nenhuma das anteriores.
+Não permite fazer cruzamento em 1 ponto de corte.
+Não permite fazer cruzamentos em 2 pontos de corte.
+Permite fazer cruzamentos em N pontos de corte, se e só se N > 2.
+
+11100010
+11101010
+10101011
+10100010
+
+00110010
+00110111
+10000010
+11000111
+
+00110111
+10000011
+11000111
+00110010
+
+547586
+567384
+347865
+475386
+
+n^m
+n+m
+n*m
+m^n
+
+14400
+510
+120
+15
+
+(3^2)!
+3^2
+(9!)^2
+9^2

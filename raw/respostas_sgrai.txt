@@ -1,0 +1,479 @@
+  Todas as anteriores
+  Recorrem a técnicas de paralelismo para atingir elevados desempenhos
+  Aliviam o processador central de diversas tarefas tais como transformações, recorte, projeção e mapeamento de texturas
+  Possuem normalmente memória dedicada
+
+  É possível desde que se usem coordenadas homogéneas
+  Não é possível; seria necessária uma adição de matrizes que refletisse o deslocamento de P para P’
+  É possível desde que a matriz T seja a matriz identidade
+  Todas as anteriores
+
+  A dimensão aparente dos objetos visualizados diminui com o aumento da distância à câmara
+  O volume de visualização tem a forma de um paralelepípedo
+  O volume de visualização tem a forma de um tronco de cone
+  Nenhuma das anteriores
+
+  Há uma lista de vértices e as faces referenciam os seus vértices através de apontadores para essa lista
+  Cada face do sólido armazena explicitamente a lista ordenada das coordenadas dos seus vértices
+  A redundância de informação é maior do que na codificação explícita
+  Todas as anteriores
+
+  Nenhuma das anteriores
+  As fontes de luz omnidirecionais não têm componente especular
+  As fontes de luz posicionais encontram-se localizadas a uma distância infinita da cena
+  As fontes de luz direcionais são atenuadas
+
+  Todas as anteriores
+  A componente de iluminação ambiente não depende da geometria
+  A componente de iluminação difusa não depende da posição do observador
+  A componente de iluminação especular depende da posição do observador, do objeto e da fonte de luz
+
+  Devolve o ponto do objeto correspondente a cada ponto do espaço de textura
+  Devolve o valor de uma determinada propriedade – cor, por exemplo – correspondente a cada ponto do espaço de textura
+  Devolve um apontador para uma lista dos objetos aos quais foram aplicados essas texturas
+  Nenhuma das anteriores
+
+  Nenhuma das anteriores
+  Não é adotado o ponto de vista do sistema
+  Estão envolvidos aspetos tais como os fatores humanos e as especificações de usabilidade
+  A definição de algoritmos e estruturas de dados é irrelevante face a outros aspetos
+
+  Todas as anteriores
+  A opção Undo deveria preceder a opção Redo
+  Deveria existir uma linha a separar as opções Find e Replace das restantes opções
+  A sequência de teclas aceleradoras associada à opção Find não constitui uma boa escolha
+
+  O objeto de interação que desencadeia essa tarefa deverá estar desativado, de modo a impedir o acionamento do mesmo por parte do utilizador
+  O objeto de interação que desencadeia essa tarefa deverá permanecer ativado e, caso o utilizador o acione, deverá surgir uma mensagem de erro a explicar a razão pela qual a tarefa não pode ser executada
+  O objeto de interação que desencadeia essa tarefa deverá permanecer ativado e, caso o utilizador o acione, nada acontecerá
+  Nenhuma das anteriores
+
+  Nenhuma das anteriores
+  Não deve contemplar o uso de teclas aceleradoras, pois o mesmo implica um esforço de memorização considerável por parte do utilizador
+  Deve ser centrado no sistema e não no utilizador, pois o comportamento deste último é imprevisível
+  Não deve basear-se em analogias com o mundo real, pois pode suscitar confusão na mente do utilizador
+
+  Deve ser redundante, de modo a ter em conta as limitações dos utilizadores daltónicos
+  Pode ser usada livremente, desde que no splash screen da aplicação apareça um aviso a desaconselhar o seu uso por utilizadores daltónicos
+  Deve ser evitada a todo o custo, por causa dos utilizadores daltónicos
+  Nenhuma das anteriores
+
+  Devem ser fraseadas de forma positiva e construtiva
+  Devem atribuir a culpa do erro ao utilizador
+  Devem conter antropomorfismos
+  Todas as anteriores
+
+  Caracterizam-se por uma complexidade de processamento O(n.º de píxeis)
+  Permitem efetuar operações como a rotação e a escala sem perda de precisão
+  São representações obsoletas, tendo sido substituídas pelas suas congéneres vetoriais
+  Todas as anteriores
+
+  Nenhuma das anteriores
+  Obriga a que o seu comprimento seja sempre unitário
+  Distingue-se da dos pontos pelo facto de w ser diferente de zero
+  Não é de todo possível, pois as coordenadas homogéneas só se aplicam aos pontos
+
+  A ordem das transformações é importante
+  As dimensões e ângulos do objeto transformado são sempre preservadas
+  As translações precedem sempre as rotações
+  Nenhuma das anteriores
+
+  Há muita redundância de informação
+  Há uma lista de vértices e as faces referenciam os seus vértices através de ponteiros
+  Há uma lista de arestas e as faces referenciam as suas arestas através de ponteiros
+  As adjacências são determinadas em tempo constante
+
+  Calcular o produto vetorial dos vetores definidos pelos vértices do triângulo e dividir o vetor resultante pelo seu comprimento
+  Calcular o produto escalar dos vetores definidos pelos vértices do triângulo e multiplicar o valor assim obtido pelas coordenadas do ponto médio do triângulo
+  Calcular o produto externo dos vetores definidos pelos vértices do triângulo e dividir o valor assim obtido pela área do triângulo
+  Dividir o triângulo genérico em dois ou mais triângulos isósceles
+
+  Todas as anteriores
+  Requer a especificação de normais
+  É um modelo local de iluminação
+  Contempla apenas os caminhos para a luz do tipo fonte luminosa/superfície/observador
+
+  É característica dos materiais altamente polidos
+  Não depende da posição do observador
+  Não pode ser usada em fontes de luz omnidirecionais
+  Todas as anteriores
+
+  O objeto de interação que desencadeia a tarefa deverá estar desativado, de modo a impedir o acionamento do mesmo por parte do utilizador.
+  O objeto de interação que desencadeia a tarefa deverá permanecer ativado e, caso o utilizador o acione, deverá surgir uma mensagem de erro a explicar a razão pela qual a tarefa não pode ser efetuada.
+  O objeto de interação que desencadeia a tarefa deverá permanecer ativado e, caso o utilizador o acione, nada acontecerá.
+  Nenhuma das anteriores.
+
+  2^8 níveis de azul.
+  Uma resolução de 2^6 x 2^4 píxeis.
+  2^32 cores.
+  Nenhuma das anteriores.
+
+  Linear.
+  Rígida.
+  Projetiva.
+  Todas as anteriores.
+
+  As dimensões aparentes dos objetos não dependem da distância à câmara.
+  As dimensões aparentes dos objetos diminuem com o aumento da distância à câmara.
+  O volume de visualização tem a forma de um tronco de pirâmide.
+  Nenhuma das anteriores.
+
+  Estabelece um sistema de coordenadas sobre a superfície herdado de um sistema de coordenadas no plano.
+  Não é usada na representação de sólidos por fronteira (B-Rep).
+  É válida mesmo quando a superfície se auto-interseta.
+  Todas as anteriores.
+
+  Nenhuma das anteriores.
+  Não é compatível com as fontes de luz direcionais.
+  É característica dos materiais baços ou foscos.
+  Depende do ângulo de incidência da fonte de luz, mas não depende da posição do observador.
+
+  Todas as anteriores
+  Misturando a cor da superfície com uma cor predefinida
+  Modulando a cor da superfície com a dos téxeis
+  Substituindo a cor da superfície pela dos téxeis
+
+  Mantém para cada pixel um valor de profundidade.
+  Opera no espaço do objeto.
+  Não é suscetível de ser implementado em hardware.
+  Nenhuma das anteriores.
+
+  “O código do item deverá estar compreendido entre 0 e 9999”.
+  “O código do item é inválido”.
+  “O código do item é inválido. Consulte o manual de instruções”.
+  “O código do item encontra-se fora da gama permitida”.
+
+  2^24 cores
+  Uma resolução de 1024 x 768 píxeis
+  24 níveis de vermelho
+  Nenhuma das anteriores
+
+  Escalamento
+  Translação
+  Rotação
+  Nenhuma das anteriores
+
+  O volume de visualização tem a forma de um tronco de pirâmide e as dimensões aparentes dos objetos diminuem com o aumento da distância à câmara
+  O volume de visualização tem a forma de um paralelepípedo e as dimensões aparentes dos objetos não dependem da distância à câmara
+  O volume de visualização tem a forma de um paralelepípedo e as dimensões aparentes dos objetos diminuem com o aumento da distância à câmara
+  O volume de visualização tem a forma de um tronco de pirâmide e as dimensões aparentes dos objetos não dependem da distância à câmara
+
+  Dividem o espaço em cubos cujos lados são potências de 2
+  Dividem o espaço em cubos de igual dimensão
+  Dividem o espaço em poliedros convexos, não necessariamente cúbicos
+  Nenhuma das anteriores
+
+  Depende do co-seno do ângulo de incidência da luz
+  Não depende da geometria do objeto iluminado
+  Depende da posição do observador
+  Nenhuma das anteriores
+
+  Todas as anteriores
+  Mipmaps
+  Repetição de padrões de texturas
+  A modulação da cor da superfície do objeto com a dos téxeis
+
+  Pinta os objetos mais distantes antes de pintar os mais próximos
+  Pinta os objetos mais próximos antes de pintar os mais distantes
+  Só é aplicável a cenas compostas por objetos poliédricos fechados
+  Nenhuma das anteriores
+
+  Designa-se por recorte (clipping) e é normalmente efetuada pelo GPU, se existir
+  Designa-se por anti-discretização (anti-aliasing) e é normalmente efetuada pelo GPU, se existir
+  Designa-se por rasterização (scan conversion) e é sempre efetuada pelo CPU
+  Nenhuma das anteriores
+
+  Nenhuma das anteriores
+  Não podem ser representadas na forma matricial
+  São exemplos de transformações rígidas
+  São exemplos de transformações projetivas
+
+  O co-seno do ângulo descrito pelos vetores
+  Um vetor unitário
+  Um vetor perpendicular aos vetores originais
+  Nenhuma das anteriores
+
+  glFrustum() ou gluPerspective()
+  glOrtho() ou glFrustum()
+  glOrtho() ou gluPerspective()
+  Nenhuma das anteriores
+
+  Todas as anteriores
+  É usada na representação de sólidos por fronteira (B-Rep)
+  Armazena informação numa estrutura associada às arestas
+  Permite determinar em tempo constante os 9 tipos de adjacência de vértices, arestas e faces
+
+  Depende da posição da fonte de luz
+  Não requer o conhecimento das normais
+  Depende da posição do observador
+  Todas as anteriores
+
+  Nenhuma das anteriores
+  Especificar para a componente de luz ambiente emitida pela fonte um valor não nulo
+  Especificar para a posição da fonte um conjunto de coordenadas homogéneas tal que w = 1
+  Especificar para o ângulo de cutoff um valor compreendido entre 0° e 90°
+
+  Cada píxel é descrito por 3 bits para a componente vermelha, 3 bits para a verde e 2 bits para a azul
+  Cada píxel é descrito por 8 bits para a componente vermelha, 8 bits para a verde e 8 bits para a azul
+  Cada píxel é descrito por 1024 bits para a componente vermelha, 1024 bits para a verde e 1024 bits para a azul
+  Nenhuma das anteriores
+
+  É possível, mas requer uma adição de matrizes
+  Não é de todo possível
+  É possível mediante uma simples multiplicação de matrizes
+  Nenhuma das anteriores
+
+  A transformação de viewport converte as coordenadas normalizadas de dispositivo em coordenadas de janela
+  A matriz de projeção converte as coordenadas de recorte em coordenadas normalizadas de dispositivo
+  A matriz de modelação e visualização converte as coordenadas do objeto em coordenadas de recorte
+  Todas as anteriores
+
+  É fácil exibir um ponto sobre a superfície do objeto
+  É fácil determinar, dado um ponto, se o mesmo se encontra no interior, na fronteira ou no exterior do objeto
+  As operações booleanas são avaliadas com facilidade
+  Nenhuma das anteriores
+
+  A componente especular de iluminação
+  A componente difusa de iluminação
+  A componente ambiente de iluminação
+  Todas as anteriores
+
+  Permite que texturas de diferentes níveis de resolução sejam aplicadas de forma adaptativa
+  É aplicável aos contextos de magnificação
+  Não pode ser usada em conjugação com as projeções perspetivas
+  Nenhuma das anteriores
+
+  Matriciais
+  Vetoriais
+  Tensoriais
+  Nenhuma das anteriores
+
+  Todas as anteriores
+  glTranslated(1.0, 2.0, 3.0); glTranslated(-1.0, -2.0, -3.0);
+  glRotated(30.0, 0.0, 1.0, 0.0); glRotated(-30.0, 0.0, 1.0, 0.0);
+  glScaled(8.0, 4.0, 2.0); glScaled(0.125, 0.25, 0.5);
+
+  Todas as anteriores
+  As grelhas dividem o espaço em cubos de igual dimensão
+  As octrees dividem o espaço em cubos cujos lados são potências de 2
+  As BSP-trees dividem o espaço em poliedros convexos
+
+  A componente especular de iluminação
+  A componente ambiente de iluminação
+  A componente difusa de iluminação
+  Todas as anteriores
+
+  Posicional
+  Direcional
+  Omnidirecional
+  Nenhuma das anteriores
+
+  Corrigir o efeito de deformação que decorre da utilização de técnicas simples de interpolação linear no mapeamento de texturas em polígonos
+  Corrigir o efeito de discretização (aliasing) que decorre da utilização de frame buffers de baixa resolução
+  Corrigir o efeito de diminuição da dimensão aparente de um objeto quando a distância do mesmo à câmara aumenta
+  Nenhuma das anteriores
+
+  Requer a prévia realização de uma operação de rasterização
+  Não é de todo possível, pois as representações vetoriais não são compatíveis com os dispositivos matriciais
+  Requer técnicas sofisticadas de reconhecimento de padrões
+  Só é possível em sistemas cuja arquitetura contempla um processador gráfico(GPU)
+
+  Em todas as circunstâncias
+  Em circunstância nenhuma
+  Só quando os vetores que caracterizam as translações forem paralelos
+  Só quando os vetores que caracterizam as translações forem perpendiculares
+
+  Um vetor de componentes x = 1, y = 0, z = 1
+  Um ponto de coordenadas x = 1, y = 0, z = 1
+  Um vetor de componentes x = 0, y = 1, z = 0
+  Um ponto de coordenadas x = 0, y = 1, z = 0
+
+  modelação, visualização, projeção, viewport
+  modelação, visualização, viewport, projeção
+  visualização, modelação, viewport, projeção
+  Nenhuma das anteriores.
+
+  O modelo é representado por uma árvore em que os nós internos designam operações de conjuntos ou transformações lineares afim e as folhas denotam objetos primitivos
+  O modelo é representado através da superfície que o delimita
+  O modelo é representado com base na divisão do espaço em cubos cujos lados são potências de base 2
+  Há ambiguidade, pois a uma mesma representação podem corresponder vários modelos
+
+  Na descrição de cada aresta introduzem-se referências para as duas faces que lhe são adjacentes
+  Não há uma lista de vértices
+  As faces referenciam os seus vértices através de ponteiros
+  Nenhuma das anteriores
+
+  Pela componente especular depende da posição do observador
+  Pela componente ambiente depende da geometria do objeto iluminado
+  Pela componente difusa não depende do ângulo de incidência da luz
+  Todas as anteriores
+
+  Escolhe o texel que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida, efetua uma interpolação linear destes dois valores
+  Escolhe o texel que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida efetua uma interpolação linear destes dois valores
+
+  Todas as anteriores
+  Recorrem a técnicas de paralelismo para aumentar o desempenho
+  Chamam a si a realização de algumas tarefas tais como as transformações e projeções
+  Normalmente usam memória separada da do sistema
+
+  Transforma necessariamente os segmentos de reta em segmentos de reta
+  Transforma necessariamente a origem na própria origem
+  Preserva necessariamente as dimensões e os ângulos dos objetos
+  Nenhuma das anteriores
+
+  Um ponto de coordenadas x = 0.25, y = 0.5, z = 0.75
+  Um ponto de coordenadas x = 1, y = 2, z = 3
+  Um vetor de componentes x = 1, y = 2, z = 3
+  Um vetor de componentes x = 0.25, y = 0.5, z = 0.75
+
+  Se a = 0.5 então o ponto R coincide com o ponto médio do segmento PQ
+  Se 0 < a < 1 então o ponto R não pertence ao segmento PQ
+  Se a = 0 então o ponto R coincide com o ponto Q
+  Se a = 1 então o ponto R coincide com o ponto P
+
+  matriz de modelação e visualização, matriz de projeção, divisão perspetiva, transformação viewport
+  matriz de modelação e visualização, transformação viewport, divisão perspetiva, matriz de projeção
+  matriz de projeção, transformação viewport, matriz de modelação e visualização, divisão perspetiva
+  Nenhuma das anteriores
+
+  Pode gerar modelos ambíguos
+  Fornece a descrição matemática das superfícies que delimitam o objeto
+  Contém informação sobre o fecho e a conectividade dos objetos modelados
+  Nenhuma das anteriores
+
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida efetua uma interpolação linear destes dois valores
+  Escolhe o texel que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Escolhe o texel que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida, efetua uma interpolação linear destes dois valores
+
+  Nenhuma das anteriores
+  Não deve contemplar o uso de teclas aceleradoras, pois o mesmo implica um esforço de memorização considerável por parte do utilizador
+  Deve ser centrado no sistema e não no utilizador, pois o comportamento deste último é imprevisível
+  Não deve basear-se em analogias com o mundo real, pois pode suscitar confusão na mente do utilizador
+
+  Dispensa o recurso a técnicas sofisticadas de reconhecimento de padrões
+  Não é de todo possível, dada a incompatibilidade do dispositivo e da representação
+  Requer a prévia realização de uma operação de rasterização
+  Só é possível em sistemas cuja arquitetura contempla um processador gráfico (GPU)
+
+  Todas as anteriores
+  São exemplos de transformações lineares afim
+  São exemplos de transformações rígidas
+  Podem ser representadas na forma matricial
+
+  Um vetor de componentes x = 6, y = 12, z = 8
+  Um ponto de coordenadas x = 6, y = 12, z = 8
+  Um sólido com 6 faces, 12 arestas e 8 vértices
+  Nenhuma das anteriores
+
+  Coordenadas de olho, coordenadas de recorte, coordenadas normalizadas de dispositivo, coordenadas de janela
+  Coordenadas normalizadas de dispositivo, coordenadas de recorte, coordenadas de olho, coordenadas de janela
+  Coordenadas de olho, coordenadas de recorte, coordenadas de janela, coordenadas normalizadas de dispositivo
+  Nenhuma das anteriores
+
+  O modelo é representado através da superfície que o delimita
+  Há ambiguidade, pois a uma mesma representação podem corresponder vários modelos
+  O modelo é representado por uma árvore em que os nós internos designam operações de conjuntos ou transformações lineares afim e as folhas denotam objetos primitivos
+  O modelo é representado com base na divisão do espaço em cubos cujos lados são potências de base 2
+
+  Nenhuma das anteriores
+  Depende da geometria do objeto iluminado
+  Depende do co-seno do ângulo de incidência da luz
+  Depende da posição do observador
+
+  Escolhe o texel que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel no mipmap que melhor se adequa ao contexto de minificação existente
+  Escolhe o texel que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida, efetua uma interpolação linear destes dois valores
+  Calcula uma média pesada da matriz de 2 x 2 texels que mais se aproxima do centro do pixel em cada um dos dois mipmaps que melhor se adequam ao contexto de minificação existente; em seguida efetua uma interpolação linear destes dois valores
+
+  Três componentes: x, y e w, em que w = 0
+  Apenas duas componentes: x e y
+  Quatro componentes: x, y, z e w, em que w = 1
+  Nenhuma das anteriores
+
+  Nenhuma das anteriores
+  Um objeto refletido no plano OXY
+  Um objeto rodado em torno do eixo dos X
+  Um erro, pois nas transformações de escalamento não são permitidos coeficientes negativos
+
+  Ajustar a lente/objetiva da câmara
+  Mover e/ou deformar os objetos abrangidos pelo volume de visualização da câmara
+  Mover e/ou orientar a câmara
+  Ampliar/reduzir a fotografia tirada pela câmara
+
+  Devolve, para cada ponto do espaço de textura, o ponto correspondente do objeto ao qual a textura está a ser aplicada
+  Devolve, para cada ponto do espaço de textura, a cor do objeto ao qual a textura está a ser aplicada
+  Não pode basear-se na descrição paramétrica da superfície do objeto ao qual a textura está a ser aplicada
+  Nenhuma das anteriores
+
+  Nenhuma das anteriores
+  Não deve ser contemplada, pois diminui significativamente a performance do utilizador na realização da tarefa
+  Não deve ser feita de forma hierárquica, pois aumenta significativamente o esforço de memorização imposto ao utilizador
+  Só se aplica às interfaces de linha de comandos
+
+  Caracterizam-se por uma complexidade de processamento O(n.º de píxeis)
+  Consistem em coleções de objetos geométricos tais como pontos, segmentos de linhas retas e polígonos
+  Permitem que operações como a rotação e a escala sejam efetuadas quase sem perda de precisão
+  Podem ser convertidas em representações vetoriais com base em técnicas de rasterização (scan conversion)
+
+  Um ponto com coordenadas (x + vx, y + vy, z + vz)
+  Um vetor com componentes (x * vx, y * vy, z * vz)
+  Um ponto com coordenadas (x * vx, y * vy, z * vz)
+  Um vetor com componentes (x + vx, y + vy, z + vz)
+
+  Quando o vetor que caracteriza a translação for paralelo ao eixo da rotação
+  Nunca
+  Quando o vetor que caracteriza a translação for perpendicular ao eixo da rotação
+  Sempre que usarmos coordenadas homogéneas
+
+  Posicionar/orientar a câmara
+  Revelar as fotografias tiradas pela câmara
+  Ajustar a lente/objetiva da câmara
+  Posicionar/orientar/deformar os objetos da cena
+
+  Não é atenuada pela distância entre a fonte de luz e o objeto iluminado
+  Depende do co-seno do ângulo de incidência da luz
+  Depende das posições do observador, do objeto e da fonte de luz
+  Simula a fluorescência dos materiais constituintes dos objetos
+
+  Deve contemplar o uso de teclas aceleradoras, não obstante o mesmo implicar um esforço considerável de memorização para o utilizador
+  Deve ser centrado no sistema e não no utilizador, pois o comportamento deste último é imprevisível
+  Não deve basear-se em analogias com o mundo real, pois pode suscitar confusão na mente do utilizador
+  Nenhuma das anteriores
+
+  Deve ser sujeito a confirmação, não obstante o esforço extra que tal implica para o utilizador
+  Deve ser acompanhado de uma mensagem de alerta para o administrador do sistema
+  Não deve ser permitido sejam quais forem as circunstâncias, pois a sua incorreta utilização pode acarretar custos muito elevados para o utilizador
+  Nenhuma das anteriores
+
+  Consistem em coleções de objetos geométricos tais como pontos, segmentos de linhas retas e polígonos
+  Caracterizam-se por uma complexidade de processamento O(n.º de píxeis)
+  Implicam uma perda significativa de precisão na realização de operações como a rotação e a escala
+  Podem ser convertidas em representações matriciais com base em técnicas de reconhecimento de padrões
+
+  Um vetor com componentes (x1 - x0, y1 - y0, z1 - z0)
+  Um ponto com coordenadas (x1 - x0, y1 - y0, z1 - z0)
+  Um escalar com o valor (x1 - x0) * (y1 - y0) * (z1 - z0)
+  Uma matriz quadrada 3 x 3
+
+  Um objeto de dimensões idênticas às do objeto original
+  Um objeto deformado, pois a transformação que resulta da composição de translações e rotações não é rígida
+  Um objeto centrado na origem
+  O mesmo efeito que obteríamos se aplicássemos as mesmas transformações pela ordem inversa
+
+  O triângulo está orientado com a face da frente voltada para o observador
+  O triângulo está orientado de perfil para o observador
+  O triângulo está orientado com a face de trás voltada para o observador
+  Algo está errado, pois a orientação de três pontos complanares não pode assumir valores positivos
+
+  Simula a fluorescência dos materiais constituintes dos objetos
+  Depende do co-seno do ângulo de incidência da luz
+  Depende das posições do observador, do objeto e da fonte de luz
+  É atenuada pela distância entre a fonte de luz e o objeto iluminado
+
+  Uma fonte de luz omnidirecional
+  Uma fonte de luz posicional rodada de 180º
+  Uma fonte de luz direcional paralela à linha de visão da câmara
+  Um projetor de luz

@@ -1,0 +1,314 @@
+﻿O tempo que o escalonador tinha atribuído ao processo (time slice) terminar e consequentemente ser colocado na fila dos ready.
+O processo emitir um pedido IO, e consequentemente ser colocado numa fila de um IO device, passando para o estado de ready.
+O processo pode criar um novo processo, ficando à espera que ele termine e consequentemente ser colocado na fila dos ready.
+O processo pode ser removido da UCP em consequência duma interrupção passando sempre para o estado de waiting.
+
+Permite que seja substituído um processo em execução por outro processo existente na fila de ready.
+Obriga à gravação de toda a memória utilizada pelo processo para disco.
+Obriga à paragem de qualquer operação de IO do processo que é retirado de execução.
+É feita sem qualquer intervenção do sistema operativo.
+
+Desencadeia a transferência do controlo para uma rotina de serviço. 
+Não permite assinalar o acontecimento de um evento. 
+Não obriga ao armazenamento do endereço da instrução interrompida.
+Não é transparente para o processo que é interrompido.
+
+O Round-Robin favorece a multiprogramação. 
+Favorecem os processos IOBound. 
+O FCFS tem uma implementação mais complexa. 
+O Round-Robin favorece os processos mais prioritários.
+
+Editor, compilador linker.
+Editor, linker e compilador.
+Linker, editor compilador.
+Compilador, linker e editor.
+
+Identificação do processo, estado do processador e informação de controlo do processo.
+Identificação do processador e identificação do processo.
+Identificação do processador, estado do processador e informação de controlo do processo.
+Informação do estado do processo.
+
+A sua performance está relacionada com o método de curto prazo utilizado em cada uma das filas.
+A sua performance está, apenas relacionada, com o método para colocar os processos nas várias filas.
+Tem que usar sempre o método Round-Robin na fila mais prioritária.
+Favorece os processos IOBound.
+
+Apenas pode ser utilizado em conjunto com um critério de escalonamento para retirar processos da memória principal para a memória secundária.
+Apenas pode ser utilizado em conjunto com o critério de escalonamento Round-Robin para retirar processos da memória principal para a memória secundária.
+Apenas pode ser utilizado em conjunto com o critério de escalonamento First-Come First Served para retirar processos da memória principal para a memória secundária.
+Permite retirar um processo da memória principal que se encontre no estado de Waiting à espera da conclusão de uma operação de IO.
+
+Simétricos podem correr em simultâneo vários processos sem existir degradação no desempenho.
+Assimétricos não partilham o barramento, o relógio e a memória.
+Simétricos não partilham o barramento, o relógio e a memória.
+Assimétricos apenas podem ter um processo no estado running em cada instante.
+
+Pode ser constituído por um ou por vários processos.
+É sempre constituído por um único processo.
+É sempre constituído por vários processos.
+Nunca pode ser constituído por vários processos.
+
+Garantem a multi-programaçao.
+Executam-se com a mesma frequência.
+São apenas responsáveis pela seleção dos processos no estado de ready.
+São ambos responsáveis pela seleção dos processos no estado de new e de ready.
+
+Round-Robin.
+FirstIn FirstOut.
+Escalonamento por prioridades. 
+Escalonamento multinivel com realimentação por filas.
+
+Que um programa seja executado transparentemente num sistema multiprocessador simétrico.
+Que um programa Seja executado transparentemente num sistema multiprocessador assimétrico. 
+Que um programa seja executado em várias máquinas. 
+Que um programa seja compilado para que possa ser executado em várias máquinas diferentes.
+
+Ambos favorecem os processos CPUBound.
+O FCFS favorece a multiprogramagão.
+Ambos favorecem os processos IOBound.
+O FCFS tem uma implementação mais complexa.
+
+Aumenta o tempo de resposta de processos interativos quando estão a concorrer Com processos CPUBound de prioridade inferior.
+Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de IO.
+Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.
+Favorece os processos CPUBound em detrimento dos processos IO Bound de igual prioridade.
+
+Todas as anteriores.
+O tratamento de interrupções.
+A sincronização de processos.
+A comunicação de processos.
+
+A sua performance está relacionada, em parte, com o método de escalonamento de curto prazo utilizado em Cada uma das filas.
+A sua performance está, apenas relacionada, com o método para atribuir os processos as filas.
+A sua performance está relacionada, apenas, com o método de escalonamento de Curto prazo.
+Favorece os processos CPUBound.
+
+Round-Robin.
+First in, first out.
+Escalonamento por prioridades.
+Escalonamento multinível com realimentação por filas.
+
+Encapsular o hardware e o Sistema Operativo como se fossem hardware.
+Permitir o acesso transparente a máquinas remotas que corram num Sistema Operativo diferente. 
+Suportar diferentes tipos de processadores na mesma máquina.
+Nenhuma das anteriores.
+
+Não permitir o acesso direto ao hardware, por parte das aplicações, obrigando-as a utilizar os serviços adequados fornecidos pelo Sistema Operativo.
+Permitir o acesso direto ao hardware por parte das aplicações.
+Obrigar a que cada camada tenha as Suas próprias funções para aceder diretamente ao hardware.
+Nenhuma das anteriores.
+
+Ambos favorecem os processos CPUBound.
+O FCFS favorece a multiprogramação.
+Ambos favorecem os processos IOBound.
+O FCFS tem uma implementação mais complexa.
+
+Aumenta o tempo de resposta de processos interativos quando estão a concorrer com processos CPUBound de prioridade inferior.
+Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de IO.
+Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.
+Favorece os processos CPUBound em detrimento dos processos IO Bound de igual prioridade.
+
+Identificação do processo, estado do processador e informação de controlo do processo. 
+Identificação do processador e identificação do processo. 
+Identificação do processador, estado do processador e informação de controlo do processo.
+Informação do estado do processo e identificação do sistema operativo, em que o processo está a correr.
+
+O tempo que o escalonador tinha atribuído ao processo (time slice) terminar e consequentemente ser Colocado no estado de ready.
+O processo emitir um pedido IO, e consequentemente ser colocado numa fila de um IO device, passando para o estado de ready.
+O processo pode criar um novo processo, ficando à espera que ele termine e consequentemente ser Colocado na fila dos ready.
+O tempo que o escalonador tinha atribuído ao processo (time slice) terminar e consequentemente ser Colocado no estado de waiting.
+
+Round-Robin.
+Fist in First out.
+Escalonamento por prioridades.
+Escalonamento multinível com realimentação por filas.
+
+Aumenta o tempo de resposta de processos interativos quando estão a concorrer Com processos CPUBound de prioridade inferior.
+Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de IO.
+Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.
+Favorece os processos CPUBound em detrimento dos processos IO Bound de igual prioridade.
+
+Identificação do processo, zonas de memória utilizadas pelo processo e informação de controlo do processo.
+Identificação do processador e identificação do processo.
+Identificação do processador, estado do processador e informação de Controlo do processo.
+Informação do estado do processo.
+
+A execução de um processo depende não apenas da obtenção de um resultado correto, mas também da sua disponibilização antes de um determinado tempo (deadline).
+Se um processo concluir a sua computação com sucesso, mas antes do deadline do processo, pode levar o Sistema a falhar.
+A perda de um deadline leva sempre o sistema a falhar.
+Apenas pode ser executado um processo quando o anterior tiver terminado.
+
+Simétricos podem correr em paralelo até n processos.
+Assimétricos não partilham o barramento, o relógio e a memória.
+Simétricos não partilham o barramento, o relógio e a memória. 
+Simétricos podem correr em paralelo, no máximo, n-1 processos.
+
+Permite a execução de outros processos quando um processo executa operações de IO.
+Um escalonador deste tipo permite retirar um processo de execução (no estado de running) e substitui-lo por outro processo do utilizador existente na fila de ready por decisão do escalonador,
+Um Sistema deste tipo não permite a execução de rotinas de interrupção enquanto um processo não Sair do estado de running.
+Não permite a execução de outros processos quando um processo executa operações de IO.
+
+O método de escalonamento de curto prazo utilizado em cada uma das filas afeta a sua performance.
+A sua performance está, apenas relacionada, com o método para atribuir os processos às filas.
+A sua performance está relacionada, apenas, com o método de escalonamento de curto prazo utilizado em Cada Uma das filas.
+Favorece os processos IOBound.
+
+Um escalonador deste tipo permite retirar um processo de execução (no estado de running) e substitui-lo por outro processo do utilizador existente na fila de ready de acordo com a regra de escalonamento vigente.
+Um sistema deste tipo não permite a execução de rotinas de interrupção enquanto um processo não Sair do estado de running. 
+Não permite a execução de outros processos quando um processo executa operações de IO.
+Um escalonador deste tipo permite retirar um processo de execução (no estado de running) e substitui-lo por processos que se encontrem na fila de waiting.
+
+Transição do estado running para o estado ready.
+Transição do estado ready para o estado running.
+Transição do estado running para o estado waiting.
+Transição do estado waiting para o estado ready.
+
+Ambos são algoritmos de alocação de memória.
+O algoritmo First Fit é um algoritmo de alocação de memória e o 2º é um algoritmo de escalonamento.
+Ambos são algoritmos de desfragmentação de memória. 
+Nenhuma das anteriores.
+
+Round-Robin (RR).
+First-Came, FirstServed (FCFS).
+Escalonamento por Prioridades.
+ShortestJob-First (SJF).
+
+Ao receber uma interrupção de hardware, o processador coloca em execução uma rotina de serviço, para essa interrupção especifica.
+Não permite assinalar o acontecimento de um evento.
+Não obriga ao armazenamento do endereço da instrução interrompida.
+Não é implementado pelo Sistema Operativo.
+
+Que um programa seja executado transparentemente num sistema multiprocessador simétrico.
+Que um programa seja executado transparentemente num sistema multiprocessador assimétrico. 
+Que várias partes do mesmo programa, possam ser executadas em diferentes máquinas.
+Nenhuma das anteriores.
+
+As operações de IO tinham que ser definidas pelos programas.
+A primeira versão já possuía um sistema operativo residente em memória. 
+Possibilitavam que vários programas corressem concorrentemente.
+A primeira versão já possuía o utilitário Monitor.
+
+É utilizado um esquema de endereçamento de memória de 64 bits.
+O maior valor inteiro possível de ser representado é sempre superior ao de um sistema computacional com uma palavra de 32 bits.
+Os registos de uso genérico são de 16 bits. 
+Sempre que se armazena um byte em memória são desperdiçados 7 bytes de memória. 
+
+Ready.
+Running.
+Waiting.
+New.
+
+Todas as anteriores são verdadeiras.
+A sua performance está relacionada com o método de escalonamento de curto prazo utilizado em cada uma das filas.
+A sua performance esta relacionada com o método para atribuir os processos as varias filas.
+Cada fila tem prioridade absoluta sobre outra fila.
+
+O requisito essencial é permitir a interação em tempo real entre os vários processos existentes na fila de ready. 
+O requisito essencial é ter um bom tempo de resposta e dividirmos recursos de forma igual.
+O requisito essencial é permitir a interação entre os vários processos existentes na fila de ready. 
+Nenhuma das anteriores é verdadeira.
+
+É denominado de processor sharing se o time quantum for pequeno. 
+Favorece os processos do tipo IOBound. 
+Não é adequado para sistemas multi-utilizador e multitarefa. 
+Nenhuma das anteriores é verdadeira.
+
+Apenas o escalonador de curto prazo.
+Os Escalonadores de longo e médio prazo.
+Apenas o escalonador de médio prazo.
+Todas as anteriores são verdadeiras.
+
+Serial Processing, Batch, Multiprogramming e Time Sharing. 
+Batch; Serial Processing, Time Sharing Multiprogramming. 
+Batch, Serial Processing, Multiprogramming e Time Sharing. 
+Batch, Multiprogramming, Serial Processing e Time Sharing.
+
+Um Programa em execução. 
+Um programa com vários fluxos de execução. 
+Um programa apenas Com um fitixo de execução. 
+Todas as anteriores são verdadeiras.
+
+Automática que executa ações determinadas por um programa.
+Autónoma que executa ações determinadas por um programa.
+Aleatória que executa ações determinadas por um programa.
+Manual que executa ações determinadas por um programa.
+
+Minimizar a utilização dos dispositivos de I/O.
+Maximizar a utilização de memória.
+Maximizar a utilização do processador.
+Maximizar a utilização dos dispositivos de I/O.
+
+Todos as anteriores são verdadeiras.
+Através de ações de utilizadores.
+Através de ações de outros processos.
+Que podem comunicar com outros processos.
+
+Todas as anteriores são verdadeiras.
+Ter excedido o tempo de execução atribuído.
+Ter ocorrido uma falta de memória.
+Ter executado uma instrução inválida.
+
+A sequência Ready => Running => Waiting é válida.
+A sequência Ready => Waiting => Running é válida.
+A sequência Running => Ready => Waiting é válida.
+Nenhuma das anteriores.
+
+O processo é removido da UCP e passa para o estado de Waiting.
+O processo continua na UCP e passa para o estado de Waiting.
+O processo é removido da UCP e passa para o estado de New.
+Todas as anteriores são verdadeiras.
+
+Pode haver várias filas para os processos que esperam por recursos de memória.
+Só pode haver uma fila para os processos prontos a executar.
+Pode haver várias filas onde estão processos à espera de operações I/O terminadas.
+Todas as anteriores são verdadeiras.
+
+Favorece os processos computacionalmente pesados em detrimento dos processos limitados por I/O de igual prioridade.
+Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de I/O.
+Favorece os processoslimitados por I/O em prejuízo dos processos limitados pela UCP.
+Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.
+
+A salvaguarda do processo que vai perder o acesso à UCP.
+A salvaguarda do processo que vai ter acesso à UCP.
+A salvaguarda do processo que vai perder acesso à UCP, apesar da informação do PCB estar danificada.
+Nenhuma das anteriores.
+
+Permitem conhecer o estado de todos os processos existentes.
+Não permitem conhecer o estado de todos os processos.
+Permitem conhecer o estado de todos os processos em execução.
+Permitem conhecer o estado de todos os processos anteriormente terminados.
+
+As operações de I/O tinham que ser definidas pelos programas.
+A primeira versão já possuía um sistema operativo residente em memória.
+Possibilitavam que vários programas corressem concorrentemente.
+A primeira versão já possuía o utilitário Monitor.
+
+Nenhuma das anteriores é verdadeira.
+Pode ser invocado apenas quando vários processos terminam.
+Tende a ser lento.
+É executado com alta frequência.
+
+Todas as anteriores são verdadeiras.
+Pode remover processos da memória.
+Pode retomar mais tarde a execução de processos.
+Recorre a Swapping para lidar com falta de memória.
+
+Imensas UCPs, imensa memória RAM e dispositivos de I/O.
+Imensas UCPs e pouca memória RAM. 
+Algumas UCPs e imensa memória RAM.
+Imensas UCPs e dispositivos de I/O.
+
+Processos e subprocessos alternam a execução de instruções e operações de I/O.
+Só subprocessos alternam a execução de instruções e operações de I/O.
+Só processos alternam a execução de instruções e operações de I/O.
+Todas as anteriores são verdadeiras.
+
+Editor, compilador e linker.
+Editor, linker e compilador.
+Linker, editor e compilador.
+Linker, compilador e editor.
+
+Tempo de resposta.
+Turnaround time.
+Deadline.
+Predictabilidade.

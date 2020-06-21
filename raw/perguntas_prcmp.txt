@@ -1,0 +1,63 @@
+﻿Durante a execução de um processo o que pode acontecer? 
+A comutação de processos: 
+O sistema de interrupções: 
+Relativamente aos métodos de escalonamento FCFS e Round-Robin pode-se dizer que: 
+Na elaboração de um programa é normal que a ordem de uso de ferramentas auxiliares envolvidas seja a Seguinte:
+O Process Control Block (PCB) possui informação sobre: 
+Relativamente ao método de escalonamento Multi-nivel com Realimentação por Filas: 
+Swapping é um mecanismo que:
+Os sistemas multi-processador:
+Num sistema operativo multitarefa, um programa:
+Relativamente aos escalonadores de longo e curto prazo pode-se dizer que:
+Se tivesse que escalonar um sistema multi-utilizadores e multi-tarefa qual das políticas de escalonamento lhe parece que seria a mais adequada: 
+Um sistema composto por várias unidades de processamento interligadas por uma rede de comunicações permite:
+Relativamente aos métodos de escalonamento First-Come FirstServed (FCFS) e Round-Robin pode-se dizer que: 
+O escalonamento preemptivo, por prioridades fixas, não e eficaz no escalonamento de processos em sistemas desktop, dado que:
+O módulo de Gestão de Processos de um Sistema Operativo fornece serviços para:
+Relativamente ao método de escalonamento Multi-nivel com Realimentação por Filas:
+Se tivesse que escalonar um sistema multiutilizador e multitarefa qual das politicas de escalonamento lhe parece que seria a mais adequada, assumindo que desconhece os perfis de execução dos processos:
+Um dos objetivos da utilização de Máquinas Virtuais:
+Um dos objetivos do Sistema Operativo ser organizado em camadas :
+Relativamente aos métodos de escalonamento FCFS e Round-Robin pode-se dizer que:
+O escalonamento preemptivo por prioridades fixas não é eficaz no escalonamento de processos em sistemas desktop, dado que:
+O Process Control Block (PCB) possui informação sobre:
+Durante a execução de um processo o que pode acontecer?
+Se tivesse que escalonar um sistema multiutilizador e multitarefa qual das políticas de escalonamento lhe parece que seria a mais adequada, assumindo que desconhece os perfis de execução dos processos:
+O escalonamento preemptivo por prioridades fixas não e eficaz no escalonamento de processos em sistemas desktop, dado que: 
+O Process Control Block (PCB) de um determinado processo possui informação sobre:
+Num sistema operativo de tempo real:
+Os sistemas multi-processador, Com n processadores:
+Num sistema em que o escalonamento utiliza um algoritmo não preemptivo, podemos dizer que:
+Relativamente ao método de escalonamento Multinivel com Realimentação por Filas, podemos afirmar que:
+Num sistema em que o escalonamento utiliza um algoritmo preemptivo, podemos dizer que:
+Num Sistema Operativo Com escalonamento não preempetivo uma das seguintes transições de estado não pode acontecer:
+Relativamente aos algoritmos First Fit e Best Fit podemos afirmar que:
+Se tivesse que escalonar um sistema multiutilizador e multitarefa qual das politicas de escalonamento lhe parece que seria a mais adequada, assumindo que desconhece os perfis de execução dos processos:
+O sistema de interrupções:
+Um sistema composto por Várias unidades de processamento interligadas por uma rede de comunicação permite:
+Relativamente aos equipamentos que recorriam ao processamento em série:
+Num sistema computacional com uma palavra de 64 bits:
+Qual o estado de um processo apos uma operação de IN/OUT?
+Relativamente ao método de escalonamento Multi-nivel por Filas, de prioridades fixas, podemos afirmar que:
+Relativamente aos sistemas interativos podemos afirmar que:
+O método de escalonamento Round-Robin (RR):
+Qual dos seguintes escalonadores permite controlar o número máximo de processos no estado de ready:
+Ordene temporalmente (do mais antigo para o mais recente) o aparecimento dos seguintes tipos de Sistemas Operativos:
+Um processo é:
+Um processo é um fluxo de atividade:
+Um sistema operativo multitarefa visa gerir a execução de processos de modo a:
+Um sistema operativo moderno permite a criação de processos:
+Quais das seguintes são razões para se interromper um processo em execução:
+Em termos de transições de estados de um processo:
+Um processo a correr na CPU necessita de uma operação de I/O, tendo este sido escalonado de forma não preemptiva e por prioridades:
+Num sistema operativo moderno:
+O escalonamento preemptivo por prioridades fixas não é eficaz no escalonamento de processos em sistemas desktop, dado que:
+Na comutação entre processos faz-se, entre outras operações:
+Em termos de estados dos processos (PCBs), as filas de escalonamento do SO:
+Relativamente aos equipamentos que recorriam ao processamento em série:
+Em termos de escalonador de longo prazo:
+O escalonador de médio-prazo:
+Um supercomputador atual é essencialmente composto por:
+Num sistema operativo atual:
+Na elaboração de um  programa é normal que a ordem de utilização das ferramentas auxiliares envolvidas seja a seguinte:
+Em termos de critérios de desempenho computacional orientado para o utilizador, o mais adequado a sistemas interativos é:

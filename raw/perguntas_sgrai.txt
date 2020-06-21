@@ -1,0 +1,96 @@
+Os processadores/aceleradores gráficos:
+A realização de uma translação de um ponto P para um ponto P’ distinto do anterior com base numa simples multiplicação de matrizes P' = T x P:
+Numa projeção em perspetiva:
+Na codificação de sólidos com base em ponteiros para uma lista de vértices:
+No modelo de iluminação do OpenGL:
+No modelo de Phong:
+Uma função de mapeamento de texturas:
+No domínio estrutural de desenvolvimento de interfaces com o utilizador:
+No seguinte menu de edição de uma aplicação informática de processamento de texto: Redo Ctrl+Y; Undo Ctrl+Z; Cut Ctrl+X; Copy Ctrl+C; Paste Ctrl+V; Clear Del; Find Shift+Del; Replace Ctrl+H:
+Considere uma situação em que o utilizador de um sistema de manipulação direta pretende efetuar uma tarefa que, tendo em conta o contexto de utilização em vigor naquele momento, é ilegal. Qual o comportamento mais adequado da interface face a esta situação?
+O design de uma interface do tipo WIMP:
+A utilização de códigos de cores em interfaces com o utilizador:
+As mensagens de erro:
+As representações gráficas matriciais:
+A representação de vetores em coordenadas homogéneas:
+Na composição de transformações lineares:
+Na codificação explícita de sólidos:
+Uma forma de determinar o vetor normal a um triângulo genérico consiste em:
+O modelo de iluminação do OpenGL:
+A componente especular do modelo de iluminação de Phong:
+Considere uma situação em que o utilizador de um sistema de manipulação direta pretende efetuar uma tarefa que, tendo em conta o contexto de utilização em vigor naquele momento, é ilegal. Qual o comportamento mais adequado da interface face a esta situação?
+Um sistema gráfico com um frame buffer RGB de 24 bits tem capacidade para reproduzir imagens com:
+Uma transformação de inclinação (shearing) constitui um exemplo de uma transformação:
+Numa projeção paralela:
+A parametrização da superfície que delimita um sólido:
+A contribuição dada pela componente de iluminação especular do modelo de Phong:
+De que forma ou formas permite o mecanismo de mapeamento de texturas do OpenGL aplicar uma textura à superfície de um objeto?
+O método Z-Buffer de determinação de visibilidade:
+Considere uma situação em que o utilizador, ao preencher o campo numérico de um formulário (o código de um item em stock, por exemplo), excede a gama permitida para o valor desse campo. Qual das seguintes mensagens de erro lhe parece mais adequada à situação?
+Um sistema gráfico com um frame buffer RGB de 24 bits tem capacidade para reproduzir imagens com:
+Suponha que pretende transformar a geometria de um objeto de modo a simular uma reflexão numa superfície plana (num espelho, por exemplo; ou na superfície de um lago). Deverá usar uma transformação de:
+Numa projeção perspetiva:
+As octrees:
+A contribuição dada pela componente de iluminação difusa do modelo de Phong:
+O mecanismo de mapeamento de texturas do OpenGL suporta:
+O algoritmo do pintor de determinação de visibilidade:
+A tarefa de supressão dos elementos de cena que se encontram fora da janela de visualização:
+As rotações e as escalas:
+Do produto escalar de dois vetores unitários resulta:
+Em OpenGL, para se obter uma projeção em perspetiva associada a um volume de visualização simétrico, deverá recorrer-se às instruções:
+A codificação Winged-Edge de sólidos:
+O cálculo das contribuições dadas pelas componentes difusa e especular do modelo de iluminação do OpenGL:
+Para iluminar uma cena com uma fonte de luz direcional, deverá:
+Num sistema gráfico dotado de um frame buffer RGB de 1024 x 1024 píxeis, 8 bits/píxel:
+A realização de uma translação de um ponto P para um ponto P’ distinto do anterior sem usar coordenadas homogéneas:
+No pipeline OpenGL de transformações:
+Na representação por fronteira de um objecto (B-rep):
+No modelo de iluminação do OpenGL, o vetor halfway é usado para calcular de uma forma simplificada:
+A técnica de filtragem de texturas designada por mipmapping:
+As vulgares impressoras de jato de tinta constituem exemplos de dispositivos:
+A qual das seguintes sequências de transformações corresponde uma matriz de transformação composta igual à matriz identidade?
+Nas representações de objetos por células:
+Em OpenGL, a alteração da propriedade GL_SHININESS de um material afeta a forma como é refletida:
+Um projetor constitui um exemplo de uma fonte de luz:
+A correção perspetiva permite:
+A visualização, no ecrã de um vulgar computador, de um gráfico descrito no formato SVG(Scalable Vector Graphics):
+Em que circunstâncias é que a ordem de composição de uma translação com outra translação é irrelevante?
+As coordenadas homogéneas [1, 0, 1, 0]T designam:
+Complete as seguintes frases: Na metáfora da câmara virtual adotada pelo OpenGL: As transformações de _______ servem para posicionar/orientar/deformar os objetos da cena. As transformações de _______ servem para posicionar/orientar a câmara. A transformação de _______ corresponde a ajustar a lente/objetiva da câmara. A transformação de _______ corresponde a revelar as fotografias tiradas pela câmara.
+Na representação de sólidos com base em operações de conjuntos (CSG – Constructive Solid Geometry):
+Na codificação de sólidos com base em ponteiros para uma lista de arestas:
+No modelo de Phong, a contribuição dada:
+No mapeamento de texturas em OpenGL, o processo de filtragem designado por GL_NEAREST_MIPMAP_LINEAR:
+As arquiteturas dotadas de processador gráfico(GPU):
+Uma transformação linear afim:
+As coordenadas homogéneas [1, 2, 3, 4]T designam:
+Considere dois pontos genéricos P e Q (não coincidentes) e o ponto R = P + a * (Q - P):
+Complete a seguinte frase: No pipeline de transformações do OpenGL as coordenadas correspondentes aos vértices dos objetos são multiplicadas pela ______________, dando origem às coordenadas de olho. Segue-se a multiplicação pela ______________, da qual resultam as correspondentes coordenadas de recorte. Em seguida, realiza-se a operação de ______________, obtendo-se assim as coordenadas normalizadas de dispositivo. Por último, efetua-se a ______________ e a consequente determinação das coordenadas de janela.
+A modelação por malha de arame (wireframe):
+No mapeamento de texturas em OpenGL, o processo de filtragem designado por GL_LINEAR_MIPMAP_LINEAR:
+O design de interfaces do tipo WIMP (Windows, Icons, Menus and Pointers):
+A visualização, no ecrã de um vulgar computador, de um gráfico descrito no formato BMP(Bitmap):
+As translações e as rotações:
+As coordenadas homogéneas [6, 12, 8, 0]T designam:
+Complete a seguinte frase: No pipeline de transformações do OpenGL as coordenadas correspondentes aos vértices dos objetos são multiplicadas pela matriz de modelação e visualização, dando origem às __________. Segue-se a multiplicação pela matriz de projeção, da qual resultam as correspondentes __________. Em seguida, realiza-se a operação de divisão perspetiva, obtendo-se assim as __________. Por último, efetua-se a transformação viewport e a consequente determinação das __________.
+Na representação de sólidos por fronteira (B-Rep – Boundary Representation):
+A contribuição dada pela componente de iluminação ambiente do modelo de Phong:
+No mapeamento de texturas em OpenGL, o processo de filtragem designado por GL_NEAREST_MIPMAP_NEAREST:
+Na representação de um vetor 2D em coordenadas homogéneas são usadas:
+Se a um determinado objeto 3D aplicarmos uma transformação de escalamento com coeficientes (-1, 1, 1) obteremos:
+As transformações projetivas servem, no modelo da câmara virtual do OpenGL, para:
+Uma função de mapeamento de textura:
+Num sistema interativo, a divisão de tarefas grandes e/ou complexas em subtarefas mais pequenas e simples:
+As representações matriciais de gráficos:
+Se a um ponto com coordenadas (x, y, z) adicionarmos um vetor com componentes (vx, vy, vz) obteremos:
+Em que circunstâncias é que a composição de uma translação com uma rotação não depende da ordem de aplicação destas transformações?
+Na metáfora da câmara virtual adotada pelo OpenGL, as transformações de visualização correspondem a:
+No modelo de Phong, a componente de iluminação ambiente:
+O design de uma interface WIMP:
+O desencadeamento de ações potencialmente destrutivas:
+As representações vetoriais de gráficos:
+Se a um ponto com coordenadas (x1, y1, z1) subtrairmos um ponto com coordenadas (x0, y0, z0) obteremos:
+Se a um determinado objeto aplicarmos uma translação genérica seguida de uma rotação genérica obteremos:
+Considere o objeto A’B’C’ que resulta da projeção de um triângulo genérico definido pelos vértices A, B e C. Se o cálculo da orientação daquele objeto resultar num valor positivo, podemos concluir que:
+No modelo de Phong, a componente emissiva de iluminação:
+Em OpenGL, um ângulo de cutoff de 180º configura:

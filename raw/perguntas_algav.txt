@@ -1,0 +1,27 @@
+Considere que se representa conhecimento com o seguinte predicado PROLOG p:a :-b.a :-c. Em Lógica o mesmo conhecimento pode ser representado por:		
+Qual das seguintes fórmulas é uma tautologia?
+Considere a seguinte base de conhecimento:pp -> qq -> z.
+Um cientista descobre que várias pessoas que tomaram um dado medicamento no passado vieram mais tarde a contrair uma dada doença da qual não se conheciam as causas. Ao assumir que uma dada pessoa tomou o referido medicamento virá a ter tal doença, esse médico usa:
+Se p -> !q é verdadeiro e se q for falso então assumirmos que p é verdadeiro estamos a usar:
+Considere as afirmações A e B. A: Se chover, o campo de golfe será fechado. B: O campo de golfe está fechado.Ao concluir que está a chover
+Considere que um dado projeto envolverá uma equipa de trabalhadores que trabalham 8 horas por dia. Esse projeto deverá estar completo em 3 dias ou menos e envolve entre 80 a 100 horas de trabalho. No projeto devem estar envolvidos entre 4 e 6 trabalhadores. Tal corresponde às seguintes restrições: 4 =< nº trabalhadores <= 61 =< nº dias <= 380 =< nº horas =< 100O projeto pode realizar-se em:
+Considere que num dado problema de planeamento temos um dado Grafo G com N nós que representam operações e A arcos dirigidos entre nós que representam as precedencias entre essas operações. Qual das seguintes afirmações é verdadeira quando se cria um Grafo G1 a partir de G incluindo mais um arco entre dois nós já existentes (e mantendo todos os outros nós e arcos que já existiam)?
+Considere o grafo G que envolve as quatro operações A, B, C e D e as duas restrições { A precede B } e { C precede D}. Considere ainda o grafo G' que envolve as quatro operações A',B', C' e D' e as duas restrições { A' precede B'} e { B' precede C'}. Podemos afirmar que:
+O método de pesquisa primeiro em profundidade:
+Em quais dos seguintes métodos o próximo nó a ser expandido é garantidamente um descendente do ultimo nó expandido:
+Em quais dos seguintes métodos o próximo nó a ser expandido não está garantidamento no mesmo nível ou no nível seguinte do último nó expandido:
+Em quais dos seguintes métodos o próximo nó a ser expandido pode não ser um descendento do último nó expandido:
+Qual dos seguintes métodos se baseia não principio fisico do arrefecimento de metais que foram postos a temperaturas elevadas:
+Qual dos seguintes métodos usa o conceito de aprendizagem:
+Qual das seguintes afirmações não é verdadeira:
+Determinados algoritmos de pesquisa tentam primeiro explorar o espaço de pesquisa em amplitude, para depois explorar mais em detalhe determinadas zonas desse mesmo espaço de pesquisa. Um exemplo desse tipo de métodos é:
+A funcção g(n) usada no algoritmo A* representa:
+Qual das seguintes afirmações é verdadeira:
+O operador de cruzamento uniforme com máscara:
+Considere os seguintes progenitores P1: 10101010 e P2: 11100010. Aplicando um cruzamento uniforme com a seguinte máscara 11001011 um dos descendentes seria:
+Qual das seguintes máscaras de um operador de cruzamento uniforme permitiria efectuar um cruzamento em 4 pontos de corte
+Qual das seguintes máscaras de um operador de cruzamento uniforme permitiria efectuar um cruzamento em 3 pontos de corte
+Qual dos seguintes decendentes não poderia ser gerado a partir dos cromossomas 547386 e 347568 se usarmos um cruzamento com manutenção de ordem?
+Considere  um  jogo  com  2  jogadores  (por  exemplo  o xadrez). Na sua vez de jogar cada jogador pode fazer n jogadas  (j1,j2,…jn).  Se  usarmos  o  método  MINIMAX quantos  nós  teremos  ao  fim  de m níveis  (m=3  níveis corresponde  a  todas  as  possibilidades  que  envolvem uma  jogada  do  jogador  A  seguida  de  uma  jogada  do jogador B seguida de uma nova jogada do jogador A)?
+Considere  um  jogo  em  que  um  dado  jogador  J1  tem  5 cartas  e  o  seu  adversário  J2  também  tem  5  cartas  que J1  conhece.  J1  é  sempre  o  primeiro  a  jogar, respondendo J2 a cada jogada até as cartas terminarem (5  jogadas  de  J1  respondidas  uma  a  uma  por  J2).  Se usarmos  o  método  MINIMAX  quantos  nós  teremos ao fim de todas as jogadas (após  as  5  jogadas  de  cada jogador)?
+No caso do jogo do galo e recorrendo ao método minimax, quantos nós teremos no final do jogo?

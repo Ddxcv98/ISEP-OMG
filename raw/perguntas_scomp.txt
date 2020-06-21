@@ -1,0 +1,73 @@
+﻿Quando um processo cria outro invocando a system call fork() qual das seguintes características não é herdada pelo processo filho:
+Se um processo filho modificar o valor de uma variável global num programa em C, qual das seguintes afirmações descreve o seu efeito?
+Com a execução concorrente de processos numa sistema com um único CPU podemos ter:
+No diagrama de transições de estado de um processo discutido nas aulas, a transição de "pronto a executar" para "em execução" indica que:
+A técnica de memória virtual agrega recursos de hardware e software com três funções básicas: realocação, protecção e paginação. A função de paginação:
+O uso de buffers entre processos comunicantes:
+A principal vantagem do uso de pipes em relação ao uso de memória partilhada como mecanismo de comunicação entre processos é:
+Em programação concorrente, uma secção crítica é uma:
+Para que ocorra um interbloqueio (deadlock) entre processos é necessário que se manifestem simultaneamente as condições:
+Os mecanismos de sincronização de processos disponibilizados pelo sistema operativo são:
+No escalonamento de processos baseado em prioridades, a inversão de prioridades refere-se a:
+Decidir o número de semáforos necessários para uma correcta sincronização de um conjunto de processos pode ser um exercício difícil. A abordagem de granularidade fina tem como consequência:
+Considere um processo com diversas threads. Qual dos seguintes recursos é partilhado por todas as threads desse processo:
+Admita que um processo inicializa uma variável global X a zero e, de seguida, cria três threads. Cada uma delas lê o valor actual de X, incrementa-o e actualiza o seu valor sem qualquer mecanismo de sincronização. Qual o valor final de X após as três threads terminarem?
+O escalonamento preemptivo é uma estratégia que suspende temporariamente a execução de um processo:
+Não assumindo qualquer conhecimento do comportamento dos processos em execução, com qual dos seguintes algoritmos de escalonamento é possível garantir a ausência de resource starvation no acesso ao CPU?
+Assuma o mesmo conjunto de processos, respetivos perfis de execução e tempos de chegada, mas um algoritmo de escalonamento preemptivo de prioridades fixas, em que os processos têm prioridades (P1=1 (mais alta); P2=3; P3=2) e usam espera passiva para aceder aos recursos. Indique a sequência de escalonamento para estes processos (note-se que o símbolo "-" significa que o processador não está a executar qualquer processo).
+Nos sistemas operativos Windows e Linux as chamadas ao sistema (system calls):
+Um sistema operativo é normalmente grande e complexo, sendo por isso construído através de um conjunto de componentes. A estruturação com base numa abordagem monolítica pura:
+As mudanças de estado de um processo são determinadas quer pelo seu ﬂuxo de execução, quer elo escalonador do sistema operativo. Qual das seguintes transições entre estados é possível?
+Durante a execução de um processo qual das seguintes situações pode ocorrer?
+A técnica de memória virtual agrega recursos de hardware e software com três funções básicas: realocação, protecção e paginação. A função de protecção:
+A gestão do acesso e reserva de memória pelos processos em execução:
+A comunicação entre processos permite:
+A utilidade do uso de sinais como método de comunicação entre processos é limitada porque:
+Uma solução eficiente para o problema da secção crítica deve garantir:
+Os mecanismos de sincronização de processos são implementados:
+Em sistemas concorrentes, resource starvation e uma situãção em que:
+Decidir o número de semáforos necessários para uma correcta sincronização de um conjunto de processos pode ser um exercício difícil. A abordagem de granularidade abrangente tem como consequência:
+Considere um processo com diversas threads. Qual das seguintes secções do espaço de endereçamento de um processo é privada para cada uma das threads desse processo:
+A estratégia de escalonamento que permite que qualquer processo em execução monopolize o CPU até ao fim do seu código ou até o libertar voluntariamente é denominada por:
+Aplicar ao algoritmo de escalonamento round robin:
+Nos sistemas operativos Windows e Linux toda a configuração e tratamento de interrupções passa pelo sistema operativo, dado que:
+Existem CPUs que têm pelo menos 2 níveis de protecção na execução de instruções do CPU (normalmente designados por kernel e user mode):
+ Relativamente às chamadas ao sistema operativo:
+Num computador o barramento é partilhado entre o CPU e os dispositivos de entrada e saída (I/O) :
+As chamadas ao sistema permitem a um programa do utilizador invocar serviços do sistema operativo:
+Existem CPUs que não oferecem qualquer nível de proteção na execução de instruções (normalmente designados por kernel e user mode): 
+A utilização dos mecanismos de DMA têm as seguintes vantagens e/ou desvantagens em relação aos mecanismos de interrupção:
+A linkagem dinâmica de bibliotecas (p.e. DLLs) não permite:
+A operação em dual mode é fundamental nos sistemas operativos modernos dado que: 
+A proteção de memória consiste:
+Num sistema preemptivo um processo é executado no estado de running:
+Num sistema não preemptivo um processo é executado no estado de running:
+As seguintes características resultam da utilização do endereçamento lógico:
+A segmentação de memória tem como objetivo:
+A paginação de memória tem como objetivo:
+Um dos objetivos da paginação de memória tem como objetivo:
+Um dos objetivos de separar um programa em duas threads diferentes poderá ser:
+A criação de um novo processo em Linux:
+As seguintes afirmações comparam as vantagens e desvantagens da utilização de threads:
+A sinalização de uma variável de condição:
+Nos sistemas operativos Windows e Linux toda a configuração e tratamento de interrupções passa pelo sistema operativo, dado que: 
+Relativamente às chamadas ao sistema operativo:
+Em relação às chamadas ao sistema operativo:
+Relativamente a proteção de memória consiste: 
+Deadlock é uma situação em que: 
+Assuma que compila um programa utilizando o comando gcc prog.c no sistema operativo Linux, a atribuição inicial de instruções e dados às respetivas posições físicas de memória é feita geralmente:
+A segmentação de memória permite:
+A criação de um novo processo num sistema operativo envolve:
+O acesso a um sistema de ficheiros organiza-se por camadas. A camada designada por “Logical File System”, é responsável por:
+Num sistema de ficheiros a alocação de espaço para um ficheiro poderá ser feita de várias formas:
+O conjunto de módulos seguintes são parte integrante de um kernel genérico de um sistema operativo para sistemas desktop, multiprocesso e multiutilizador: 
+A criação de um novo processo em Linux, através da função fork, envolve: 
+Assuma que um programa em C aloca memória partilhada ( apontada pela variável m) com sizeof(int)*2 bytes de comprimento, numa arquitetura Intel x86. No entanto o código seguinte não gera um erro (m[20]=20), indique as razões porque não é detetado qualquer erro:
+A utilização pelo sistema operativo da execução em kernel mode e user mode permite: 
+Starvation é uma situação em que: 
+Assuma que um conjunto de programas de vários utilizadores está a ser executado num sistema operativo com suporte para multiprocessamento e multiutilizador:
+Num sistema com escalonamento preemptivo, com prioridades fixas, com vários processos a concorrer pelo CPU, um processo é executado no estado de running sem qualquer comutação para outros processos: 
+Relativamente aos semáforos em Linux System V pode-se afirmar o seguinte:
+Um dos objetivos de separar um programa em threads diferentes poderá ser:
+Num sistema multiprocessador o mecanismo de Crossbar Switching necessita X Switchs num sistema com n processadores. Indique o valor de x.
+Considere um CPU multicore e um programa multi-thread. Considere que o número de threads do programa 1 (NT) é superior ao número de cores (Ncores) (i.e. NT>Ncores) e que nenhuma das threads pode interferir com as outras. Considere também o programa 2 igual ao programa 1, apenas variando o número de threads.
