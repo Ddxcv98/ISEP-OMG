@@ -18,8 +18,8 @@ classes.addEventListener('input', () => {
 
         fs.readFile(`${remote.app.getAppPath()}/raw/respostas_${text}.txt`, 'utf8', (err, dAnswers) => {
             if (err) throw err;
-            const questions = dQuestions.split(/(\n|\r|\r\n)/g);
-            const answers = dAnswers.split(/(\n|\r|\r\n)/g);
+            const questions = dQuestions.split('\n');
+            const answers = dAnswers.split('\n');
             
             let j = 0;
             
@@ -44,7 +44,7 @@ search.addEventListener('input', () => {
     const text = search.value;
     table.innerHTML = '';
 
-    if (text.length > 0) {
+    if (classes.value && text.length > 0) {
         map.forEach((value, key) => {
             if (key.toLowerCase().includes(text.toLowerCase())) {
                 const tr = document.createElement('tr');
