@@ -8,10 +8,12 @@ const table = document.getElementById('table');
 let map;
 
 classes.addEventListener('input', () => {
+    search.disabled = true;
+    search.value = '';
+    table.innerHTML = '';
+
     const text = classes.value.toLowerCase();
     map = new Map();
-    table.innerHTML = '';
-    search.value = '';
     
     fs.readFile(`${remote.app.getAppPath()}/raw/perguntas_${text}.txt`, 'utf8', (err, dQuestions) => {
         if (err) throw err;
@@ -30,12 +32,20 @@ classes.addEventListener('input', () => {
                     answer = answers[++j].trim();
                 }
 
-                map.set(question.trim(), answer);
+                const trimmed = question.trim();
+
+                if (map.get(trimmed)) {
+                    console.warn(`Duplicate: ${trimmed}`);
+                }
+
+                map.set(trimmed, answer);
 
                 do {
                     j++
                 } while (j < answers.length && answers[j].trim().length !== 0);
             }
+
+            search.disabled = false;
         });
     });
 });

@@ -1,0 +1,94 @@
+Um meio de transmissão adequado a sinais elétricos digitais
+O tempo que uma rede demora a entregar um pacote desde o nó de origem até ao nó de destino (latência de rede)
+Quando um pacote é entregue num nó, e inclui, no cabeçalho ou na cauda, um código de deteção de erros,
+Na pilha protocolar ou arquitetura de rede
+Numa célula de uma rede local sem fios 802.11 (WLAN)
+Os PDU das redes ATM (Asynchronous Transfer Mode) designam-se células, as células das redes ATM
+O protocolo IPv4 permite a fragmentação de pacotes e posterior reagrupamento,
+Para um nó de rede IPv4 utilizar o sistema de resolução de nomes DNS (Domain Name System), é suficiente conhecer
+No HTTP (Hypertext Transfer Protocol), o corpo da mensagem (content)
+Muitos protocolos de aplicação utilizam o modelo cliente-servidor,
+Um componente fundamental de uma VPN (Virtual Private Network) é o túnel,
+A técnica de codificação (line coding) do tipo NRZ (Non-return-to-zero)
+Numa rede de meio de transmissão partilhado (shared medium network)
+O controlo de erros
+Uma característica que é comum entre as redes Ethernet (IEEE 802.3) e as redes locais sem fios (IEEE 802.11) é
+O local loop é uma ligação de nível dois entre o subscritor e o ISP (Internet Service Provider),
+Uma vantagem das redes ATM (Asynchronous Transfer Mode) relativamente às redes Ethernet é que,
+Os PDU (Protocol Data Unit) do protocolo IPv4,
+O sistema de resolução de nomes DNS (Domain Name System) utiliza vários tipos de registos,
+As aplicações cliente que utilizam o protocolo HTTP (Hypertext Transfer Protocol),
+O SMTP (Simple Mail Transfer Protocol) permite a clientes o envio de mensagens de correio eletrónico a servidores,
+Um agente SNMPv1 (Simple Network Management Protocol version one) é uma aplicação de rede que
+A EMI (Electromagnetic interference) é um fenómeno que
+Ao aumentar a quantidade de dados transportados por cada pacote enviado através de uma rede, isso
+Numa rede de comutação de pacotes com circuitos virtuais,
+No contexto do modelo de referência OSI (Open Systems Interconnection), o PDU (Protocol Data Unit)
+Quando a tecnologia de rede local sem fios 802.11 (WLAN) é usada para garantir a cobertura de um edifício,
+A tecnologia ADSL (Asymmetric Digital Subscriber Line)
+Uma semelhança entre o protocolo IPv4 e o protocolo IPv6 é que ambos
+Numa tabela de encaminhamento (routeing table) IPv4
+No protocolo HTTP (Hypertext Transfer Protocol), os pedidos
+Um MTA (Mail Transport Agent / Message Transfer Agent)
+Um agente SNMPv1 (Simple Network Management Protocol version one) é
+A relação sinal/ruído (S/N ou SNR)
+Exemplos de algumas tecnologias que usam codificação (line coding) e não usam modulação digital (digital modulation) são:
+O tempo que um pacote demora a atravessar uma infraestrutura de rede (e.g. a Internet), não depende
+Um PDU (Protocol Data Unit), tal como definido no modelo OSI,
+Na transmissão de um pacote entre um emissor e um recetor, a deteção de erros
+O Local Loop
+No cabeçalho de um pacote IPv4, o campo
+O protocolo DHCP (Dynamic Host Configuration Protocol)
+Os servidores de nomes (NS - Name Server) do sistema de resolução de nomes DNS (Domain Name System),
+Na API Berkeley Sockets, quanto um servidor TCP (Transmission Control Protocol) aceita uma ligação de um cliente,
+Uma mensagem HTTP (Hypertext Transfer Protocol)
+No protocolo HTTP, a linha de cabeçalho (header field)
+No contexto de web services, um pedido HTTP
+Para autenticar um servidor através do certificado de chave pública
+Um dos principais componentes de uma VPN (Virtual Private Network) é o túnel, numa VPN o túnel
+Os sistemas de monitorização de rede e serviços (network and services monitoring systems)
+Um MTA (Mail Transfer Agent) é uma aplicação que utiliza o protocolo SMTP (Simple Mail Transfer Protocol),
+Uma vantagem da cablagem de cobre quando comparada com a cablagem de fibra ótica é
+A modulação digital (digital modulation)
+O tempo que um nó de rede demora a colocar um pacote no meio de transmissão (emitir o pacote)
+No modelo OSI (Open Systems Interconnection), a camada de rede (network layer / layer three),
+Os códigos de validação de dados para efeitos de deteção de erros (e.g. Frame Check Sequence)
+As tecnologias DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line)
+Uma semelhança entre o cabeçalho de um pacote IPv4 e o cabeçalho de um pacote IPv6 é que, ambos
+O protocolo ARP (Address Resolution Protocol)
+No sistema DNS (Domain Name System), os servidores de nomes dos domínios de topo (TDL - Top-Level Domain)
+Na API Berkeley Sockets, quando um cliente UDP (User Datagram Protocol) envia um pedido,
+O cabeçalho (header) de uma mensagem HTTP (Hypertext Transfer Protocol)
+No protocolo HTTP, os pedidos com o método GET
+Através da primeira linha de uma mensagem HTTP, ficamos sempre a saber
+Quando uma ligação TCP é protegida pelo protocolo SSL/TLS (Secure Sockets Layer/Transport Layer Security),
+Numa VPN (Virtual Private Network) do tipo Host-LAN (Remote-Access VPN)
+Os agentes SNMP (Simple Network Management Protocol)
+Para um utilizador ter acesso às mensagens de correio eletrónico que estão depositadas na sua mailbox
+A EMI (Electromagnetic interference) é um fenómeno
+A modulação digital (digital modulation) é uma técnica
+Um vantagem de se utilizarem pacotes (packets) de dimensão reduzida é que dessa forma
+De acordo com o modelo OSI (Open Systems Interconnection), nas camadas inferiores desse modelo,
+As redes de área local Ethernet (IEEE802.3/ISO8802-3)
+As linhas telefónicas da rede pública (PSTN - Public Switched Telephone Network)
+No cabeçalho de um pacote IPv6 existe um campo designado next-header, esse campo
+O protocolo TCP (Transmission Control Protocol)
+No sistema DNS (Domain Name System), os registos (RR – Resource Records)
+Na API Berkeley Sockets, a função accept() e o método accept(), respetivamente em linguagens C e Java, usam-se
+Todas as mensagens do protocolo HTTP (Hypertext Transfer Protocol) começam por um cabeçalho em formato de texto,
+O protocolo HTTP suporta vários tipos de pedidos (methods),
+Através da primeira linha (request line) de uma mensagem de pedido HTTP, ficamos sempre a saber
+O protocolo HTTPS utiliza habitualmente certificados de chave pública. Um certificado de chave pública
+O SSL/TLS (Secure Sockets Layer/Transport Layer Security) envolve uma negociação inicial, nessa negociação
+Uma caraterística fundamental comum a qualquer tipo de VPN (Virtual Private Network) é que
+O envio de uma mensagem de correio eletrónico através de SMTP (Simple Mail Transfer Protocol
+O cabeçalho (header) de um pacote IPv4
+Observando os valores dos campos no cabeçalho (header) de um pacote IPv4, podemo sempre concluir
+No contexto do encaminhamento dinâmico (dynamic routing), um sistema autónomo
+Imagine que um pacote IPv4 destinado ao nó 197.37.28.73 está a ser transportado por um pacote (frame) Ethernet destinado ao endereço 0A:00:27:DD:B3:12, então podemos afirmar com total certeza que
+O protocolo de encaminhamento (routing protocol)
+A técnica PMTUD (Path Maximum Transmission Unit Discovery),
+O protocolo HTTP (Hypertext Transfer Protocol) suporta vários tipos de pedidos (methods).
+De forma a garantir condições mínimas de segurança, um servidor SMTP (Simple Mail Transfer Protocol) não deve em circunstância nenhuma aceitar uma mensagem se:
+Na monitorização de redes e serviços podemos identificar duas formas de verificação: Monitorização ativa (active checking) e Monitorização passiva (passive checking). Sobre esta classificação, podemos afirmar que:
+As mensagens de correio eletrónico enviadas através do protocolo SMTP (Simple Mail Transfer Protocol) têm fortes limitações quanto ao seu conteúdo, permitem apenas caracteres de 7 bits (códigos ASCII de 0 a 127). Graças à especificação MIME (Multipurpose Internet Mail Extensions) estas limitações são contornadas especificando formas de codificação para efeito da transferência (linha de cabeçalho Content-Transfer-Encoding) que permitem transformar qualquer tipo de conteúdo em caracteres de 7 bits. Sobre a utilização da linha de cabeçalho Content-Transfer-Encoding no SMTP podemos afirmar que:

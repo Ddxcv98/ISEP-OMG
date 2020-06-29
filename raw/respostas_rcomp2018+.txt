@@ -1,0 +1,187 @@
+deve apresentar valores de atenuação reduzidos para sinais com frequências próximas de zero.
+
+tende a ser menor se os nós intermédios da rede operarem em modo cut-through e não em modo store & forward.
+
+o algoritmo de cálculo do código que deve ser usado pelo recetor tem de ser o mesmo que foi usado pelo emissor.
+
+TCP/IP, todos os PDU (Protocol Data Unit) do protocolo TCP são transportados dentro de PDUs IP (Internet Protocol).
+
+, seja qual for o endereço de destino, quando um pacote é emitido, todos os nós da célula recebem uma cópia do mesmo.
+
+caraterizam-se por terem um tamanho total relativamente reduzido e fixo.
+
+esta funcionalidade permite tirar o máximo proveito dos valores de MTU (Maximum Transmission Unit) existentes.
+
+o endereço IPv4 de um servidor de nomes DNS (name server).
+
+é usado para transferir dados, tanto do servidor para o cliente como do cliente para o servidor.
+
+no entanto, no SNMP (Simple Network Management Protocol) o agente pode assumir ambos os papéis (cliente e servidor).
+
+no contexto de uma VPN, o túnel tem de garantir a privacidade dos pacotes que são enviados através dele.
+
+permite a utilização de múltiplos níveis de sinal, para transportar um byte em cada codificação seriam necessários 256 níveis.
+
+cabe aos nós da rede verificar o endereço de destino de cada pacote recebido e ignorar o pacote se for destinado a terceiros.
+
+ARQ contínuo (Continuous Automatic Repeat Request) é do tipo BEC (Backward Error Correction).
+
+os endereços dos nós destas redes serem sempre constituídos por 48 bits.
+
+o principal objetivo desta ligação é a transferência de pacotes IP (Internet Protocol).
+
+garantem a ordem dos dados, ou seja, que os dados são entregues na mesma ordem em que são emitidos.
+
+contêm um checksum, cada vez que o PDU atravessa um router, o checksum tem de ser calculado novamente.
+
+os únicos registos que permitem converter um nome DNS num endereço IPv4 são os registos do tipo A.
+
+enviam pedidos (HTTP requests), nunca enviam respostas (HTTP responses).
+
+frequentemente, a aplicação que opera como servidor para receber uma mensagem, opera a seguir como cliente.
+
+permite o acesso à MIB (Management Information Base) existente no nó de rede em que a aplicação se encontra.
+
+pode ter impacto sobre o ponto de vista da confidencialidade/privacidade da informação que está a ser transmitida.
+
+leva a que o overhead dos pacotes fique mais reduzido, admitindo que o tamanho do cabeçalho se mantém.
+
+quando é enviada uma sequência de pacotes para um nó de destino, eles chegam na mesma ordem em que foram enviados.
+
+é composto pelo PCI e pelo SDU (Service Data Unit), no entanto o SDU pode conter ele próprio um ou vários PCI.
+
+todas as células devem ter o mesmo SSID (Service Set Identifier), fazendo parte do mesmo ESS (Extended Service Set).
+
+utiliza sinais analógicos, consequentemente tem de ser instalado um MODEM (modulator/demodulator) do lado do subscritor.
+
+são capazes de transportar PDUs de diversos protocolos, como por exemplo UDP e TCP.
+
+, se estiver definida a rede de destino 0.0.0.0/0, ela deve encontrar-se no fim da tabela (última linha).
+
+com o método GET são sempre mensagens exclusivamente em formato de texto.
+
+utiliza o SMTP (Simple Mail Transfer Protocol) tanto para enviar como para receber mensagens de correio eletrónico.
+
+uma aplicação de rede que opera sobre o protocolo UDP (User Datagram Protocol).
+
+para um sinal ótico não inclui o efeito da EMI (Electromagnetic interference).
+
+Ethernet 1000baseT e 10GbaseT.
+
+do tipo de dados transportados pelo pacote.
+
+é constituído pelo PCI (Protocol Control Information) e pelo SDU (Service Data Unit).
+
+exige que tanto emissor como recetor realizem ações concertadas e bem definidas.
+
+é uma ligação de nível dois entre um subscritor e um ISP (Internet Service Provider).
+
+HEADER CHECKSUM tem de ser recalculado sempre que um router retransmite o pacote.
+
+utiliza o protocolo UDP (User Datagram Protocol) para transporte das suas mensagens.
+
+devem conhecer os endereços dos root name servers.
+
+no servidor é criado um novo socket TCP, que representa a ligação TCP estabelecida com o cliente.
+
+pode começar pela sequência de carateres POST, nesse caso podemos afirmar que é um pedido e não uma resposta.
+
+Accept é usada nos pedidos HTTP, não faz qualquer sentido numa resposta HTTP.
+
+com o método PUT é adequado para substituir o conteúdo de um recurso existente.
+
+o emissor do certificado (Issuer) tem de ser considerado fidedigno (trusted) pelo cliente.
+
+deve ter a particularidade de garantir a privacidade (confidencialidade) dos pacotes que são transferidos através dele.
+
+devem verificar o estado dos serviços de rede diretamente, e não através de agentes nos sistemas monitorizados.
+
+quando o MTA assume o papel de cliente envia mensagens, quando assume o papel de servidor, recebe mensagens.
+
+a maior simplicidade na montagem dos conetores.
+
+QAM (Quadrature Amplitude Modulation) usa ASK (Amplitude Shift Keying) e PSK (Phase Shift Keying).
+
+é tanto maior quanto maior for o tamanho do pacote.
+
+define um PDU (Protocol Data Unit) que vai ser o SDU (Service Data Unit) da camada de ligação lógica (layer two).
+
+são definidos pelos emissores e verificados pelos recetores.
+
+utilizam linhas telefónicas analógicas da rede pública (PSTN - Public Switched Telephone Network).
+
+possuem um campo que determina o número máximo de routers que o pacote poderá atravessar.
+
+exige que os nós intervenientes estejam no mesmo domínio de broadcast (rede física ou VLAN).
+
+devem ser conhecidos pelos root name servers.
+
+pode definir como destino um endereço multicast ou broadcast.
+
+é sempre integralmente constituído por linhas de texto, todas terminadas por CR/LF.
+
+podem conter a linha de cabeçalho (header field) Accept / nunca devem definir as linhas de cabeçalho (header fields) Content-Length ou Content-Type
+
+se é um pedido (HTTP request) ou uma resposta (HTTP response).
+
+é opção do servidor exigir ou não ao cliente um certificado de chave pública.
+
+é habitual os utilizadores serem autenticados através de username/password.
+
+são adequados para implementar active checking, mas não são adequados para implementar passive checking.
+
+pode utilizar o serviço POP3 (Post Office Protocol version 3), se este estiver disponível no servidor correspondente.
+
+cujos efeitos nefastos podem ser reduzidos através de blindagens.
+
+em que o sinal produzido nunca tem frequência zero.
+
+diminui-se o atraso de propagação dos pacotes através de nós intermédios que operam em modo store & forward.
+
+os pacotes têm tendência a ter dimensão superior aos pacotes nas camadas superiores.
+
+permitem que os nós saibam, com algum grau de certeza, se um pacote recebido contém algum erro.
+
+podem ser utilizadas pelas tecnologias DSL (Digital Subscriber Line) e ADSL (Asymmetric Digital Subscriber Line).
+
+define de que tipo são os dados que se seguem ao cabeçalho IPv6.
+
+tem a possibilidade de operar sobre IPv4 ou sobre IPv6.
+
+que servem para definir endereços IPv4 de nós de rede são os registos do tipo A.
+
+quando se pretende aceitar um pedido de ligação TCP de um cliente.
+
+a única forma de determinar o tamanho do cabeçalho é proceder à leitura integral do mesmo.
+
+o método PUT é habitualmente usado no contexto REST para atualizar o conteúdo de um recurso.
+
+qual é o tipo de pedido HTTP (method) e qual a versão do protocolo HTTP que o cliente está a utilizar.
+
+identifica uma entidade, frequentemente através de um nome DNS, e contém a respetiva chave pública.
+
+é o servidor que decide qual a versão SSL/TLS a utilizar, e também qual o cypher-suite a utilizar.
+
+é garantida a confidencialidade dos dados que são transferidos através dela.
+
+está muitas vezes limitado a formato de texto simples, mas mesmo assim é possível enviar outros tipos de conteúdos.
+
+contém um campo para deteção de erros, no entanto apenas permite a deteção no cabeçalho, não nos dados transportados (payload).
+
+se o pacote IPv4 transporta um pacote UDP ou não.
+
+RIP (Routing Information Protocol) nunca pode fazer fronteira com outro sistema autónomo RIP.
+
+O endereço Ethernet 0A:00:27:DD:B3:12 pode ser de um router, ou então é do nó de rede que tem o endereço IPv4 197.37.28.73.
+
+EIGRP (Enhanced Interior Gateway Routing Protocol) implementa a monitorização ativa do estado dos routers vizinhos.
+
+tem como objetivo garantir que o pacote IPv4 não necessita de ser fragmentado até ser entregue no nó de destino.
+
+Em caso de sucesso, a resposta a um pedido com o method HEAD não contém corpo (content/body/entity).
+
+A mensagem provém do exterior não havendo autenticação do remetente (campo From) e o destinatário não é uma mailbox local.
+
+Os testes de eco ICMP são claramente uma monitorização ativa.
+
+A codificação base64 permite transferir todo e qualquer tipo de conteúdo, mas tem a desvantagem de aumentar o seu volume.
