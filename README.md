@@ -1,3 +1,3 @@
-# ISEP-OMG
+# ISEP-SEARCH
 
-Find the answer at the speed of light!
+Find exam answers in real time!
